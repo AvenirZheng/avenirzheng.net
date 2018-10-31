@@ -1,0 +1,9 @@
+---
+title: 想寫點什么..
+url: 199.html
+id: 199
+date: 2007-07-17 03:07:13
+tags:
+---
+
+Last few days, I just can’t help but thinking of you, I mean I have got used to it. Sometimes I would persuade myself that I should make a phone call, so that I can hear your voice, telling you what I was feeling right now, or figour out what’s wrong between u and me. However, I never make that call, I just know, I would hurt you, I don’t want to mix up your life. I know, I can change nothing. You got your Mr Right, and I totally believe that he will bring you happiness, which I never bring to you. Sometimes I felt guilty, because it washed you 4 years on me, you know what, when you said ‘ I have waited you for 4 years, but you did’t change yourself at all’, it hurt, you know, I have try, but I can’t, I am so weak, I need u, I need someone to help me, to open my heart, it was heart-broken, I knew, you gave up. It’s on me, I know, you tried, you quited. The last time I was dringking, I had said some nonsense, I regreted to saying that words to you. I would’t forget that day, because I finally realized how weak am I. I was scared, I think I would lost everything, my lover, my future, my family, and myself. Now I pround of myself, because I think I am in the right direction, I keep moving, I improve myself everyday, I confident that I would have a bright future, and I think I had made a right decision, you have your pretty good life. En..it would be little bitte to me, but, you know, i can take over it. You know , what happen to me is not imporetant, like what I was saying ‘I wish u happiness’, I do, turst me, I will be stronger, more than what you have except me to be. I swear, I love you more than anything …

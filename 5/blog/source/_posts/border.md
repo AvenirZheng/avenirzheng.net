@@ -1,0 +1,9 @@
+---
+title: 伪PS高手教程-边框篇
+url: 81.html
+id: 81
+date: 2007-06-04 23:45:52
+tags:
+---
+
+[](http://cai13.info/blog_pic/2007/06/1.jpg "1.jpg")[](http://cai13.info/blog_pic/2007/06/2.jpg "2.jpg")[![8.jpg](http://cai13.info/blog_pic/2007/06/01/8.jpg "8.jpg")](http://cai13.info/blog_pic/2007/06/8.jpg "8.jpg") [![11.jpg](http://cai13.info/blog_pic/2007/06/11.jpg "11.jpg")](http://cai13.info/blog_pic/2007/06/11.jpg "11.jpg")  1............ [![1.jpg](http://cai13.info/blog_pic/2007/06/1.jpg)](http://cai13.info/blog_pic/2007/06/1.jpg "1.jpg") [![2.jpg](http://cai13.info/blog_pic/2007/06/2.jpg "2.jpg")](http://cai13.info/blog_pic/2007/06/2.jpg "2.jpg") ![](http://cai13.info/blog_pic/2007/06/3.jpg) ![](http://cai13.info/blog_pic/2007/06/4.jpg) ![](http://cai13.info/blog_pic/2007/06/5.jpg) ![](http://cai13.info/blog_pic/2007/06/6.jpg) ![](http://cai13.info/blog_pic/2007/06/7.jpg) ![](http://cai13.info/blog_pic/2007/06/08.jpg) ![](http://cai13.info/blog_pic/2007/06/9.jpg) ![](http://cai13.info/blog_pic/2007/06/10.jpg) ![](http://cai13.info/blog_pic/2007/06/11.jpg) ![](http://cai13.info/blog_pic/2007/06/12.jpg) ![](http://cai13.info/blog_pic/2007/06/13.jpg) 2.......... ![](http://cai13.info/blog_pic/2007/06/01/1.jpg) ![](http://cai13.info/blog_pic/2007/06/01/2.jpg) ![](http://cai13.info/blog_pic/2007/06/01/3.jpg) ![](http://cai13.info/blog_pic/2007/06/01/4.jpg) ![](http://cai13.info/blog_pic/2007/06/01/5.jpg) ![](http://cai13.info/blog_pic/2007/06/01/6.jpg) ![](http://cai13.info/blog_pic/2007/06/01/7.jpg) ![](http://cai13.info/blog_pic/2007/06/01/8.jpg)[](http://cai13.info/blog_pic/2007/06/1.jpg "1.jpg")

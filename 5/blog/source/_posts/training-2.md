@@ -1,0 +1,9 @@
+---
+title: '{ Training } 腾讯 - 毕业生西冲拓展'
+url: 1415.html
+id: 1415
+date: 2010-05-06 19:40:45
+tags:
+---
+
+[![training](http://caib.me/wp-content/uploads/2010/05/training_thumb.jpg "training")](http://caib.me/wp-content/uploads/2010/05/training.jpg) BU组织的毕业生户外拓展，玩得很尽兴，很重口味，一如既往地低调上图。照片都不是我拍的，所以都很好看。  [![IMG_0085](http://caib.me/wp-content/uploads/2010/05/IMG_0085_thumb.jpg "IMG_0085")](http://caib.me/wp-content/uploads/2010/05/IMG_0085.jpg) [![IMG_0691](http://caib.me/wp-content/uploads/2010/05/IMG_0691_thumb.jpg "IMG_0691")](http://caib.me/wp-content/uploads/2010/05/IMG_0691.jpg)[![IMG_1391](http://caib.me/wp-content/uploads/2010/05/IMG_1391_thumb.jpg "IMG_1391")](http://caib.me/wp-content/uploads/2010/05/IMG_1391.jpg) [![IMG_1391](http://caib.me/wp-content/uploads/2010/05/IMG_1391_thumb1.jpg "IMG_1391")](http://caib.me/wp-content/uploads/2010/05/IMG_13911.jpg) [![IMG_1399](http://caib.me/wp-content/uploads/2010/05/IMG_1399_thumb.jpg "IMG_1399")](http://caib.me/wp-content/uploads/2010/05/IMG_1399.jpg)[![IMG_1478](http://caib.me/wp-content/uploads/2010/05/IMG_1478_thumb.jpg "IMG_1478")](http://caib.me/wp-content/uploads/2010/05/IMG_1478.jpg) [![IMG_1426](http://caib.me/wp-content/uploads/2010/05/IMG_1426_thumb.jpg "IMG_1426")](http://caib.me/wp-content/uploads/2010/05/IMG_1426.jpg) [![IMG_1897](http://caib.me/wp-content/uploads/2010/05/IMG_1897_thumb.jpg "IMG_1897")](http://caib.me/wp-content/uploads/2010/05/IMG_1897.jpg) [![IMG_1900](http://caib.me/wp-content/uploads/2010/05/IMG_1900_thumb.jpg "IMG_1900")](http://caib.me/wp-content/uploads/2010/05/IMG_1900.jpg)[![IMG_1917](http://caib.me/wp-content/uploads/2010/05/IMG_1917_thumb.jpg "IMG_1917")](http://caib.me/wp-content/uploads/2010/05/IMG_1917.jpg)[![腾讯拓展 164](http://caib.me/wp-content/uploads/2010/05/164_thumb.jpg "腾讯拓展 164")](http://caib.me/wp-content/uploads/2010/05/164.jpg)

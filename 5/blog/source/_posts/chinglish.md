@@ -1,0 +1,9 @@
+---
+title: '中式英语PK标准英语 '
+url: 93.html
+id: 93
+date: 2007-06-08 00:59:26
+tags:
+---
+
+下面就是这些Chinglish说法，其中每行第一部分是汉语说法，第二部分是Chinglish说法，第三部分则是英语的标准说法。 ① 欢迎你到... ② welcome you to ... ③ welcome to ... ① 永远记住你 ② remember you forever ③ always remember you（没有人能活到forever） ① 祝你有个... ② wish you have a ... ③ I wish you a ...{ **某人刚刚犯了这个错** } ① 给你 ② give you ③ here you are ① 很喜欢... ② very like ... ③ like ... very much ① 黄头发 ② yellow hair ③ blond/blonde（西方人没有yellow hair的说法） ① 厕所 ② WC ③ men's room/women's room/restroom ① 真遗憾 ② it's a pity ③ that's too bad/it's a shame（it's a pity说法太老） ① 裤子 ② trousers ③ pants/slacks/jeans ① 修理 ② mend ③ fix/repair ① 入口 ② way in ③ entrance ① 出口 ② way out ③ exit（way out在口语中是crazy的意思） ① 勤奋 ② diligent ③ hardworking/studious/conscientious ① 应该 ② should ③ must/shall ① 火锅 ② chafing dish ③ hot pot ① 大厦 ② mansion ③ center/plaza ① 马马虎虎 ② so-so ③ average/fair/all right/not too bad/OK（西方人很少使用so-so） ① 好吃 ② delicious ③ good/nice/tasty/appetizing（delicious在中国被滥用） ① 尽我最大努力 ② try my best ③ try/strive（try的本意就是try my best） ① 有名 ② famous ③ well-known/renowned/legendary/popular（famous在中国被滥用） ① 滑稽 ② humorous ③ funny/witty/amusing/entertaining ① 欺骗 ② to cheat ③ to trick/to play a joke on/to con/to deceive/to rip off ① 车门 ② the door of the car ③ the car's door ① 怎么拼? ② how to spell? ③ how do you spell? ① 再见 ② bye-bye ③ bye/see you/see you later/later（bye-bye有些孩子气） ① 玩 ② play ③ go to/do（play在中国被滥用） ① 面条 ② noodles ③ pasta（noodles有些孩子气） ① 据说 ② it is said ③ I heard/I read/I was told ① 等等 ② and so on ③ etc. ① 直到现在 ② till now ③ recently/lately/thus far ① 农民 ② peasant ③ farmer ① 宣传 ② propaganda ③ information

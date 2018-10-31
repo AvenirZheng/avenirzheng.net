@@ -1,0 +1,8 @@
+---
+title: '{Creative}外国与中国的区别'
+url: 297.html
+id: 297
+tags:
+---
+
+餐厅分贝 ![餐厅分贝.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_餐厅分贝.jpg) 处理问题 ![处理问题.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_处理问题.jpg) 对待愤怒 ![对待愤怒.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_对待愤怒.jpg)  对待新的事物 ![对待新的事物.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_对待新的事物.jpg) 孩子 ![孩子.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_孩子.jpg) 交通工具 ![交通工具.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_交通工具.jpg) 聚会 ![聚会.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_聚会.jpg) 老人的生活 ![老人的生活.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_老人的生活.jpg) 淋浴 ![淋浴.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_淋浴.jpg) 领导 ![领导.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_领导.jpg) 旅游![旅游.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_旅游.jpg) 美丽的标准![美丽的标准.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_美丽的标准.jpg) 排队![排队.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_排队.jpg) 人际关系![人际关系.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_人际关系.jpg) 生活方式![生活方式.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_生活方式.jpg) 一日三餐![一日三餐.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_一日三餐.jpg) 意见![意见.jpg](http://sharefile.zcool.com.cn/day_070820/20070820_126_意见.jpg)
