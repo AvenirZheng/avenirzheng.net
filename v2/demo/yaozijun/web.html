@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script type="text/javascript" src="JQuery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(function(){ 
+	$('.nav_a li').hover(
+		function(){
+			$(this).children('ul').css({display:'block'});
+			
+		},function(){
+			$(this).children('ul').css({display:'none'});
+			
+		});
+});
+
+
+$(function(){ 
+	$('.leftdown dl').click(function(){
+		$(this).children('dd').slideDown().end().siblings().children('dd').slideUp();
+	});
+	
+});
+</script>
+<style type="text/css">
+*{ margin:0; padding:0;}
+body{font-size:12px; font-family:Verdana, Geneva, sans-serif;
+　　 }
+ul{ list-style:none;}
+a{ color:#000000; text-decoration:none;}
+.wrapper{ width:950px; margin:0 auto;}
+
+.header{ height:100px; background:#ccc;}
+.header div.headA{ height:27px; background:url(images/未标题-2.png) no-repeat;  }
+#exit{ position:absolute; right:10px; top:7px; }
+
+.nav{ margin-left:68px;}
+.nav li{ float:left; position:relative; margin-top:7px;  background:url(images/line_1.png) no-repeat center right;padding-right:1px; }
+.nav li ul{ position:absolute; }
+.nav li #a,#b{ margin-left:10px;margin-right:10px;}
+#exit{ position:relative; float:right;}
+
+
+
+.nav_a{ margin-left:168px; margin-top:5px;height:18px; width:100px;background:url(images/q_group_132.jpg) no-repeat right center; background-color:#DEF0F5; border:2px solid #4CAAE8; padding:1px 1px 1px 1px;}
+.nav_a li {float:left;position:relative;margin-top:0;left: 0;}
+.nav_a li a{ display:block; padding:0 20px; float:left;height:23px; line-height:23px;}
+.nav_a li ul a:hover { color:#FF0000;}
+.nav_a li ul{ position:absolute; width:168px; height:149px;overflow:auto;border:1px solid #64B9F8;background-color:#C4E2F7;display:none;}
+.nav_a li ul a{ width:106px; float:left;background: #FFFFFF; border:1px solid #DEF0F5; }
+.nav_a li #c{ margin:0;height:13px;}
+.secondary-menu{ left:-2px; top:18px; border:1px solid  #C4E2F7; padding:2px;}
+
+h1{ font-size:13px;}
+h2{ font-size:25px;color:#FFFFFF; margin-left:160px;} 
+.header div.headB{ width:949px;height:72px; background:url(images/未标题-3.png) no-repeat 0 0; border:1px solid  #458BC1;}
+.header div.headB p{color:#FFFFFF; margin-left:160px; margin-top:5px;}
+.header div.headC{ width:950px;margin:1px 0; background:#ECECEC;}
+.s1{ margin-left:0; padding:5px 703px 10px 30px; background:url(images/q_group_4.gif) no-repeat;overflow:auto;}
+
+
+.content{ width:950px; margin: 30px 0; height:1%; overflow:hidden;}
+.content div.left,div.center,div.right{ float:left; display:inline; width:100px; padding-bottom:9999px; margin-bottom:-9999px;  }
+.content div.left{ width:178px; background:#C5E5FE;}
+.content div.left div.lefttop{ width:168px; height:120px; background:#F0F5FB; border:1px solid #64B9F8; margin:auto; margin-top:5px;}
+.content div.left div.lefttop .STYLE1{font-size:14px; font-weight:bold; }
+.content div.left div.lefttop .STYLE2{ color:#FF0000;}
+.content div.left div.lefttop .STYLE3{ margin:11px 10px;}
+.content div.left div.lefttop .STYLE4{ margin:5px 10px;}
+.content div.left div.leftdown{width:168px; background:#FFFFFF;border:1px solid #64B9F8;margin:5px auto 5px;}
+.content div.left div.leftdown  dt a{ color:#1F5595; text-decoration:underline; }
+.content div.left div.leftdown  dt{font-size:14px;font-weight:bold; margin :7px auto  12px 11px; }
+.content div.left div.leftdown  dl{ width:152px; border:1px solid #A7C4E2; margin:7px auto; background:#F0F5FB;}
+.content div.left div.leftdown  dd a{color:#1F5595; text-decoration:underline;}
+.content div.left div.leftdown  dd { display:none;margin :7px auto 7px 55px;}
+.content div.left div.leftdown dl dt .STYLE5,.STYLE6,.STYLE7,.STYLE8,.STYLE9{ padding:4px 10px 7px 30px;}
+.content div.left div.leftdown dl dt .STYLE5{background:url(images/q_group_113.gif) no-repeat;overflow:auto;}
+.STYLE6{ background:url(images/q_group_114.gif) no-repeat;overflow:auto;}
+.STYLE7{ background:url(images/q_group_112.gif) no-repeat;overflow:auto;}
+.STYLE8{ background:url(images/q_group_111.gif) no-repeat;overflow:auto;}
+.STYLE9{ background:url(images/q_group_.gif) no-repeat;overflow:auto;}
+
+.content div.center{ width:581px; margin-left:7px; margin-right:7px;}
+.content div.center div.centertop{ margin-top:10px;}
+.content div.center div.centertop span.STYLE10{ margin:10px 10px 20px 10px;}
+.STYLE11{position:absolute;}
+.STYLE12{margin:20px auto 14px 0; font-weight:bold;}
+.STYLE13{ width:320px; margin-left:10px;letter-spacing:1px;word-wrap:break-word; overflow:hidden; line-height:20px;text-indent:28px;}
+.STYLE14{font-size:12px; font-weight:bold; color:#0B5C91; padding:0 454px 5px 0;}
+.STYLE15{margin:auto 0 0 auto;}
+.STYLE16{ width:581px;  margin-top:18px;}
+#STYLE25{ max-height:20px;font-weight:bold; background:#F1F1F1;margin-top:2px; padding:8px 0; overflow:hidden;}
+#STYLE17{ margin-left:25px;padding:10px 260px 10px 0;}
+#STYLE18{ padding-right:70px;}
+#STYLE19{ padding-right:55px;}
+#STYLE26{ height:21px;  padding:5px 0 0 0;background:url(images/line_2.png) repeat-x ;background-position: top ;}
+#STYLE21{letter-spacing:1px; margin-left:28px; padding-right:68px;}
+#STYLE22{padding:0 48px 0 20px; background:url(images/q_group_168.gif) no-repeat; overflow:auto;}
+#STYLE23{padding-right:15px;}
+#STYLE27{background:#F1F1F1;height:30px; width:581; }
+#STYLE28{  height:26px;   line-height:26px; color:#0B5C91;  overflow:hidden; padding:0 0 0 530px;}
+.content div.right{width:176px;}
+.righttop{ width:156px; padding:5px; border:5px solid #C5E5FE;}
+.rightdown{ width:166px;margin-top:5px; border:5px solid #E9ECEF;}
+.list_1{ border:1px solid #D4D5D7;}
+.list_1 dd{ height:24px;   line-height:24px; overflow:hidden;padding-left:26px;margin-left: 30px ; background:url(images/q_group_255.gif) no-repeat 0 4px;}
+.STYLE29{ font-weight:bold; color:#0B5C91; height:25px;   line-height:25px; overflow:hidden; padding-left:5px; }
+#STYLE30{ background:#FFFFFF;padding-left:90px;color:#0B5C91;}
+.footer{ margin:0; padding:0;}
+.footer p{text-align:center;}
+#STYLE31{ margin-top:20px;}
+#STYLE32{ margin-top:15px; font-size:10px; color:#818181;}
+#STYLE33{margin-top:15px;color:#818181;}
+#STYLE34{ color:#8DC7F0; width:950px; margin:0; padding:0;}
+#s3{ margin-top:5px;}
+
+
+</style>
+</head>
+<body>
+<div class="wrapper" >
+  <div class="header">
+    <div class="headA">
+      <ul class="nav">
+        <li> <a href="#"><span id="a" >首页</span></a></li>
+        <li><a href="#"><span id="b">帮助</span></a></li>
+      </ul>
+      <ul class="nav_a" >
+        <li> <a href="#"><span id="c">我加入的群</span></a>
+          <ul class="secondary-menu" >
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+            <li><a href="#">爱生活爱自己</a></li>
+          </ul>
+      </ul>
+      <span><a href="#" id="exit">退出登录</a></span> </div>
+    <div class="headB">
+      <h1>&nbsp;&nbsp;</h1>
+      <h2 >爱生活爱自己</h2>
+      <p>【广东省】同一个时代，不同的两个时空，超越时空的声音，带动你。</p>
+    </div>
+    <div class="headC"> <span class="s1">飘飘 创建于 2003.12.12</span><span class="s2"><img src="images/q_group_ (3).gif" /> </div>
+  </div>
+  <div class="content">
+    <div class="left">
+      <div class="lefttop">
+        <p class="STYLE3"><span class="STYLE1">普通群</span>[<span class="STYLE2">非公开</span>]&nbsp;&nbsp;&nbsp;<img src="images/q_group_ (8).gif" /></p>
+        <p class="STYLE4">群成员数 87/100人</p>
+        <p class="STYLE4">相册空间&nbsp;<img src="images/q_group_08.jpg" />&nbsp;0/10M</p>
+        <p class="STYLE4">硬盘空间&nbsp;<img src="images/q_group_06.jpg" />&nbsp;10/16M</p>
+      </div>
+      <div class="leftdown">
+        <dl class="show">
+          <dt ><a href="#" class="STYLE5" >首页</a></dt>
+          <dd><a href="#">&#8226;测试</a></dd>
+          <dd><a href="#">&#8226;测试</a></dd>
+          <dd><a href="#">&#8226;测试</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="#" class="STYLE6">论坛</a></dt>
+          <dd><a href="#">&#8226;讨论版</a></dd>
+          <dd><a href="#">&#8226;贴图版</a></dd>
+          <dd><a href="#">&#8226;随写</a></dd>
+          <dd><a href="#">&#8226;分享</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="#" class="STYLE7">相册</a></dt>
+          <dd><a href="#">&#8226;本群相册</a></dd>
+          <dd><a href="#">&#8226;涂鸦照片</a></dd>
+          <dd><a href="#">&#8226;最新照片</a></dd>
+          <dd><a href="#">&#8226;今日热图</a></dd>
+          <dd><a href="#">&#8226;其他群的相册</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="#" class="STYLE8">群聊天记录</a></dt>
+          <dd><a href="#">&#8226;大段文字记录</a></dd>
+          <dd><a href="#">&#8226;含链接的记录</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="#" class="STYLE9">群成员</a></dt>
+          <dd><a href="#">&#8226;大段文字记录</a></dd>
+          <dd><a href="#">&#8226;含链接的记录</a></dd>
+        </dl>
+      </div>
+    </div>
+    <div class="center">
+      <div class="centertop"><span class="STYLE10"><img src="images/q_group_ (6).gif" /></span><span class="STYLE11">
+        <p class="STYLE12">群内公告</p>
+        <p class="STYLE13">为了赎罪，我选择了爱你！为了赎罪，我选择了爱你！为了赎罪，我选择了爱你！为了赎罪，我选择了爱你！为了赎罪，我选择了爱你！为了赎罪，我选择了爱你！为了赎罪，我选择了爱你！</p>
+        </span></div>
+      <div class="STYLE16"><span class="STYLE14">群论坛空间</span><span class="STYLE15"><img src="images/q_group_ (15).gif" /></span></div>
+      <div class="centerdown">
+        <hr color="#C0C0C0" />
+        <ul class="list">
+          <li id="STYLE25"><span id="STYLE17" >文章列表</span><span id="STYLE18" >作者</span><span id="STYLE19" >时间</span><span id="STYLE20" >浏览/回复</span></li>
+          <li id="STYLE26"><a href="#"><span id="STYLE21">[通知版]个人中心将显示部分QQ好友动态</span></a><span id="STYLE22" >测试</span><span id="STYLE23" >01.31&nbsp;13：45</span><span id="STYLE24" >12/1</span></li>
+          <li id="STYLE26"><a href="#"><span id="STYLE21">[通知版]个人中心将显示部分QQ好友动态</span></a><span id="STYLE22" >测试</span><span id="STYLE23" >01.31&nbsp;13：45</span><span id="STYLE24" >12/1</span></li>
+          <li id="STYLE26"><a href="#"><span id="STYLE21">[通知版]个人中心将显示部分QQ好友动态</span></a><span id="STYLE22" >测试</span><span id="STYLE23" >01.31&nbsp;13：45</span><span id="STYLE24" >12/1</span></li>
+          <li id="STYLE26"><a href="#"><span id="STYLE21">[通知版]个人中心将显示部分QQ好友动态</span></a><span id="STYLE22" >测试</span><span id="STYLE23" >01.31&nbsp;13：45</span><span id="STYLE24" >12/1</span></li>
+          <li id="STYLE26"><a href="#"><span id="STYLE21">[通知版]个人中心将显示部分QQ好友动态</span></a><span id="STYLE22" >测试</span><span id="STYLE23" >01.31&nbsp;13：45</span><span id="STYLE24" >12/1</span></li>
+          <li id="STYLE26"><a href="#"><span id="STYLE21">[通知版]个人中心将显示部分QQ好友动态</span></a><span id="STYLE22" >测试</span><span id="STYLE23" >01.31&nbsp;13：45</span><span id="STYLE24" >12/1</span></li>
+          <li id="STYLE26"><a href="#"><span id="STYLE21">[通知版]个人中心将显示部分QQ好友动态</span></a><span id="STYLE22" >测试</span><span id="STYLE23" >01.31&nbsp;13：45</span><span id="STYLE24" >12/1</span></li>
+          <li id="STYLE26"><a href="#"><span id="STYLE21">[通知版]个人中心将显示部分QQ好友动态</span></a><span id="STYLE22" >测试</span><span id="STYLE23" >01.31&nbsp;13：45</span><span id="STYLE24" >12/1</span></li>
+          <li id="STYLE26"><a href="#"><span id="STYLE21">[通知版]个人中心将显示部分QQ好友动态</span></a><span id="STYLE22" >测试</span><span id="STYLE23" >01.31&nbsp;13：45</span><span id="STYLE24" >12/1</span></li>
+          <li id="STYLE26"><a href="#"><span id="STYLE21">[通知版]个人中心将显示部分QQ好友动态</span></a><span id="STYLE22" >测试</span><span id="STYLE23" >01.31&nbsp;13：45</span><span id="STYLE24" >12/1</span></li>
+        </ul>
+        <div id="STYLE27"><span id="STYLE28" >更多>></span></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="righttop"> <img src="images/q_group_ (5).gif" /><img id="s3"src="images/q_group_ (9).gif" /> </div>
+      <div class="rightdown">
+        <dl class="list_1">
+          <dt ><a href="#" class="STYLE29" >成员列表</a></dt>
+          <hr color="#D4D5D7" align="center"   width="90%" />
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <dd><a href="#">爱生活PP</a></dd>
+          <hr color="#D4D5D7" />
+          <dd id="STYLE30"><a href="#">更多>></a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <hr id="STYLE34"/>
+    <p id="STYLE31">关于腾讯&nbsp;About Tencent &nbsp;服务条款&nbsp; 广告服务&nbsp; 腾讯招聘&nbsp; 客服中心&nbsp; 网站导航</p>
+    <p id="STYLE32">Copyright&nbsp;&copy; &nbsp;1998 - 2008 &nbsp;Tencent&nbsp; Inc. &nbsp;All&nbsp; Rights &nbsp;Reserved</p>
+    <p id="STYLE33">腾讯公司&nbsp; 版权所有&nbsp; 腾讯网络文化经营许可证</p>
+  </div>
+</div>
+</body>
+</html>

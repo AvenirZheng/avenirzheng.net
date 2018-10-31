@@ -1,0 +1,287 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+Resume General Style Sheet
+
+Verison: 1.0
+Date:28/04/2009
+autor:Adrian Tsang
+Email:div.adrian@gmail.com
+Website:http://www.adriancheng.name
+--------------------------------------------------------------------*/
+@import url("reset.css");/* =Eric Meyer样式初始化*/
+
+/*------------------------common----------------------*/	
+html{
+	width:100%;
+	height:100%;
+	background:#e9e9ce url(../images/resume-bg.jpg) repeat-x;
+}
+body{
+	font-size:12px;
+	font-family:Tohamo,Arial,helvetica, sans-serif;
+	font-family:"Microsoft YaHei", "微软雅黑",yahei;
+	width:960px;
+	height:100%;
+	margin:30px auto;
+}
+h3{color:#428eda;}
+a:link, a:visited{
+	color:#000;
+	text-decoration:none;
+}
+strong, dt{
+	font-weight:bold;
+}
+.clearfix:after{/* =clearfloat*/
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}* html .clearfix{height:1%;}
+/*------------------------header----------------------*/	
+div#header{
+	width:855px;
+	padding:0 105px 20px 0;
+	margin:0 0 20px 0;
+	border:solid 10px #428eda;
+	border-width:0 0 10px 0;
+	position:relative;
+	float:left;
+	clear:both;
+	}
+h1{
+	font-size:24px;
+	font-weight:bold;
+	line-height:48px;
+	text-indent:10px;
+	color:#428eda;
+	width:100px;
+	height:44px;
+	margin:0 0 0 7px;
+	border:dotted 1px #999;
+	border-width:0 0 0 1px;
+	display:block;
+	float:right;
+	position:relative;
+	overflow:hidden;
+	}
+	h1 span.nameImg{
+		width:100%;
+		height:100%;
+		display:block;
+		position:absolute;
+		left:-10px;
+		top:0;
+		}
+h2.tagetPosition{
+	font-size:12px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#428eda;
+	text-align:right;
+	*width:700px;/* 强制换行 ie6 ie7*/
+	padding:9px 0 0;
+	float:right;
+	}
+	h2.tagetPosition em{
+		font-size:16px;
+		font-family:"Microsoft YaHei", "微软雅黑","yahei", "宋体", simsun;
+		font-weight:bold;
+		display:block;
+		}
+img.photo{
+	float:right;
+	padding:2px;
+	border:solid 1px #428eda;
+	position:absolute;
+	top:0px;
+	right:0px;
+	}
+div.information, div.contact{
+	font-size:11px;
+	line-height:1.2em;
+	width:175px;
+	margin:5px 0 0 60px;
+	float:right;
+	}
+div.information{
+	width:130px;
+	clear:right;
+	}
+	div.information h3, div.contact h3{
+		font-size:12px;
+		text-indent:-73px;
+		margin:0 0 -16px 0;
+		}
+	div.information b, div.contact b{
+		color:#428eda;
+		font-size:12px;
+		}
+.note{
+	text-align:center;
+	color:#fff;
+	padding:1px 10px 3px;
+	background:#428eda;
+	position:absolute;
+	right:0;
+	bottom:-31px;
+	}
+	.note a:link, .note a:visited{
+	color:#fff;
+	display:block;
+	}
+	p.pdflink a{
+		font-size:14px;
+		font-weight:bold;
+		text-decoration:underline;
+		color:#428eda;
+		}
+	
+/*------------------------content----------------------*/	
+#content{padding:0 20px 0 40px;}
+#content a{text-decoration:underline;}
+#content h3{
+	font-size:36px;
+	font-family:黑体;
+	text-indent:-32px;
+	margin:25px 0 5px 0;
+	clear:both;
+	}
+	dl.summary{line-height:150%;/*----自我评价---*/	}
+		dl.summary dt{
+			font-size:14px;
+			margin:0 0 5px 0;
+			float:left;
+			clear:left;
+			}
+		dl.summary dd{margin:0 0 5px 0;}
+	ul.experience > li{/*----项目经验&实习经历---*/	
+		margin:0 0 10px 0;
+		position:relative;
+		}
+		ul.experience li h4{
+			font-size:18px;
+			text-transform:uppercase;
+			position:relative;
+			}
+			ul.experience li h4 a{
+				font-size:12px;
+				font-weight:normal;
+				text-transform:none;
+				position:absolute;
+				top:4px;
+				left:399px;
+				}
+		ul.experience li h4 + ul{
+			margin:0 0 5px 0;
+			clear:both;
+			}
+			ul.experience li h4 + ul li{
+				font-size:14px;
+				width:200px;
+				display: -moz-inline-stack;  /*Firefox only code*/
+   				display: inline-block;       /*some standard browsers*/
+    			zoom: 1;                     /*IE only*/
+    			*display: inline;            /*Only IE know this code (CSS Hack)*/
+				}
+		ul.experience li ul + ul,ul.experience p + p{
+			line-height:150%;
+			list-style: circle;
+			margin-left:20px;
+			display:list-item;
+			}
+		
+		ul.experience h4 + p{
+			position:absolute;
+			top:4px;
+			left:399px;
+			}
+
+	ol#tagCloud{
+		width:95%;
+		height:130px;
+		margin:0 auto 20px;
+		position:relative;
+		}
+		ol#tagCloud li li{
+			display:block;
+			position:absolute;
+			}
+			/*----外观---*/	
+			ol#tagCloud a{text-decoration:none;}
+			li.primary a{
+				font-size:56px;
+				font-weight:bold;
+				}
+			li.senior a{
+				font-size:28px;
+				font-weight:bold;
+				}
+			li.minor a{
+				font-size:16px;
+				color:#666;
+				}
+			li.significant a{
+				font-size:14px;
+				font-weight:bold;
+				text-transform:uppercase;
+				}
+			li.unimportant a{color:#999;}
+			/*----位置---*/	
+			li#css2{left:0;top:2%;}
+			li#xhtml{left:35%;top:32%;}
+			li#xhmtlcss{left:19%;top:26%;}
+			li#fixbug{left:13%;top:2%;}
+			li#workaround{left:13%;top:13%;}
+			li#mshtml{left:41%;top:29%;}
+			li#seperate{left:12%;top:40%;}
+			li#blogger{left:22%;top:76%;}
+			li#creativity{left:11%;top:86%;}
+			li#passionate{left:11%;top:78%;}
+			li#cet6{left:0%;top:75%;}
+			li#book{left:5%;top:62%;}
+			li#webkit{left:44%;top:82%;}
+			li#webdesign{left:47%;top:3%;}
+			li#gentle{left:52%;top:31%;}
+			li#gecko{left:64%;top:55%;}
+			li#seo{left:52%;top:82%;}
+			li#micro{left:75%;top:11%;}
+			li#semantic{left:73%;top:20%;}
+			li#dtd{left:85%;top:11%;}
+			li#progessEnhancement{left:73%;top:64%;}
+			li#w3c{left:83%;top:0%;}
+			li#valid{left:88%;top:22%;}
+			li#dom{left:89%;top:63%;}
+			li#xml{left:96%;top:10%;}
+			li#jq{left:88%;top:71%;}
+			li#js{left:78%;top:86%;}
+			li#discipline{left:29%;top:15%;}
+			li#php{left:58%;top:86%;}
+			li#mysql{left:61%;top:82%;}
+			li#tp{left:66%;top:83%;}
+			li#wp{left:29%;top:83%;}
+			li#ps{left:31%;top:1%;}
+		
+/*------------------------footer----------------------*/	
+#footer{
+	height:10px;
+	margin:0 0 30px 0;
+	border:solid 20px #428eda;
+	border-width:10px 0 0;
+	position:relative;
+	}
+	#footer blockquote{bottom:-11px;}
+	#tagCloud h4{display:none;}
+	ul.valid{margin:6px 0 0;}
+		ul.valid li{
+			padding:0 10px 0 25px;
+			background:url(../images/bg-icon.gif) no-repeat left top;
+			float:left;
+			}
+		ul.valid li.micro{
+			padding-left:35px;
+			background-position:left -14px;
+			}
+		ul.valid li.html{background-position:left -44px;}
+		ul.valid li.css{background-position:left -69px;}
+			ul.valid li a{text-decoration:underline;}

@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*=== LAYOUT ===*/
+body{position:relative;}
+.gb_header{position:absolute;bottom:10px;z-index:102;}
+.gb_nav{position:absolute;}
+.gb_content{}
+.gb_side{position:absolute;bottom:10px;margin-left:-266px;}
+.gb_footer{position:absolute;bottom:10px;}
+
+.my_network{position:absolute;left:266px;}
+.tweet{right:0px;}
+
+.gb_header a:hover, .gb_nav a:hover{color:#ff8400;text-decoration:none;}

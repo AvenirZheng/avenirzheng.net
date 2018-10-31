@@ -1,0 +1,18 @@
+﻿@charset "utf-8";
+/*!
+ *
+ * Copyright 2013
+ * Licensed under the Apache License v2.0
+ * http://resume.avenirzheng.net/
+ *
+ * 郑焕义的简历 IE6
+ */
+ .backtop{
+	position: absolute;
+}
+.mod_content .misc{
+	left: -170px;
+}
+.mod_content h2{
+	zoom: 1;
+}

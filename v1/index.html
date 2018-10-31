@@ -1,0 +1,749 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="chrome=1"> 
+<script type="text/javascript">
+// For discussion and comments, see: http://remysharp.com/2009/01/07/html5-enabling-script/
+(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
+</script>
+<![endif]--> 
+<!-- HTML5 and chrome frame-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="郑焕义[ADRIAN]，就读于广东外语外贸大学，电子商务06级，擅长网页设计和页面重构，专注Web标准，期望在不久的将来，能为Web标准在中国的发展作出绵薄的贡献，我正在不断地学习、实践，思考，我热爱着这样的生活，憧憬着Web标准在中国真正普及的未来。如果您的公司正在招聘[前端开发工程师]或者您有合作项目的话，希望我的作品和潜力能打动您给与我这么一个机会。"/>
+<meta name="keywords" content="Adrian,Cheng,web,desgin, frondend, web develop, w3c,standards,xhtml,网页设计,网页重构,郑焕义,实习,外包,网站项目,动画,div+css,网页标准"/>
+<meta name="Author" content="Adrian Cheng" />
+<title>[ 郑焕义 ] - 专注Web Standard</title>
+<link href="css/global.css"  rel="stylesheet" type="text/css"  media="screen"/>
+<link href="css/print.css"  rel="stylesheet" type="text/css"  media="print"/>
+<link rel="Shortcut Icon" href="images/favicon.png" type="image/x-icon" />
+<!--[if lte IE 6]>
+<link href="css/ie6.css" rel="stylesheet" type="text/css" media="screen"/>
+<script type="text/javascript" src="js/webrebuild_api.js"></script>
+<![endif]-->
+<!--
+<link href="css/414.css" rel="stylesheet" type="text/css" media="screen"/>
+-->
+<!-- script src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js" type="text/javascript"></script -->
+<script src="js/jquery.min.js" type="text/javascript" ></script>
+<!-- jQuery.ScrollTo by Ariel Flesler url:http://flesler.blogspot.com/2007/10/jquerylocalscroll-10.html -->
+<script src="js/jquery.scrollTo-min.js" type="text/javascript" ></script>
+</head>
+<body id="home" class="clearfix">
+<atricle class="vcard">
+<div id="warpper">
+  <header class="header clearfix">
+    <h1><img src="images/logo.png" alt="Adrian Cheng"/>Adrian Cheng</h1>
+    <nav>
+        <ul class="nav"> <!-- 可使用快捷键P,各个浏览器快捷方式不一 -->
+          <li id="navPortfolio"><a href="#portfolioContent" class="current" accesskey="p"><span>作品</span><kbd>P</kbd>ortfolio</a></li>
+          <li id="navAbout"><a href="#aboutContent" accesskey="a"><span>关于</span><kbd>A</kbd>bout</a></li>
+          <li id="navContact"><a href="#contactContent" accesskey="c"><span>联系</span><kbd>C</kbd>ontact</a></li>
+          <li id="navFav"><a href="#favContent" accesskey="f"><span>典藏</span><kbd>F</kbd>avorites</a></li>
+          <!--
+          <li id="navLog"><a href="http://yimi.name/" accesskey="b" title="实验田，慎入，新窗口弹出" rel="external"><span>博客</span><kbd>B</kbd>log</a></li>
+          -->
+          <li id="navLog"><a href="http://caib.me/" accesskey="b"><span>博客</span><kbd>B</kbd>log</a></li>
+        </ul>
+    </nav>
+    <hr/>
+    <!-- little hack for ie -->
+    <!--[if IE]><span class="line"></span><![endif]-->
+  </header>
+  <!-- end header -->
+  <section id="portfolioContent">
+    <div class="content">
+      <h2 class="tittle">Portfolio.<em>作品</em></h2>
+      <p>Hey, dude, Je m'appelle <em>adrian cheng</em>, specializing in creating awesome websites and with a penchant for the lastest <abbr title="The World Wide Web Consortium">W3C</abbr> <dfn title="Web standards is a general term for the formal standards and other technical specifications that define and describe aspects of the World Wide Web">web standards</dfn> guidelines. Currently as the co-founder of <a href="http://www.i-wui.com/" class="org">i-Wui Team</a></p>
+      <nav>
+          <ul class="caseList" id="caseL">
+          	<li><a href="#case1"  class="current">Cashmore</a></li>
+            <li><a href="#case2">20nian</a></li>
+            <li><a href="#case3">Getright.Solutions</a></li>
+            <li><a href="#case4">继兴创汽车用品</a></li>
+            <li><a href="#case5">Ylem</a></li>
+            <li><a href="#case6">CantonFair.net</a></li>
+            <li><a href="#case7">Kemtrust Technology</a></li>
+            <li><a href="#case8">zhuoyue jadeite</a></li>
+            <li><a href="#case9">i-Wui Team</a></li>
+            <li><a href="#case10">er-com.com</a></li>
+            <li><a href="#case11">BandRM</a></li>
+            <li><a href="#case12">Cityteem</a></li>
+            <li><a href="#case13">Easy</a></li>
+            <li><a href="#case14">广外大经贸学院</a></li>
+            <li><a href="#case15">NuSkool Enterainment</a></li>
+            <li><a href="#case16">AngloChinese</a></li>
+            <li><a href="#case17">Student work-study center</a></li>
+            <li><a href="#case18">Agent NO.2</a></li>
+          </ul>
+      </nav>
+      <div class="pane" id="pane-target">
+      	<dl id="case1">
+          <dt class="casePic"><a href="http://demo.adriancheng.name/cm/" class="shadow" title="cashmore"  rel="external"><img src="images/case/case-cashmore.jpg" alt="cashmore" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>Cashmore Design</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">网页设计</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://demo.adriancheng.name/cm/" rel="external">http://demo.adriancheng.name/cm/</a></dd>
+        </dl>
+        <dl id="case2">
+          <dt class="casePic"><a href="http://www.20nian.com/" class="shadow" title="20nian"  rel="external"><img src="images/case/case-20nian.jpg" alt="20nian" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>20nian 贰拾念</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责网页设计及页面重构，页面设计简洁、大气，在<dfn title="A-grade support is the highest support level by yahoo recomnended">A-Grade浏览器</dfn>中表现一直，符合W3C推荐WEB标准，结构清晰，语义丰富。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://www.20nian.com/" rel="external">http://www.20nian.com/</a></dd>
+        </dl>
+        <dl id="case3">
+          <dt class="casePic"><a href="http://www.getright.com.hk/" class="shadow" title="Getright.Solutions"  rel="external"><img src="images/case/case-getrightsolution.jpg" alt="Getright.Solutions" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>Getright.Solutions</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责网页设计，网站正在建设中。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://www.getright.com.hk/" rel="external">http://www.getright.com.hk/</a></dd>
+        </dl>
+        <dl id="case4">
+          <dt class="casePic"><a href="http://demo.adriancheng.name/jcx/" class="shadow" title="广州继兴创汽车用品"  rel="external"><img src="images/case/case-jcx.jpg" alt="广州继兴创汽车用品" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>广州继兴创汽车用品</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责网页设计和页面重构，及后台开发，Demo页面通过w3c的XHTML 1.0 Strict验证，结构清晰，使用ThinkPHP作二次开发</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://demo.adriancheng.name/jcx/" rel="external">http://demo.adriancheng.name/jcx/</a></dd>
+        </dl>
+        <dl id="case5">
+          <dt class="casePic"><a href="http://demo.adriancheng.name/ylem/" class="shadow" title="募职网"  rel="external"><img src="images/case/case-ylem.jpg" alt="募职网" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>广州艾伦软件</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责网页设计，网站正在建设中。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://demo.adriancheng.name/ylem/" rel="external">http://demo.adriancheng.name/ylem/</a></dd>
+        </dl>
+        <dl id="case6">
+          <dt class="casePic"><a href="http://www.cantonfair.net/cantonfair/" class="shadow" title="CantonShare Business Service(CBS)" rel="external"><img src="images/case/case-cantonfair.jpg" alt="CantonFair.net" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>CantonShare Business Service(CBS)</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责设计网站主页、酒店列表页面以及酒店介绍页面，并基于W3C标准重构了作为全站模板的酒店列表页以及酒店介绍页，网站上线后由CBS团队进行维护。使用了基于jquery框架的coda-slider插件，使用iepngfix.htc修复IE6对PNG-24的透明度问题。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://www.cantonfair.net/cantonfair/" rel="external">http://www.cantonfair.net/cantonfair/</a></dd>
+        </dl>
+        <dl id="case7">
+          <dt class="casePic"><a href="http://www.kemtrust.net" class="shadow" title="深圳市凯诚通科技有限公司" rel="external"><img src="images/case/case-kem.jpg" alt="www.kemtrust.net" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>深圳市凯诚通科技有限公司</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责整站的建设，基于thinkphp开源框架进行二次开发，遵循W3C建议标准，在各大主流浏览器中表现基本一致，</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://www.kemtrust.net" rel="external">http://www.kemtrust.net</a></dd>
+        </dl>
+        <dl id="case8">
+          <dt class="casePic"><a href="http://demo.adriancheng.name/zhuoyue/" class="shadow" title="琢悦翡翠" rel="external"><img src="images/case/case-zhuoyue.jpg" alt="琢悦翡翠" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>琢悦翡翠</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">琢悦翡翠设计稿，客户最终采用他人设计，但仍为客户提供页面重构服务，通过XHTML1.0 Strict验证。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://demo.adriancheng.name/zhuoyue/" rel="external">http://demo.adriancheng.name/zhuoyue/</a></dd>
+        </dl>
+        <dl id="case9">
+          <dt class="casePic"><a href="http://www.i-wui.com/" class="shadow" title="i-Wui Team" rel="external"><img src="images/case/case-iwui.jpg" alt="i-wui team" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>i-Wui Team</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">团队工作室网站，负责网站策划及网页设计，并完成了部分页面的切割工作。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://www.i-wui.com/" rel="external">http://www.i-wui.com/</a></dd>
+        </dl>
+        <dl id="case10">
+          <dt class="casePic"><a href="http://demo.adriancheng.name/er-com/" class="shadow" title="er-com" rel="external"><img src="images/case/case-ercom.jpg" alt="er-com" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>er-com</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责网页设计和使用JQuery插件完成网站交互部分</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://demo.adriancheng.name/er-com/" rel="external">http://demo.adriancheng.name/er-com/</a></dd>
+        </dl>
+        <dl id="case11">
+          <dt class="casePic"><a href="http://www.bandrm.com/" class="shadow" title="BandRM" rel="external"><img src="images/case/case-bandrm.jpg" alt="bandrm" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>BandRM</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责整站切割，编写Xhtml和CSS，网站兼容主流浏览器，尝试采用css sprite技术。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://www.bandrm.com/" rel="external">http://www.bandrm.com/</a></dd>
+        </dl>
+        <dl id="case12">
+          <dt class="casePic"><a href="http://demo.adriancheng.name/cityteem/" class="shadow" title="广州正佳网现代服务有限公司" rel="external"><img src="images/case/case-cityteem.jpg" alt="www.cityteem.com" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>广州正佳网现代服务有限公司</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责4个专题网页的设计，布局参考了拍拍网及淘宝网的设计，从中体会到排版的4大原则-对齐、重复、对比、亲密性。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://demo.adriancheng.name/cityteem/" rel="external">http://demo.adriancheng.name/cityteem/</a></dd>
+        </dl>
+        <dl id="case13">
+          <dt class="casePic"><a href="http://demo.adriancheng.name/easy/" class="shadow" title="易时网" rel="external"><img src="images/case/case-easy.jpg" alt="Easy 易时网" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>易时网</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">作为易时创业团队成员，设计了易时社区的首页，网站基于Ucenter开发。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://demo.adriancheng.name/easy/" rel="external">http://demo.adriancheng.name/easy/</a></dd>
+        </dl>
+        <dl id="case14">
+          <dt class="casePic"><a href="http://demo.adriancheng.name/et2/" class="shadow" title="广外大经济贸易学院" rel="external"><img src="images/case/case-site.jpg" alt="广外大经贸" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>广外大经济贸易学院</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">06年负责学院网站改版任务，负责前端部分，基于Xhtml/CSS开发，网站在09年被再次改版。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://www1.gdufs.edu.cn/site/sv/economic/index.php" rel="external">http://www1.gdufs.edu.cn/site/sv/economic/index.php</a></dd>
+        </dl>
+        <dl id="case15">
+          <dt class="casePic"><a href="http://demo.adriancheng.name/nuskool/" class="shadow" title="Nuskool entertainment 星乐娱乐" rel="external"><img src="images/case/case-nuskool.jpg" alt="星乐娱乐" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>Nuskool entertainment 星乐娱乐</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责星乐娱乐公司的网站改版设计任务，网站因合同问题最终未能通过。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://demo.adriancheng.name/nuskool/" rel="external">http://demo.adriancheng.name/nuskool/</a></dd>
+        </dl>
+        <dl id="case16">
+          <dt class="casePic"><a href="http://demo.adriancheng.name/thames/" class="shadow" title="广州英通中教育咨询" rel="external"><img src="images/case/case-AngloChinese.jpg" alt=">广州英通中教育咨询" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>广州英通中教育咨询</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">负责英通中网站改版任务，完成了各个页面的设计和切割工作</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://demo.adriancheng.name/thames/" rel="external">http://demo.adriancheng.name/thames/</a></dd>
+        </dl>
+        <dl id="case17">
+          <dt class="casePic"><a href="http://qgzx.gdufs.edu.cn/" class="shadow" title="广外大学生勤工助学中心" rel="external"><img src="images/case/case-Study-work-center.jpg" alt="广外大学生勤工助学中心" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>广外大学生勤工助学中心</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">任职学生勤工助学中心网络组成员期间，与后端工程师合作，完成网站改版计划，网站使用XML架构，具有较强的向前兼容性。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://qgzx.gdufs.edu.cn/" rel="external">http://qgzx.gdufs.edu.cn/</a></dd>
+        </dl>
+        <dl id="case18">
+          <dt class="casePic"><a href="http://www.tracy2.cn/" class="shadow" title="个人网站2007" rel="external"><img src="images/case/case-agentno2.jpg" alt="Agent NO.2" /></a></dt>
+          <dt>Client.<em>客户</em></dt>
+          <dd>个人</dd>
+          <dt>Information.<em>概况</em></dt>
+          <dd class="descrie">个人网站2007年版，全Flash个站。</dd>
+          <dt>Url.<em>网址</em></dt>
+          <dd><a href="http://www.tracy2.cn/" rel="external">http://www.tracy2.cn/</a></dd>
+        </dl>
+      </div>
+      <!-- end pane-target -->
+    </div>
+    <!-- end Content -->
+    <p class="topBtn"><a href="#portfolioContent">Back to Top</a></p>
+  </section>
+  <!-- end portfolioContent -->
+  <br style="clear:both"/>
+  <section id="aboutContent">
+    <div class="content">
+      <h2 class="tittle">About.<em>关于</em></h2>
+      <img src="images/me.png" alt="cartoon of adrian" class="imgFloat me face" />
+      <p>Hello, dude, my name is <em class="name">adrian</em>, twenty two y.o. I currently major in E-commerece at Guangdong University of Foreign Study. I am proficient in <dfn title="Semantics of information and services on the web is defined, making it possible for the web to understand and satisfy the requests of people and machines to use the web content.">semantic</dfn> markup and improving <dfn title="Web accessibility refers to the practice of making websites usable by people of all abilities and disabilities.">accessibility</dfn>.</p>
+      <p>I have a true passion when it comes to designing and codeing a bright new project, I'am currently available for freelance work, if there are more information on request, please feel free to <a href="#contactContent">get in touch</a> with me. Anyway, I would like to make friends with all your guys.</p>
+      <p class="translate">大家好，我叫<em>[Adrian]</em>，就读于广东外语外贸大学，擅长网页设计和页面重构，崇尚Web标准，并一步步充实自己的知识，期望在不久的将来，能为Web标准在中国的发展作出绵薄的贡献。</p>
+      <p  class="translate">本人接触网页设计和前端刚有4年的时间，在课余时间，我有机会接触到各类外包项目，同时与朋友组成了前端团队，我正在不断地学习、实践，思考，我热爱着这样的生活，憧憬着Web标准在中国真正普及的未来。</p>
+      <p class="translate">如有任何合作机会，欢迎联系。<a href="#contactContent">联系方式</a></p>
+      <a href="./resume.html" class="viewResume">查看简历</a>
+      <ul class="skillLevel">
+        <li class="xhtml">(X)HTML<span>:</span><span class="bar">55</span></li>
+        <li class="javascript"><dfn title="JavaScript is an object-oriented[2] scripting language used to enable programmatic access to objects within both the client application and other applications">JavaScript</dfn><span>:</span><span class="bar">30</span></li>
+        <li class="css">CSS<span>:</span><span class="bar">53</span></li>
+        <li class="flash">Flash<span>:</span><span class="bar">15</span></li>
+        <li class="photoshop">Photoshop<span>:</span><span class="bar">65</span></li>
+        <li class="imagination">Imagination<span>:</span><span class="bar">unlimited</span></li>
+      </ul>
+    </div>
+    <!-- end Content -->
+    <p class="topBtn"><a href="#aboutContent">Back to Top</a></p>
+  </section>
+  <!-- aboutContent -->
+  <section id="contactContent">
+    <div class="content">
+      <h2 class="tittle">Contact<em>.联系</em></h2>
+      <!-- 使用formsite表单服务 -->
+      <form method="post" id="FSForm" action="http://fs6.formsite.com/fs6_app/FormSite" enctype="application/x-www-form-urlencoded" onSubmit="processSubmit(this);" class="contactForm">
+        <fieldset>
+        <legend>Contact<em>.联系</em></legend>
+        <div style="display:none;">
+          <input type="hidden" name="FormId" value="FormResult" />
+          <input type="hidden" name="UserNbr" id="UserNbr" value="622210" />
+          <input type="hidden" name="FormNbr" id="FormNbr" value="0" />
+          <input type="hidden" name="FormKey" id="FormKey" value="488547663" />
+          <input type="hidden" name="ElapsedTime" id="ElapsedTime" value="0" />
+          <input type="hidden" name="Referrer" id="Referrer" value="" />
+          <input type="text" name="subject_line" />
+        </div>
+        <label  for="RESULT_TextField-0">Name<em>.姓名：</em>
+        <input type="text" name="RESULT_TextField-0" class="text_field" id="RESULT_TextField-0" size="25" maxlength="255" placeholder="Mr/Ms:" required/>
+        </label>
+        <label  for="RESULT_TextField-1">Email<em>.邮箱：</em>
+        <input type="text" name="RESULT_TextField-1" class="text_field" id="RESULT_TextField-1" size="25" maxlength="255"  placeholder="@"  required/>
+        </label>
+        <label class="message" for="RESULT_TextArea-2">Message<em>.留言：</em></label>
+        <textarea name="RESULT_TextArea-2" class="text_field" id="RESULT_TextArea-2" rows="7" cols="55" required></textarea>
+        <input type="submit" name="Submit" value=""  id="FSsubmit"   class="submit" />
+        <span>All required</span>
+        </fieldset>
+        <aside class="print">
+          <!-- 打印时表单显示邮递地址 -->
+          <p>地址：广州市 广东外语外贸大学 南苑13栋 705房</p>
+          <p>邮编：518006</p>
+          <p>收件人：郑焕义</p>
+        </aside>
+      </form>
+      <h3>Around the WWW</h3>
+      <ul class="contactList">
+        <li><span>Blog.</span><em>博　客：</em><a href="http://caib.me/">http://caib.me/</a></li>
+        <li><span>Gallery.</span><em>相　册：</em><a href="http://adrian2.bababian.com/">http://adrian2.bababian.com/</a></li>
+        <li><span>Studio.</span><em>工作室：</em><a href="http://www.i-wui.com/">http://www.i-wui.com/</a></li>
+        <li><span>Twitter.</span><em>牢　骚：</em><a href="https://twitter.com/adrianF2E">https://twitter.com/adrianF2E</a></li>
+        <li><span>Portfolio.</span><em>作　品：</em><a href="http://case.blueidea.com/peoples/view/tracy2/">http://case.blueidea.com/peoples/view/tracy2/</a></li>
+      </ul>
+      <h3>Contact Method</h3>
+      <ul class="contactList">
+        <li><span>E-mail.</span><em>邮　箱：</em><a href="mailto:div.adrian@gmail.com">div.adrian@gmail.com</a></li>
+        <li><span>QQ.</span><em>在　线：</em>18900509</li>
+        <li><span>Mobi.</span><em>手　机：</em>+86 13824345489(sz)</li>
+        <li><span>Location.</span><em>地　址：</em>中国 广州 番禺区 广州大学城 广东外语外贸大学</li>
+      </ul>
+      <a href="./resume.html" class="viewResume">查看简历</a> </div>
+    <!-- end Content -->
+    <p class="topBtn"><a href="#contactContent">Back to Top</a></p>
+  </section>
+  <!-- end contactContent -->
+  <section id="favContent">
+    <div class="content">
+      <h2 class="tittle">Favorites.<em>典藏</em></h2>
+      <h3>Books.<em>嗜书如命</em></h3>
+      <ul class="bookList clearfix">
+      	<li><a href="http://www.douban.com/subject/3735295/" class="shadow" title="重构HTML: 改善Web应用的设计"><img src="images/book/book-refactoring-HTML.jpg" alt="重构HTML: 改善Web应用的设计" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3735295/">重构HTML</a></li>
+            <li>作者：（美）哈罗德</li>
+            <li class="last">摘要：<br/>前端领域发展的又一次见证，很多时候，多花一点点心思，便能实现良构的、具有可访问的网页，当然也要学会利用自动化工具。</li>
+          </ul>
+        </li>
+      	<li><a href="http://www.douban.com/subject/3735295/" class="shadow" title="未来是湿的"><img src="images/book/book-here-comes-everybody.jpg" alt="未来是湿的" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3735295/">未来是湿的</a></li>
+            <li>作者：[美] 克莱·舍基</li>
+            <li class="last">摘要：<br/>社会性力量的崛起</li>
+          </ul>
+        </li>
+      	<li><a href="http://www.douban.com/subject/3054707/" class="shadow" title="Web 标准实战"><img src="images/book/book-web-standards-solutions.jpg" alt="Web 标准实战" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3054707/">Web 标准实战</a></li>
+            <li>作者：（美）锡德霍姆</li>
+            <li class="last">摘要：<br/>一本不错的入门手册，只是出版的太晚了。作为实战用书，更推荐嗷嗷的《Web标准设计》。</li>
+          </ul>
+        </li>
+     	 <li><a href="http://www.douban.com/subject/3717165/" class="shadow" title="众包：大众力量缘何推动商业未来"><img src="images/book/book-crowd-sourcing.jpg" alt="众包：大众力量缘何推动商业未来" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3717165/">众包</a></li>
+            <li>作者：杰夫·豪</li>
+            <li class="last">摘要：<br/>讲述Web 2.0浪潮下新生产方式，理论案例结合，给人不错的启发。全书虽系统，仍略显的文笔拖沓，处处能见“复制、粘贴”的痕迹。</li>
+          </ul>
+        </li>
+         <li><a href="http://www.douban.com/subject/2381069/" class="shadow" title="第一团队：携程与如家"><img src="images/book/book-we-are-one.jpg" alt="第一团队：携程与如家" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/2381069/">第一团队：携程与如家</a></li>
+            <li>作者：朱瑛石/马蕾</li>
+            <li class="last">摘要：<br/>
+              “先把最危险，最有争执的利益说清楚，才能坦诚相见“，若季琦真如所说，两次创立新公司，两次平静放弃权力，其胸怀真让人尊敬。 </li>
+          </ul>
+        </li>
+      	<li><a href="http://www.douban.com/subject/3886044/" class="shadow" title="瞬间之美"><img src="images/book/book-designing-the-moment.jpg" alt="瞬间之美" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3886044/">瞬间之美</a></li>
+            <li>作者：霍克曼</li>
+            <li class="last">摘要：<br/>
+              一篇通读，文字很简单，但能处处感受到作者对细节的斟酌，案例、解决方案，而更为重要的是它不断启发读者对用户体验的思考。</li>
+          </ul>
+        </li>
+      <li><a href="http://www.douban.com/subject/3007076/" class="shadow" title="精通 JavaScript"><img src="images/book/book-pro-javascript-technical.jpg" alt="精通 JavaScript" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3007076/">精通 JavaScript</a></li>
+            <li>作者：John Resig</li>
+            <li class="last">摘要：<br/>
+              作者以一章专门讲述JavaScript的面向对象编程，作者剖析类库的专研态度也很值得读者学习。</li>
+          </ul>
+        </li>
+      <li><a href="http://www.douban.com/subject/3590768/" class="shadow" title="JavaScript语言精粹"><img src="images/book/book-javascript-the-good-parts.jpg" alt="JavaScript语言精粹" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3590768/">JavaScript语言精粹</a></li>
+            <li>作者：Douglas Crockford</li>
+            <li class="last">摘要：<br/>
+              书很薄，确将JavaScript语言的特性讲得很细致，细细品味中。</li>
+          </ul>
+        </li>
+       <li><a href="http://www.douban.com/subject/3082278/" class="shadow" title="JavaScript DOM高级程序设计"><img src="images/book/book-advanced-dom-scripting.jpg" alt="JavaScript DOM高级程序设计" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3082278/">JavaScript DOM高级程序设计</a></li>
+            <li>作者：Samb-ells，J</li>
+            <li class="last">摘要：<br/>
+              全面深入地介绍JavaScript方方面面，最佳实践、原型域、作用链、DOM、库，案例同样很精彩。</li>
+          </ul>
+        </li>
+         <li><a href="http://www.douban.com/subject/3022779/" class="shadow" title="ppk谈JavaScript"><img src="images/book/book-ppk-on-javascript.jpg" alt="ppk谈JavaScript" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3022779/">PPk谈JavaScript</a></li>
+            <li>作者：Koch，P.P</li>
+            <li class="last">摘要：<br/>
+              正如后记所说的，这本书应该是学习的开始，而不是结束，作者功力无容置疑，作者分享了大量开发经验，对可访问性、可用性的关注。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/1921890/" class="shadow" title="JavaScript DOM编程艺术"><img src="images/book/book-dom-scripting.jpg" alt="JavaScript DOM编程艺术" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/1921890/">JavaScript DOM编程艺术</a></li>
+            <li>作者：Jeremy Keith</li>
+            <li class="last">摘要：<br/>
+              一本很适合没有编程基础的设计师的Dom Scripting入门书，对Dom标准、优雅退化，可访问性做了详细描述，是很好的启蒙书。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/3327829/" class="shadow" title="Web标准设计"><img src="images/book/book-web-standards-design.jpg" alt="Web标准设计" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3327829/">Web标准设计</a></li>
+            <li>作者：刘杰（嗷嗷）</li>
+            <li class="last">摘要：<br/>
+              很全面的一本书，在很多地方上，嗷嗷都有深刻见解，语义化、优雅退化的概念也时有穿插。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/3158926/" class="shadow" title="精通CSS与HTML设计模式"><img src="images/book/book-pro-css-and-html-design-patterns.jpg" alt="精通CSS与HTML设计模式" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3158926/">精通CSS与HTML设计模式</a></li>
+            <li>作者：Michael Bowers</li>
+            <li class="last">摘要：<br/>
+              在图书馆掏的书，内容很详尽，需要掌握一定设计模式基础，书读起来很生涩，有很多新的想法展现在书中。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/3042031/" class="shadow" title="Web设计创新思维"><img src="images/book/book-Web-Standards-Creativity.jpg" alt="Web设计创新思维" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3042031/">Web设计创新思维</a></li>
+            <li>作者：Adams等</li>
+            <li class="last">摘要：<br/>
+              在图书馆借来看的书，多位大师的实战经验浓缩成一本书，感觉内容安排比较杂乱，但作为提高技巧应该是本不错的书。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/2382147/" class="shadow" title="精通HTML"><img src="images/book/book-html-mastery.jpg" alt="精通HTML" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/2382147/">精通HTML</a></li>
+            <li>作者：Paul Haine</li>
+            <li class="last">摘要：<br/>
+              HTML总是最基础却又最容易让人忽略，关于语义化、微格式、HTML5等，都做了详尽的介绍，书很薄，但受益匪浅。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/3323633/" class="shadow" title="写给大家看的设计书"><img src="images/book/book-nondesigner-book.jpg" alt="写给大家看的设计书" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3323633/">写给大家看的设计书</a></li>
+            <li>作者：Robin Williams</li>
+            <li class="last">摘要：<br/>
+              正在阅读，Robin法则对齐，重复，对比，亲密性“在打破规则前，必须了解规则”、“要有空白，而且空白也要组织。”</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/3008594/" class="shadow" title="CSS实战精粹"><img src="images/book/book-pro-css.jpg" alt="CSS实战精粹" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3008594/">CSS实战精粹</a></li>
+            <li>作者：Jeff Croft / Lan Lioyd</li>
+            <li class="last">摘要：<br/>
+              很好的一本CSS实战书，技巧方法都很实用，终于知道holly hack原来是这样来的，呵呵。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/1775691/" class="shadow" title="少有人走的路：心智成熟的旅程"><img src="images/book/book-the-road-less-traveller.jpg" alt="少有人走的路：心智成熟的旅程" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/1775691/">少有人走的路：心智成熟的旅程</a></li>
+            <li>作者：M.斯科特.派克</li>
+            <li class="last">摘要：<br/>
+              我们都在逃避责任，是一本很好的自省书籍，从今天就开始行动吧。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/3082293/" class="shadow" title="jQuery基础教程"><img src="images/book/book-jquery.jpg" alt="jQuery基础教程" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3082293/">jQuery基础教程</a></li>
+            <li>作者：斯威德伯格/查弗</li>
+            <li class="last">摘要：<br/>
+              比较难得的一本介绍JavaScript框架的书籍，居然能在图书馆淘到这样一本书，看过后发现JQ真得太奇妙了。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/3006856/" class="shadow" title="深入浅出JavaScript"><img src="images/book/book-js.jpg" alt="深入浅出JavaScript" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/3006856/">深入浅出JavaScript</a></li>
+            <li>作者：海尔曼</li>
+            <li class="last">摘要：<br/>
+              我是JavaScript菜鸟，大部分没看懂，仍需努力啊。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/1898098/?i=0" class="shadow" title="精通CSS——高级Web标准解决方案"><img src="images/book/book-css-mastery.jpg" alt=" 精通CSS——高级Web标准解决方案" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/1898098/?i=0">精通CSS——高级Web标准解决方案</a></li>
+            <li>作者：Andy Budd</li>
+            <li class="last">摘要：<br/>
+              从入门到精通，是我做了最多笔记的一本书，中英文版一一收录。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/1806321/?i=0" class="shadow" title="网页设计与配色实例分析书"><img src="images/book/book-web-design.jpg" alt="网页设计与配色实例分析" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/1806321/?i=0">网页设计与配色实例分析</a></li>
+            <li>作者：黎芳</li>
+            <li class="last">摘要：<br/>
+              向朋友借来看的一本书，比较全面地介绍网页设计，案例和理论结合。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/1873926/?i=0" class="shadow" title="CSS网站布局实录"><img src="images/book/book-css-layout.jpg" alt="CSS网站布局实录" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/1873926/?i=0">CSS网站布局实录</a></li>
+            <li>作者：李超</li>
+            <li class="last">摘要：<br/>
+              中文CSS书籍的典范，通俗易懂，就从这本书开始，慢慢走向web标准</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/1230451/" class="shadow" title="网站重构：应用Web标准进行设计"><img src="images/book/book-web-standard.jpg" alt="网站重构：应用Web标准进行设计" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/1230451/">网站重构：应用Web标准进行设计</a></li>
+            <li>作者：Zeldman,J.</li>
+            <li class="last">摘要：<br/>
+              绝对是一本洗脑的权威书籍，没有太多方法和技巧，只有不断强调改变观念，遵循网页标准。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/1811208/" class="shadow" title="生而为赢"><img src="images/book/book-born-to-win.jpg" alt="生而为赢" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/1811208/">生而为赢</a></li>
+            <li>作者：俞敏洪</li>
+            <li class="last">摘要：<br/>
+              简简单单的一本书，确饱含智慧，每篇文章都是背诵的佳文，王强老师的朗读实在是好。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/2157554/" class="shadow" title="赢在用户"><img src="images/book/book-user-guide.jpg" alt="赢在用户" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/2157554/">赢在用户</a></li>
+            <li>作者： Steve Mulder / Ziu Yaar</li>
+            <li class="last">摘要：<br/>
+              讲授创建人物角色方法的图书，内容涉及一些用户体验的理论，仍在反复攻读。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/1493316/" class="shadow" title="交互设计之路"><img src="images/book/book-intereact.jpg" alt="交互设计之路" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/1493316/">交互设计之路</a></li>
+            <li>作者：库帕（Coper,A.）</li>
+            <li class="last">摘要：<br/>
+              主要阐述交互设计的重要性、理念的图书，内容比较概括。</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/1090457/" class="shadow" title="HTML XHTML权威指南书"><img src="images/book/book-xhtml.jpg" alt="HTMLXHTML权威指南" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/1090457/">HTML XHTML权威指南</a></li>
+            <li>作者：Chuck Musciano</li>
+            <li class="last">摘要：<br/>
+              遇到不了解的标签时，就会翻一下，感觉是前端必备的工具书之一</li>
+          </ul>
+        </li>
+        <li> <a href="http://www.douban.com/subject/2052176/" class="shadow" title="CSS禅意花园书"><img src="images/book/book-css-zen-garden.jpg" alt="CSS禅意花园" /></a>
+          <ul>
+            <li><a href="http://www.douban.com/subject/2052176/">CSS禅意花园</a></li>
+            <li>作者：Dave Shea/Molly</li>
+            <li class="last">摘要：<br/>
+              感叹CSS设计师的无穷创意，一本(X)HTML CSS入门的好书，大量的案例，各种解决问题的思路，值得珍藏。</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="album">
+        <h3>Album.<em>乐从心动</em></h3>
+        <ul class="clearfix">
+          <li><a href="http://www.ucomo.com/space/MusicAlbum.aspx?Domain=ADRIAN" class="shadow" title="Daniel Schuhmacher - The Album 2009 MOD" rel="external"><img src="images/album/album-Daniel-Schuhmacher.jpg" alt="Daniel Schuhmacher - The Album 2009 MOD" /></a></li>
+          <li><a href="http://www.ucomo.com/space/MusicAlbum.aspx?Domain=ADRIAN" class="shadow" title="sam salter-Little Black Book" rel="external"><img src="images/album/album-sam-salter.jpg" alt="sam salter-Little Black Book" /></a></li>
+          <li><a href="http://www.ucomo.com/space/MusicAlbum.aspx?Domain=ADRIAN" class="shadow" title="曹格-Super Sunshine"  rel="external"><img src="images/album/album-gary.jpg" alt="曹格-Super Sunshine" /></a></li>
+          <li><a href="http://www.ucomo.com/space/MusicAlbum.aspx?Domain=ADRIAN" class="shadow" title="Legacy-Greatest Hits Collecti" rel="external"><img src="images/album/album-Legacy-Greatest-Hits-Collecti.jpg" alt="Legacy-Greatest Hits Collecti" /></a></li>
+          <li><a href="http://www.ucomo.com/space/MusicAlbum.aspx?Domain=ADRIAN" class="shadow" title="Darren-Hayes" rel="external" ><img src="images/album/album-Darren-Hayes.jpg" alt="Darren-Hayes" /></a></li>
+          <li><a href="http://www.ucomo.com/space/MusicAlbum.aspx?Domain=ADRIAN" class="shadow" title="babyface" rel="external" ><img src="images/album/album-babyface.jpg" alt="babyface" /></a></li>
+          <li><a href="http://www.ucomo.com/space/MusicAlbum.aspx?Domain=ADRIAN" class="shadow" title="It's on Tonight" rel="external"><img src="images/album/album-sam-salter-It's-on-Tonight.jpg" alt="It's on Tonight" /></a></li>
+          <li><a href="http://www.ucomo.com/space/MusicAlbum.aspx?Domain=ADRIAN" class="shadow" title="Gary-Barlow-Open-Road" rel="external"><img src="images/album/album-Gary-Barlow-Open-Road.jpg" alt="Gary-Barlow-Open-Road" /></a></li>
+          <li><a href="http://www.ucomo.com/space/MusicAlbum.aspx?Domain=ADRIAN" class="shadow" title="Owl-City-Maybe.I'm.Dreaming" rel="external"><img src="images/album/album-Owl-City-Maybe.I'm.Dreaming.jpg" alt="Owl-City-Maybe.I'm.Dreaming" /></a></li>
+        </ul>
+      </div>
+      <div class="articles">
+        <h3>Articles.<em>营养大餐</em></h3>
+        <ul>
+        	<li>Jon Tan 陳：<a href="http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work">@font-face in IE: Making Web Fonts Work</a></li>
+        	<li>jay.li：<a href="http://www.uedmagazine.com/ued/index.php?entry=entry100217-213747">透过现象看本质----URL编码</a></li>
+        	<li>cloudgamer：<a href="http://www.cnblogs.com/cloudgamer/archive/2010/02/01/LazyLoad.html">Lazyload 延迟加载效果</a></li>
+        	<li>Jeekundo：<a href="http://jeekundo.com/2010/02/309">优化HTML</a></li>
+        	<li>Stoyan：<a href="http://www.phpied.com/uncompressed-data-in-base64-probably-not/">Uncompressed data in base64? Probably not</a></li>
+<li>Eric Puidokas：<a href="http://www.puidokas.com/css-sprite-custom-color-palette/">Custom color palette for your sprites</a></li>
+<li>施晟：<a href="http://blog.sina.com.cn/s/blog_6170e29b0100hh90.html">九点之前准时上班</a></li>
+<li>王建硕:<a href="http://home.wangjianshuo.com/cn/20100130_aec.htm">做好人的原因</a></li>
+<li>robertmao：<a href="http://robertmao.com/2010/01/24/revolution-vs-evolution/">Revolution .vs. Evolution</a></li>
+<li>Ruby's Louvre：<a href="http://www.cnblogs.com/rubylouvre/archive/2010/01/28/1658006.html">全世界最短的IE判定</a></li>
+<li>vfresh：<a href="http://www.vfresh.org/w3c/880">css3 简单交互应用“:target”</a></li>
+<li>张克军：<a href="http://hikejun.com/blog/?p=536">Zakas解答Baranovskiy的JavaScript小测试</a></li>
+<li>Adam Lu：<a href="http://adamlu.com/?p=268">前端开发工具整理</a></li>     
+<li>阿蜜果：<a href="http://www.blogjava.net/amigoxie/archive/2009/11/30/304317.html">http协议学习和总结系列——基础概念篇</a></li>        
+<li>奔波儿灞：<a href="http://hi.baidu.com/benboba/blog/item/b1e1bf0989d0dc2f6a60fbd9.html">老生常谈：还是思维方式——第三期web标准化交流会有感</a></li>
+<li>纯银：<a href="http://firecacada.blog.163.com/blog/static/70743762008312105359723/">大平台的局限</a></li>
+<li>纯银：<a href="http://firecacada.blog.163.com/blog/static/707437620091125114910430/">迎战腾讯</a></li>
+<li>IIduce：<a href="http://css9.net/learn-javascript-from-masters/">向大师们学习Javascript（视频、PPT）</a></li>
+<li>jay.li：<a href="http://www.uedmagazine.com/ued/index.php?entry=entry091214-025048">关于克军在webrebuild上LSM分享的一些发散</a></li>
+<li>lifesinger：<a href="http://lifesinger.org/blog/2009/12/thinking-of-fed-process/">也谈前端开发流程</a></li>
+<li>张克军：<a href="http://hikejun.com/blog/?p=501">WebRebuild活动分享-LSM实践</a></li>
+<li>Nicholas C. Zakas：<a href="http://www.nczonline.net/blog/2009/11/30/empty-image-src-can-destroy-your-site/">Empty image src can destroy your site</a></li>
+<li>张克军：<a href="http://hikejun.com/blog/?p=493">前端创新思考</a></li>
+<li>Burak Guzel：<a href="http://net.tutsplus.com/tutorials/other/http-headers-for-dummies/">HTTP Headers for Dummies</a></li>
+<li>Stoyan Stefanov：<a href="http://www.phpied.com/the-performance-roadmap/">The performance roadmap</a></li>
+<li>幼学笔记：<a href="http://www.oncoding.cn/2009/javascript_execution_sequence/">JavaScript程序执行顺序问题总结</a></li>	
+<li>hax：<a href="http://hax.javaeye.com/blog/500015">关于样式类（Style Class）</a></li>	
+<li>小麦：<a href="http://www.mikkolee.com/261">关于前端开发这份工作</a></li>	
+<li>laruence：<a href="http://www.laruence.com/2009/09/23/1089.html">深入理解JavaScript定时机制</a></li>
+<li>demix：<a href="http://www.cnblogs.com/demix/archive/2009/09/16/1567906.html">Iframe, onload 与 document.domain</a></li>	
+        	<li>demix：<a href="http://www.cnblogs.com/demix/archive/2009/10/15/1584022.html">谈 focus 和 blur 的事件代理</a></li>	
+            <li>Louis Lazarisy：<a href="http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/">CSS Differences in Internet Explorer 6, 7 and 8</a></li>
+          <li>Dexter.Yy：<a href="http://www.limboy.com/2009/06/29/html5-css3-es5-support/">HTML5, CSS3, ES5…新的web标准和浏览器支持一览</a></li>
+          <li>ytzong：<a href="http://www.99css.com/2009/10/speeding-up-javascript-working-with-dom.html">加速 JavaScript：处理 DOM</a></li>
+          <li>lifesinger：<a href="http://lifesinger.org/blog/2008/10/understand-progressive-enhancement/">理解渐进增强（Progressive Enhancement）</a></li>
+          <li>Zakas：<a href="http://www.nczonline.net/blog/2009/09/29/web-definitions-dom-ajax-and-more/">Web definitions: DOM, Ajax, and more</a></li>
+          <li>Benjamin：<a href="http://www.virtuosimedia.com/tutorials/ultimate-ie6-cheatsheet-how-to-fix-25-internet-explorer-6-bugs">Ultimate IE6 Cheatsheet: How To Fix 25+ Internet Explorer 6 Bugs</a></li>
+          <li>hgx127：<a href="http://bbs.blueidea.com/thread-2837961-1-1.html">在工作中成长 – 致有追求的Coder和可爱的部门同事们</a></li>
+          <li>MARK PILGRIM：<a href="http://diveintohtml5.org/">DIVE INTO HTML5</a></li>
+          <li>小haha：<a href="http://www.cnblogs.com/mars-bird/archive/2009/09/24/1572972.html">JavaScript\ActionScript\ruby\php中实现回调函数,以及由此引出的闭包问题的讨论(一)</a></li>
+          <li>朱涛：<a href="http://www.cnblogs.com/mindsbook/archive/2009/09/27/1575333.html">javascript必知必会之this关键字及scope</a></li>
+          <li>realazy：<a href="http://realazy.org/blog/2007/07/18/scope-in-javascript/">JavaScript中的作用域</a></li>
+          <li>秦歌：<a href="http://dancewithnet.com/2008/10/27/javascript-gotchas/">JavaScript的陷阱</a></li>
+          <li>Chris Coyier：<a href="http://css-tricks.com/you-know-you-should-use-javascript-when/">You Know You Should Use JavaScript When…</a></li>
+          <li>Dan Orlando：<a href="http://www.ibm.com/developerworks/cn/web/wa-cssflex/">探索 Flex 和 CSS 的强大功能</a></li>
+          <li>Ghost：<a href="http://www.cssforest.org/blog/index.php?id=139">页面重构中的语义化</a></li>
+          <li>派・索尼客：<a href="http://py.thonic.org/2009/07/html5-doctype.html">HTML5 笔记：字符编码、DOCTYPE 和标签改进</a></li>
+          <li>REALAZY：<a href="http://realazy.org/blog/2009/06/29/engineer-vs-scientist/">工程师与科学家</a></li>
+          <li>小麦：<a href="http://www.mikkolee.com/">可访问性——前端的使命</a></li>
+          <li>卿本佳人：<a href="http://www.zreading.cn/archives/947.html">不要抱怨生活</a></li>
+          <li>Inayaili de Leon：<a href="http://www.qianduan.net/take-your-design-to-the-next-level-with-css3.html">用CSS3将你的设计带入下个高度</a></li>
+          <li>张欢：<a href="http://www.21manager.com/html/2009/6-12/101204424.html">丁磊秘诀</a></li>
+          <li>its：<a href="http://www.comsharp.com/GetKnowledge/zh-CN/CMS_K783.aspx">50个卓越的公司网站设计</a></li>
+          <li>珊瑚：<a href="http://www.cssrain.cn/article.asp?id=1366">设计漂亮的样式表是一门艺术(译)</a></li>
+          <li>老肥：<a href="http://fisio.cn/css-3-hover-animations.html">CSS3 鼠标悬停动画</a></li>
+          <li>爆牙齿：<a href="http://www.cnblogs.com/yuntian/archive/2009/05/26/1489089.html">Web标准的未来，浏览器的未来，应用的未来。</a></li>
+          <li>嗷嗷：<a href="http://www.aoao.org.cn/blog/2007/04/after-xhtml-css/">学完了xhtml+css之后要学什么呢？</a></li>
+          <li>Tommyfan：<a href="http://tommyfan.com/blog/skill/expression/">网页性能优化 » expression效率问题</a></li>
+          <li>Plane：<a href="http://www.csspeople.cn/archives/51">浏览器的工作原理</a></li>
+          <li>tony：<a href="http://uitony.com/?p=91">设计师的幸福</a></li>
+          <li>lifesinger：<a href="http://lifesinger.org/blog/?p=1661">图片的HTTP请求</a></li>
+          <li>eddie：<a href="http://www.ediyang.com/3-photoshop-skills-make-pixel-popping/">Photoshop网页设计中加强像素化细节的3个小技巧</a></li>
+          <li>Jeffpan：<a href="http://www.thefast.cn/?p=350">淘宝栅栏布局模块化命名浅析</a></li>
+          <li>未知：<a href="http://blog.perkyee.com/?p=893">挨踢加班人士的心声</a></li>
+          <li>lifesinger：<a href="http://lifesinger.org/blog/?p=1629">呼唤前端交互师</a></li>
+          <li>lunaticsun：<a href="http://www.lunaticsun.com/article/design-and-front-end-tech">今天为你实现的页面感到骄傲了吗？</a></li>
+          <li>14px：<a href="http://www.14px.com/?p=62">理解五条叠加法则，自由使用层的叠加</a></li>
+          <li>猫哥：<a href="http://www.yeeyan.com/articles/view/75357/38221">像设计良好网页的4项原则[译]</a></li>
+          <li>凉风：<a href="http://webteam.tencent.com/?p=956">像懒人一样去设计</a></li>
+          <li>西乔：<a href="http://ucdchina.com/snap/3173">项目如何开始：怎样和客户一起搞定需求</a></li>
+          <li>爆牙齿：<a href="http://www.cnblogs.com/yuntian/archive/2006/03/25/358776.html">学习、应用Web标准一路走来——《重构之美》</a></li>
+          <li>bluesnail：<a href="http://www.blueidea.com/design/doc/2009/6640.asp">屏幕分辨率和布局简述</a></li>
+          <li>二米拉：<a href="http://webteam.tencent.com/?p=892">Qzone项目组视觉设计标注的前前后后</a></li>
+          <li>its：<a href="http://www.comsharp.com/GetKnowledge/zh-CN/It_News_K782.aspx">IE6 死后即将大快人心的10件事</a></li>
+          <li>Twinsen Liang：<a href="http://www.twinsenliang.net/skill/20090413.html">清理浮动的全家</a></li>
+          <li>karlen：<a href="http://www.topcss.cn/?p=102">页面制作如何精确还原设计稿</a></li>
+          <li>梦之都：<a href="http://www.dreamdu.com/xhtml/html_xhtml/">HTML与XHTML的区别</a></li>
+          <li>大宝：<a href="http://sodme.dev.blog.163.com/blog/static/5478002009369238944/">为什么要跟进？如何来跟进一件事？</a></li>
+          <li>千鸟：<a href="http://blog.rexsong.com/?p=6040">宽屏不是用来阅读的</a></li>
+          <li>lifesinger：<a href="http://lifesinger.org/blog/?p=1250">淘宝CSS框架研究（1）：Reset CSS（八卦篇）</a></li>
+          <li>小猪头：<a href="http://www.blueidea.com/design/doc/2009/6552.asp">全局于网站整体的网页设计</a></li>
+          <li>bill：<a href="http://www.ued163.com/?p=369">网易网站设计(思想)</a></li>
+          <li>rainoxu：<a href="http://www.rainoina.com/raino/archive/388.html">慎用UL列表</a></li>
+          <li>Ghost：<a href="http://www.cssforest.org/blog/index.php?id=125">再读《你是一个职业的页面重构工作者吗？》</a></li>
+          <li>Lytous：<a href="http://lytous.ucdchina.com/?p=815">设计的小事：报价的指导原则</a></li>
+          <li>Ghost：<a href="http://www.cssforest.org/blog/index.php?id=121">你是一个职业的页面重构工作者吗？</a></li>
+          <li>lifesinger：<a href="http://lifesinger.org/blog/?p=956">改变世界的Web前端开发</a></li>
+          <li>Angela：<a href="http://angela.ucdchina.com/?p=16">视觉设计师扛起UE大旗？</a></li>
+          <li>Felix：<a href="http://dingyu.me/blog/posts/view/why-no-division-in-web-design-1">为什么网页设计不应强调分工</a></li>
+          <li>LK：<a href="http://hiliangke.blogcn.com/diary,18934257.shtml">向世界的中心出发</a></li>
+          <li>cukai：<a href="http://uicss.cn/an-analysis-of-adobe/">Adobe前端开发——结构层概况</a></li>
+          <li>Aethert：<a href="http://www.blueidea.com/tech/web/2008/5298.asp">土豆网前端概况</a></li>
+          <li>熊猫：<a href="http://blog.xiaoxiao.com.cn/2008/02/04/10-principles-of-effective-web-design-chinese-version.html">网站有效设计的10个原则</a></li>
+          <li>布林：<a href="http://ued.koubei.com/">视觉冲击力表现技法</a></li>
+          <li>pitiaoxiao：<a href="http://www.blueidea.com/design/doc/2007/4972.asp">天极产品设计流程</a></li>
+          <li>Moond：<a href="http://ucdchina.com/blog/?p=302">科学与艺术兼顾的有效网页视觉设计</a></li>
+        </ul>
+      </div>
+      <div class="friendlylink">
+        <h3>Link.<em>折腾人生</em></h3>
+        <ul>
+          <li>一棵树：<a href="http://www.eddsoft.com/"  title="持续低调的德哥">[一丁点软件]</a></li>
+          <li>小Joe：<a href="http://www.xiebiji.com/"  title="由设计到页面，由页面到交互，由交互到后台，他不是一个人在战斗。">[写笔记]</a></li>
+          <li>偷米饭：<a href="http://tommyfan.com/blog/"  title="他永无止境地重构最专业的页面，永无止境地重构最进取的人生。">[偷米寄居]</a></li>
+          <li>南芝：<a href="http://www.12sui.cn/"  title="他才12岁">[我才12岁]</a></li>
+          <li>Hermes.Cheung：<a href="http://www.hicrokee.com/blog/"  title="他完美地阐释了宅的定义">[HicroKee]</a></li>
+          <li>大雄：<a href="http://www.thedaxiong.com/"  title="起着东洋漫画人物名、疑似越南入境的老广州的他是淘宝资深牛B的射即湿">[大雄阳光灿烂的日子]</a></li>
+          <li>胖子：<a href="http://liupangzi.org/wordpress/index.php"  title="史上最灵活，转身最犀利的胖子">Liupangzi</a></li>
+          <li>杨晟：<a href="http://ysheen.com/"  title="工作室的师弟">SHEEN.YEUNG</a></li>
+          <li>i-Wui Team：<a href="http://www.i-wui.com/"  title="不一样的企业建站，专注前端，优质服务">[艾维前端工作室]</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end Content -->
+    <p class="topBtn"><a href="#favContent">Back to Top</a></p>
+  </section>
+  <!-- end favContent -->
+
+</div></atricle>
+<!-- end: warpper -->
+<aside id="top">
+  <div class="topWarp">
+    <dl>
+      <dt><a href="./resume.html"><img src="images/icon-resume.png" alt="download resume[pdf]"  class="pdf"/></a></dt>
+      <dd class="resumeLink"><a href="./resume.html" rel="external">个人简历</a></dd>
+      <dd><a href="./resume.html" rel="external">View My Resume</a></dd>
+    </dl>
+    <address>
+    <a href="http://validator.w3.org/check?uri=referer" title="HTML5草案">Valid HTML 5.0(draft)</a><del><a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="被moz，wibkit私有属性和脑残的IE6搞到通不过验证">Valid CSS3</a></del>
+    </address>
+  </div>
+</aside>
+<!-- top -->
+<footer id="footer">
+  <p><a href="http://www.miibeian.gov.cn/CX/main.jsp?1366806687=3705011208" rel="external">粤ICP备09045391号</a>Copyright © 2009 Adrian Cheng Some rights reserved </p>
+</footer>
+<!-- footer -->
+<!-- 为最后加载背景而设的额外DIV
+<div id="bg1"></div>
+<div id="bg2"></div>
+<div id="bg3"></div>
+<div id="bg4"></div>
+  5/10删除 -->
+
+<script src="js/init.js" type="text/javascript" ></script>
+<script type="text/javascript">
+function externallinks() { 
+ if (!document.getElementsByTagName) return; 
+ var anchors = document.getElementsByTagName('a'); 
+ for (var i=0,l=anchors.length; i<l; i++) { 
+   var anchor = anchors[i]; 
+   //if(anchor.getAttribute('href').indexOf('http://')!=-1){anchor.setAttribute('rel','external')}
+   if (anchor.getAttribute('href') && 
+       anchor.getAttribute('rel') == 'external') 
+     anchor.target = '_blank'; 
+ } 
+} 
+window.onload = externallinks;
+</script>
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/urchin.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript">
+	// <![CDATA[
+_uacct = "UA-8904250-2";
+urchinTracker();
+	// ]]>
+</script>
+</body>
+</html>

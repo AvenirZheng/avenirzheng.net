@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<title>QQ电影票</title> 
+    <link rel="stylesheet"  href="static/global.css" />
+	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="static/iscroll.js"></script>
+    <script>
+		$(document).ready(function(){
+			//$('.moives_list li').bind('touchstart', function() {
+				// $(this).addClass('hovered')
+			//});
+			$('.moives_list li').click(function(){
+				$(this).addClass('hovered');
+				var href =$(this).find('a').attr('href');
+				location = href;
+			})
+		});
+    </script>
+</head> 
+<body> 
+<!-- Start of first page -->
+<div data-role="page" id="foo" data-theme="q" class="ui-body-q">
+	<div data-role="header" data-theme="q" class="ui-header" id="header">
+		<h1><img src="static/logo.png" alt="QQ电影票"/></h1>
+        <a href="index_swipe.html" data-role="button" data-icon="swipe" class="ui-btn ui-btn-right"><span class="ui-btn-inner"><span class="ui-btn-text">大图</span><span class="ui-icon ui-icon-swipe"></span></span></a>
+	</div><!-- /header -->
+	<div data-role="content" id="wrapper">	
+        	<ul data-role="listview" class="moives_list ui-listview" data-theme="q" data-inset="true" id="scroller"> 
+            	<li>
+                	<img src="static/s1.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《月满轩尼诗》</a></h3>
+                    <p class="moives_grade"><span class="star_4"></span></p>
+                </li><li>
+                	<img src="static/s2.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《华尔街 2》</a></h3>
+                    <p class="moives_grade"><span class="star_3"></span></p>
+                </li><li>
+                	<img src="static/s3.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《南极大冒险》</a></h3>
+                    <p class="moives_grade"><span class="star_2"></span></p>
+                </li><li>
+                	<img src="static/s4.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《海豚湾》</a></h3>
+                    <p class="moives_grade"><span class="star_5"></span></p>
+                	                    	
+                </li><li>
+                	<img src="static/s5.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《月满轩尼诗》</a></h3>
+                    <p class="moives_grade"><span class="star_5"></span></p>
+                	                    	
+                </li><li>
+                	<img src="static/s6.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《剑雨》</a></h3>
+                    <p class="moives_grade"><span class="star_5"></span></p>
+                	                    	
+                </li>
+            </ul>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" id="footer">
+		<div data-role="navbar" class="ui-footer" role="navigation">
+			<ul class="ui-grid-q">
+				<li class="ui-block-a"><a href="index.html" class="ui-btn-movie ui-btn-active"><span class="ui-btn-text">电影</span></a></li>
+				<li class="ui-block-b"><a href="cinema.html" class="ui-btn-cenima"><span class="ui-btn-text">影院</span></a></li>
+				<li class="ui-block-c"><a href="lbs.html" class="ui-btn-talk"><span class="ui-btn-text">大家说</span></a></li>
+			</ul>
+		</div>
+	</div><!-- /header -->
+</div><!-- /page -->
+</body> 
+</html> 

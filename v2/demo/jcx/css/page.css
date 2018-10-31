@@ -1,0 +1,330 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+Kcx Subpage Style Sheet
+
+Verison: 1.0
+autor:Adrian Cheng
+Email:me@adriancheng.name
+Website:http://avenirzheng.net
+date:2009/05/16
+--------------------------------------------------------------------*/
+
+@import url("global.css");
+
+/*--------Common------------*/
+h2{
+	height:28px;
+	width:233px;
+	text-indent:-9999px;
+	background:url(../images/bg_no_repeat.gif) no-repeat;
+	}
+a.more{
+	color:#546d81;
+	position:absolute;
+	top:14px;
+	right:23px;
+	}	
+#main{
+	color:#14222d;
+	width:960px;
+	margin:10px 0 1px;
+	}
+#mainContent{
+	width:726px;
+	float:right;
+	}
+.content{
+	padding:20px 30px 30px 30px;
+	background:#fff url(../images/bg.jpg) 0 -1030px repeat-x;
+	}
+	.content h2{
+	width:100%;
+	padding:0 0 5px;
+	margin:0 0 16px;
+	border:1px outset #8b99a7;
+	border-width:0 0 1px;
+	display:block;
+	}
+#secondaryContent{
+	width:230px;
+	margin:0 0 0 3px;
+	float:left;
+	position:relative;
+	}
+	#secondaryContent h2{height:37px; margin-bottom:1px;}
+	#secondaryContent ul{
+		width:204px;
+		height:180px;
+		padding:13px 7px 0 12px;
+		background:url(../images/bg.jpg) 0 -529px repeat-x;
+		border:1px solid #e7e4e4;
+		border-width:0 1px 0 1px;
+		}
+		#secondaryContent ul li{
+			padding:3px 0 3px 14px;
+			margin:0 5px 2px 0;
+			border:1px solid #d2cba1;
+			border-width:0 0 1px;
+			}
+		#secondaryContent ul li.current{background:#FFF;}
+			#secondaryContent ul a{
+				padding:0 0 0 15px;
+				background:url(../images/bg_no_repeat.gif) -282px -59px no-repeat;
+				}
+			#secondaryContent ul a:hover, #secondaryContent ul li.current a{
+				color:#000;
+				text-decoration:none;
+				background-position:-282px -76px;
+				}
+		#secondaryContent div.mark{
+			width:100%;
+			height:47px;
+			background:url(../images/mark.png) repeat-x;
+			position:absolute;
+			bottom:2px;
+			z-index:2;
+			}
+/* ----------面包屑模块---------- */
+div.breadcrumb{margin:0 0 5px; overflow:hidden;}
+	.breadcrumb p,.breadcrumb ul,.breadcrumb a{float:left;}
+		.breadcrumb ul li ul li a{
+			padding:0 0 0 10px;
+			margin:0 0 0 5px;
+			background:url(../images/bg_no_repeat.gif) -282px -30px no-repeat;
+			}
+			
+/* ----------列表模块---------- */
+.content ul.item li{
+	padding:0 0 0 13px;
+	margin:0 0 1px;
+	background:url(../images/bg_no_repeat.gif) -282px -38px no-repeat;
+	position:relative;
+	}
+	.content ul.item a{
+		line-height:25px;
+		width:100%
+		height:25px;
+		padding:0 0 0 3px;
+		border:1px dotted #999;
+		border-width:0 0 1px;
+		display:block;
+		}
+	.content ul.item a:hover,.content ul.item li:hover a{
+		text-decoration:none;
+		color:#fff;
+		background:url(../images/bg.jpg) 0 -503px repeat-x;
+		}
+	.content span.date{
+		line-height:25px;
+		color:#939393;
+		position:absolute;
+		right:5px;
+		top:0;
+		z-index:10;
+		}
+	li:hover span.date{color:#fff;}
+/* ----------产品列表模块---------- */
+ul.pitem {
+	width:630px;
+	margin:0 auto;
+	}
+ul.pitem li{
+	text-align:center;
+	width:190px;
+	height:160px;
+	margin:0 18px 5px 0;
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+	}
+ul.pitem li p{
+	text-indent:0;
+	line-height:35px;
+	height:35px;
+	background-position: -372px -33px;
+	}
+	ul.pitem li p a{
+	padding:0 0 0 5px;
+	}
+/* ----------正文内容模块---------- */
+.content p{
+	text-indent:2em;
+	line-height:150%;
+	}
+.content h3{
+	font-size:14px;
+	font-weight:bold;
+	margin:16px 0 10px;
+	}
+.content h4{
+	font-weight:bold;
+	width:90%;
+	margin:25px 0 0;
+	border:1px solid #202f3e;
+	border-width:0 0 1px;
+	}
+.content ol{
+	list-style:decimal;
+	margin:5px 0 5px 60px;
+	}
+.content ol li{
+	line-height:150%;
+	color:#11161b;
+	margin:2px 0;
+	}
+
+/*----------分页模块------*/
+p.pageNum{
+	text-align:right;
+	margin:17px 10px 0 0;
+	}
+	p.pageNum a, p.pageNum span.current{
+		padding:0 4px;
+		margin:0 2px;
+		border:1px solid #5f5f5f;
+		}
+	p.pageNum span.current ,p.pageNum a:hover{
+		color:#fff;
+		background:url(../images/bg.jpg) 0 -503px repeat-x;
+		}
+		
+/*----------新闻列表模块------*/	
+#newslist div.content h2{background-position:0 -161px;}
+#newslist div#secondaryContent h2{background-position: 0 -196px;}
+/*----------新闻正文模块------*/
+#news div.content h2{
+	text-indent:0;
+	background:none;
+	font-size:24px;
+	font-family:"黑体";
+	font-weight:bold;
+	margin:0;
+	overflow:hidden;
+	}
+div.info{
+	color:#999;
+	text-align:right;
+	margin-bottom:20px;
+	}
+#news div#secondaryContent h2{background-position: 0 -196px;}
+	
+/*----------公司简介模块------*/	
+#about div.content h2{background-position:0 -241px;}
+#about div#secondaryContent h2{background-position:0 -277px;}
+img.aboutPic{
+	border:1px solid #1c2b38;
+	float:right;
+	margin:5px 0 0 20px;
+	}
+/*----------产品列表模块------*/
+#product div.content h2{background-position:0 -325px;}
+#product div#secondaryContent h2{background-position:0 -365px;}
+/*----------产品介绍模块------*/
+h3.pcat{
+	font-size:12px;
+	font-weight:normal;
+	text-indent:25px;
+	line-height:27px;
+	color:#fff;
+	height:27px;
+	margin:0;
+	background:url(../images/bg_no_repeat.gif) 0 -584px no-repeat;
+	clear:both;
+	}
+div.pinfo, div.pintro{
+	width:644px;
+	padding:10px 10px 15px;
+	margin:0 auto 20px;
+	background:#f5f4f4;
+	border:1px solid #fff;
+	}
+	div.ppicbox{
+		width:213px;
+		height:182px;
+		float:left;
+		}
+		div.ppicbox p.ptitle{
+			background-position:-349px -33px;
+			line-height:33px;
+			text-indent:0;
+			text-align:center;
+			}
+	div.pinfo dt, div.pinfo dd{
+		line-height:24px;
+		height:24px;
+		margin:0 0 8px;	
+		background:url(../images/bg.jpg) 0 -475px  repeat-x;
+		}
+	div.pinfo dt{
+		font-weight:bold;
+		text-align:right;
+		width:73px;
+		margin-left:10px;
+		float:left;
+		}
+	div.pinfo dd{
+		text-align:left;
+		width:340px;
+		overflow:hidden;
+		}
+		
+
+/*----------客户留言模块------*/
+#message div.content h2{background-position:0 -410px;}
+#message div#secondaryContent h2{background-position:0 -451px;}
+form#feedback{
+	width:521px;
+	height:354px;
+	margin:15px auto 0;
+	padding:13px 0 0;
+	background:url(../images/form-bg.jpg) no-repeat;
+	}
+#feedback legend{
+	text-indent:-9999px;
+	}
+#feedback label{
+	font-weight:bold;
+	color:#fff;
+	text-align:right;
+	width:430px;
+	margin:0 0 6px;
+	clear:left;
+	float:left;
+	overflow:hidden;
+	cursor:pointer;
+	}
+#feedback input, #feedback textarea{
+	font:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+	width:295px;
+	height:20px;
+	padding:6px 0 0 0;
+	border:none;
+	background:transparent;
+	}
+#feedback textarea{
+	width:296px;
+	height:122px;
+	padding:10px 0 0 10px;
+	backgrou1nd:#ff0000;
+    }
+	#feedback label em{
+		font-weight:normal;
+		font-style:italic;
+		color: #900;
+		}
+		input#submit, input#reset{
+			width:100px;
+			height:25px;
+			padding:0;
+			float:none;
+			cursor:pointer;
+			}
+		input#submit{margin:5px 13px 0 134px;}
+		input#reset{width:77px;}
+/*----------联系我们模块------*/
+#contact div.content h2{background-position:0 -496px;}
+#contact div#secondaryContent h2{background-position:0 -533px;}
+#contact dt{font-weight:bold; float:left;}
+#contact dd{margin:0 0 5px;}

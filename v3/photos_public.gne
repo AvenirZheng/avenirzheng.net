@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	    xmlns:media="http://search.yahoo.com/mrss/"
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:creativeCommons="http://cyber.law.harvard.edu/rss/creativeCommonsRssModule.html"
+	    	    xmlns:flickr="urn:flickr:" >
+	<channel>
+
+
+		<title>AvenirZheng 的作品</title>
+		<link>http://avenirzheng.net/</link>
+ 		<description></description>
+		<pubDate>Sat, 29 Jan 2011 04:21:22 -0800</pubDate>
+		<lastBuildDate>Sat, 29 Jan 2011 04:21:22 -0800</lastBuildDate>
+		<generator>http://avenirzheng.net/</generator>
+		<image>
+			<url>http://farm2.static.flickr.com/1287/buddyicons/51073381@N04.jpg?1276368492#51073381@N04</url>
+			<title>AvenirZheng 的上載</title>
+			<link>http://www.flickr.com/photos/avenirzheng/</link>
+		</image>
+
+		<item>
+			<title>Cashmore Design</title>
+			<link>http://demo.adriancheng.name/cm/</link>
+			<image>http://avenirzheng.net/system/application/views/themes/avenir/static/case/cashmore.jpg</image>
+			
+			                 
+		</item>
+
+
+	</channel>
+</rss>

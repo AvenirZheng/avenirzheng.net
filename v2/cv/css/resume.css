@@ -1,0 +1,384 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+Resume General Style Sheet
+
+Verison: 1.0
+Date:18/10/2009
+autor:Adrian Cheng
+Email:div.adrian@gmail.com
+Website:http://www.adriancheng.name
+--------------------------------------------------------------------*/
+@import url("reset.css");/* =Eric Meyer样式初始化*/
+
+/*------------------------common----------------------*/	
+html{
+	width:100%;
+	height:100%;
+}
+body{
+	font-size:12px;
+	font-family:"微软雅黑","Microsoft YaHei",SimSun;
+	height:100%;
+	width:100%;
+	background:#fff;
+	text-shadow:1px 1px -1px #fff;
+}
+body#eng{font-family:Tahoma, Arial, helvetica, sans-serif;}
+h1,h2,h3{
+	color:#428eda;
+	text-shadow:1px 1px 1px #000;
+	/*filter:DropShadow(color="#dddddd",offX="2",offY="2",positive="1");*/
+}
+h2,h3{
+	text-shadow:1px 1px 1px #ccc;
+}
+a:link, a:visited{
+	color:#000;
+}
+a:hover{color:#428eda;}
+a[rel=external],a.external{
+	padding-right:17px;
+	background:url(../images/bg-icon.gif) right -113px no-repeat;
+}
+strong, dt{font-weight:bold;}
+::selection {
+color:#000;
+background-color:#e1fc00;
+}
+::-moz-selection {
+color: #428eda;
+background-color: #000;
+}
+.clearfix:after{/* =clearfloat*/
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}* html .clearfix{height:1%;}
+section,header,footer,aside{display:block;}
+time{display:inline;}
+/*------------------------header----------------------*/	
+header{
+	border:solid 10px #428eda;
+	border-width:0 0 10px 0;
+	/* ff产生渐变边框和1px高亮效果,webkit阴影效果 */
+	-moz-border-bottom-colors:#428eda #428eda #428eda #3f87ce #3d81c5 #3b7bbc #3876b2 #3876b2 #fff #3876b2; /* ff 私有属性 */
+	border-bottom-colors:#428eda #428eda #428eda #3f87ce #3d81c5 #3b7bbc #3876b2 #3876b2 #fff #3876b2; /* css3 属性 border多颜色 */
+	-moz-box-shadow:-5px 5px 5px #d9d9d9;
+	-webkit-box-shadow:-5px 5px 5px #d9d9d9;
+	box-shadow:-5px 5px 5px #d9d9d9;
+	position:relative;
+	zoom:1;
+	height:150px;
+	}
+.innerHeader{
+	width:960px;
+	height:150px;
+	margin:0 auto;
+	position:relative;
+	display:block;
+}
+h1.name{
+	font-size:28px;
+	font-weight:bold;
+	line-height:40px;
+	color:#428eda;
+	width:100px;
+	height:46px;
+	border:dotted 1px #999;
+	border-width:0 1px 0 0;
+	display:block;
+	position:absolute;
+	left:105px;
+	top:20px;
+	overflow:hidden;
+	}
+#eng  h1.name{font-size:30px;line-height:40px;}
+	h1.name .replaceImg{
+		position:absolute;
+		width:100%;
+		height:100%;
+		background:url(../images/resume-name.gif) no-repeat;
+	}
+	h1.name .family-name{padding-left:5px;}
+h2.tagetPosition{
+	font-size:12px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-variant:small-caps;
+	font-weight:bold;
+	color:#428eda;
+	padding:7px 0 0;
+	position:absolute;
+	top:14px;
+	left:215px;
+	}
+	h2.tagetPosition em dfn{
+		font-size:24px;
+		font-weight:bold;
+		display:block;
+		}
+nav{display:none;}
+img.photo{
+	padding:2px;
+	border:solid 1px #428eda;
+	position:absolute;
+	top:10px;
+	left:10px;
+	box-shadow:1px 1px 1px #d9d9d9;
+	-moz-border-radius:2px;
+	-khtml-border-radius:2px;
+	border-radius:2px;
+	-webkit-box-reflect:below -1px -webkit-gradient(linear,left top,left bottom, from(transparent),color-stop(0.9,transparent),to(white));
+	}
+div.detail{
+	width:100%;
+	position:absolute;
+	top:75px;
+	left:110px;
+	}	
+	.detail div{
+		line-height:1.3em;
+		margin:0 0 5px 0;
+		clear:both;
+		*zoom:1;
+		}
+	.information{}
+		.detail h3{
+			font-weight:bold;
+			text-shadow:1px 1px -1px #fff;
+			margin:0 0 3px 0;
+			}
+		.detail h3:before{content:"#";}
+		.detail dl{
+			margin:-19px 0 0 64px;
+			zoom:1;
+			clear:left;
+			}
+			.detail dt{display:inline; margin:0 3px 0;}
+		#eng .detail dl{margin:-19px 0 0 74px;}
+		.detail dl:before{content:"{"; color:#428eda; font-weight:bold;}
+		.detail dl:after{content:"}"; color:#428eda; font-weight:bold;}
+		.detail dd{display:inline; margin:0 3px 0 0;}
+		.detail dd:after{content:";";}
+.note{
+	text-align:center;
+	color:#fff;
+	padding:1px 10px 3px;
+	background:#428eda;
+	position:absolute;
+	right:0;
+	bottom:-28px;
+	text-shadow:1px 1px -1px #000;
+	}
+	.note a:link, .note a:visited{
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	}
+	p.pdflink{
+		position:absolute;
+		right:0;
+		bottom:-28px;
+		display:none;
+		}
+	.pdflink a{
+		font-size:12px;
+		color:#428eda;
+		}
+	
+/*------------------------content----------------------*/	
+#content{
+	width:895px;
+	margin:0 auto;
+	padding:0 32px 20px;
+	}
+#content section{
+	margin:25px 0 5px 0; /* 防止ie margin叠加 */
+}
+#content h1{
+	font-size:36px;
+	font-family:"黑体" , hei;
+	text-indent:-32px;
+	color:#428eda;
+	background:#fff;
+	clear:both;
+	}
+#eng #content h1{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-variant:small-caps;
+	}
+#content p a{text-decoration:underline;}
+	dl.summary{line-height:150%;/*----自我评价---*/	}
+		.summary dt{
+			font-size:14px;
+			}
+		#eng .summary dt{
+			margin:0;
+			float:none;
+			}
+		.summary dd{margin:-18px 0 8px 74px;}
+		#eng .summary dd{margin:0 0 5px 30px;}
+	ul.experience > li{/*----项目经验&实习经历---*/	
+		margin:0 0 15px;
+		position:relative;
+		}
+		.anchorFoucs{text-decoration:none;}
+		.experience li h2{
+			font-size:18px;
+			font-weight:bold;
+			font-family:"Microsoft YaHei",SimSun;
+			text-transform:uppercase;
+			border:solid 1px #333;
+			border-width:0 0 3px;
+			position:relative;
+			}
+		h2.summary{margin-bottom:3px;}	
+		#eng .experience li h2{text-transform:capitalize;}
+			.experience li h2 a{
+				font-size:12px;
+				font-weight:normal;
+				text-transform:none;
+				position:absolute;
+				top:4px;
+				left:478px;
+				}
+			#eng .experience li h2 a{left:552px;}
+		.experience li .intro{
+			margin:0 0 5px 0;
+			clear:both;
+			}
+			.experience li .intro li{
+				font-size:14px;
+				width:235px;
+				display: -moz-inline-stack;  /*Firefox only code*/
+   				display: inline-block;       /*some standard browsers*/
+    			zoom: 1;                     /*IE only*/
+    			*display: inline;            /*Only IE know this code (CSS Hack)*/
+				}
+			#eng .experience li h2 + ul li{width:276px;}
+		.experience li ul + ul, .experience p + p{
+			line-height:150%;
+			list-style:circle;
+			margin-left:20px;
+			display:list-item;
+			}
+		.experience h2 + p{
+			position:absolute;
+			top:4px;
+			left:399px;
+			}
+		#eng .experience h2 + p{left:552px;}
+
+	ol#tagCloud{
+		width:95%;
+		height:130px;
+		margin:0 auto 20px;
+		position:relative;
+		}
+	#eng ol#tagCloud{font-family:Georgia, "Times New Roman", Times, serif;}
+		#tagCloud h2{display:none;}
+		#tagCloud li li{
+			display:block;
+			position:absolute;
+			}
+			/*----外观---*/	
+			#tagCloud a{text-decoration:none;}
+			#tagCloud a:hover{color: #428eda; background-color: #000;}
+			.core a{
+				font-size:64px;
+				font-weight:bold;
+				font-family:Georgia, "Times New Roman", Times, serif;
+				font-variant:small-caps;
+				}
+			.mastery a{
+				font-size:36px;
+				font-weight:bold;
+				}
+			.deeply a{
+				font-size:24px;
+				font-weight:bold;
+				text-transform:uppercase;
+				color:#272727;
+				}
+			.experienced a{
+				font-size:18px;
+				color:#666;
+				}
+			.
+			.know a{color:#999;}
+			/*----位置---*/	
+			#w3c{left:20%;top:27%;}
+			#css2{left:0;top:2%;}
+			#html{left:80%;top:0%;}
+			#eng #html{left:80%;top:22%;}
+			#xhmtlcss{left:47%;top:15%;}
+			#fixbug{left:13%;top:72%;}
+			#workaround{left:19%;top:13%;}
+			#seperate{left:1%;top:49%;}
+			#blogger{left:43%;top:73%;}
+			#creativity{left:29%;top:86%;}
+			#passionate{left:36%;top:86%;}
+			#cet6{left:0%;top:75%;}
+			#book{left:5%;top:39%;}
+			#webkit{left:44%;top:82%;}
+			#webdesign{left:47%;top:3%;}
+			#gentle{left:60%;top:31%;}
+			#vim{left:64%;top:95%;}
+			#seo{left:52%;top:82%;}
+			#micro{left:79%;top:34%;}
+			#eng #micro{left:77%;top:66%;}
+			#semantic{left:67%;top:7%;}
+			#eng #semantic{left:64%;}
+			#dtd{left:61%;top:11%;}
+			#progessEnhancement{left:76%;top:64%;}
+			#eng #progessEnhancement{left:20%;top:95%;}
+			
+			#valid{left:88%;top:22%;}
+			#dom{left:89%;top:57%;}
+			#eng #dom{top:49%;}
+			#xml{left:96%;top:10%;}
+			#jq{left:68%;top:94%;}
+			#js{left:78%;top:86%;}
+			#discipline{left:29%;top:15%;}
+			#php{left:58%;top:86%;}
+			#mysql{left:61%;top:82%;}
+			#tp{left:66%;top:83%;}
+			#wp{left:29%;top:83%;}
+			#ps{left:31%;top:1%;}
+		
+/*------------------------footer----------------------*/	
+footer{
+	height:10px;
+	margin:0 0 30px 0;
+	border:solid 1px #428eda;
+	border-width:10px 0 0;
+	-moz-border-top-colors:#3876b2 #fff #3876b2 #3876b2 #3b7bbc #3d81c5 #3f87ce #428eda #428eda #428eda; /* ff 私有属性 */
+	border-top-colors:#3876b2 #fff #3876b2 #3876b2 #3b7bbc #3d81c5 #3f87ce #428eda #428eda #428eda; /* css3 属性 border多颜色 */
+	position:relative;
+	}
+	footer q.note{bottom:-8px;}
+	ul.valid{margin:6px 0 0;}
+		.valid li{
+			padding:0 10px 0 25px;
+			background:url(../images/bg-icon.gif) no-repeat left top;
+			float:left;
+			}
+		.valid .micro{
+			padding-left:35px;
+			background-position:left -14px;
+			}
+		.valid .html{background-position:left -44px;}
+		.valid .css{background-position:left -69px;}
+			footer a{text-decoration:underline;}
+
+
+.hresume .hover, .hresume .click{
+	color:#428eda;
+	background:#F6F6F6;
+	border-color:#428eda;
+	}		
+.hresume .hover a , .hresume .click a{color:#428eda;}	
+.hover:before{content:"+";}	
+.click:before{content:"- ";}		
+

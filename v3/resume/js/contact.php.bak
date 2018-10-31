@@ -1,0 +1,15 @@
+﻿<?php
+
+$name=$_POST['name'];
+
+$mail=$_POST['mail'];
+
+$url=$_POST['url'];
+
+$message=$_POST['message'];
+
+mysql_query("insert into user values(0,'$writer','$pass')",$db);
+
+//echo $_POST['writer'];
+
+?> 

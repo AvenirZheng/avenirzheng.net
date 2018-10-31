@@ -1,0 +1,122 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+ADRIAN CHENG 512 special Style Sheet
+Verison: 1.0
+Date:04/20/2010 更改背景
+autor:Adrian Cheng
+Email:div.adrian@gmail.com
+Website:http://www.adriancheng.name
+--------------------------------------------------------------------*/
+
+hr, span.line {
+	background:none;
+	background-color:#000;
+}
+em {
+	color:#fff;
+}
+a.viewResume:link, a.viewResume:visited {
+	color:#fff;
+	background:url(../images/512/bg-icon.gif) left bottom no-repeat;
+}
+a:hover.viewResume {
+	color:#000;
+}
+p.topBtn a:hover {
+	color:#fff;
+	background:url(../images/bg-top-btn.png) left top no-repeat;
+}
+.nav a {
+	color:#fff;
+}
+.nav a:hover, .nav a.current {
+	color:#fff;
+	background:#000;
+}
+#aboutContent h2.tittle {
+	width:125px;
+	height:30px;
+	background:url(../images/512/bg-title.png) 0 2px no-repeat;
+}
+#portfolioContent div.content > p a:hover {
+	color:#fff;
+}
+ul.caseList a:link, ul.caseList a:visited {
+	color:#fff;
+}
+.pane dd a:hover {
+	background:#fff;
+}
+.casePic a:hover img {
+	border:solid 1px #fff;
+}
+#aboutContent div.content p a:hover {
+	background:#000;
+}
+.skillLevel span.bar {
+	background:url(../images/512/bg-repeatx.jpg) 0 -159px repeat-x;
+}
+.contactForm legend {
+	background:url(../images/512/bg-title.png) 20px -82px no-repeat;
+}
+.contactForm input, .contactForm textarea {
+	color:#fff;
+	background:url(../images/512/bg-repeatx.jpg) 0 -8px repeat-x;
+}
+.contactForm textarea {
+	background:url(../images/512/bg-repeatx.jpg) 0 -27px repeat-x;
+}
+.contactForm input.submit {
+	background:url(../images/512/bg-btn-sumit.gif) left bottom no-repeat;
+}
+.contactForm input.hover {
+	background:url(../images/512/bg-btn-sumit.gif)no-repeat;
+}
+#contactContent h3 {
+	color:#fff;
+	border-bottom:solid 1px #fff;
+}
+ul.contactList a:hover {
+	background:#fff;
+}
+#favContent h2.tittle {
+	background:url(../images/512/bg-title.png) 0 -55px no-repeat;
+}
+.bookList li li a:hover {
+	background:#000;
+}
+.bookList li li.last {
+	color:#fff;
+}
+div.album ul img {
+	border:solid 1px #000;
+}
+div.album ul a:hover img {
+	border:solid 1px #000;
+}
+div.articles ul a:hover {
+	background:#fff;
+}
+.topWarp p.resumeLink a, .topWarp p.resumeLink a:hover {
+	font-weight:bold;
+	color:#fff;
+}
+.topWarp a:hover {
+	color:#fff;
+}
+.topWarp address a {
+	color:#fff;
+	background:url(../images/512/bg-icon.gif) 0 4px no-repeat;
+}
+#footer p {
+	background:url(../images/512/bg-footer.png) center bottom no-repeat;
+}
+.contactForm legend {
+	background:url(../images/512/bg-title-contact.png) no-repeat;
+}
+#aboutContent h2.tittle {
+	background:url(../images/512/bg-title-about.png) no-repeat;
+}
+#favContent h2.tittle {
+	background:url(../images/512/bg-title-fav.png) no-repeat;
+}

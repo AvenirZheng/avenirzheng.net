@@ -1,0 +1,131 @@
+/* CSS Document */
+/*=siderbar*/
+#sidebar h2{
+background:url(../images/aboutTittle.gif) no-repeat;
+}
+#main{
+padding-left:10px;
+}
+/*=content*/
+.menu{
+width:603px;
+margin:0 10px 0px 0;
+padding-bottom:4px;
+overflow:hidden;
+background:url(../images/page1MenuBg.gif) no-repeat bottom;
+}
+ .menu li{
+float:left;
+margin-right:5px;
+}
+ .menu a{
+display:block;
+height:34px;
+width:107px;
+background:url(../images/contentMenu.gif) no-repeat;
+text-align:center;
+font-size:14px;
+line-height:34px;
+font-weight:bold;
+color:#999;
+}
+.menu a:hover, #about .menu .current{
+color:#fff;
+background:url(../images/contentMenuHover.gif) no-repeat;
+text-decoration:none;
+}
+#banner{
+margin-top:9px;}
+/*=content*/
+.content{
+width:601px;
+overflow:hidden;
+background:#fff;
+border:1px solid #e7e7e7;
+border-width:0 1px;
+}
+.contentWrap{
+width:3000px;
+overflow:hidden;
+}
+.content .inner{
+width:601px;
+float:left;
+}
+.content .block{
+margin-left:20px;
+width:557px;
+background:url(../images/tittleBg.gif) no-repeat;
+}
+.content h3{
+height:27px;
+margin-left:10px;
+background:url(../images/tittle3.gif) no-repeat left center;
+text-indent:-9999px;
+}
+.content #adress{
+background:url(../images/tittle1.gif) no-repeat left center;
+}
+.content #serverEqui{
+background:url(../images/tittle2.gif) no-repeat left center;
+}
+.content p{
+padding:15px 30px;
+line-height:18px;
+color:#666;
+text-indent:2em;
+}
+.content .block p{
+padding:7px 0 25px 15px;
+text-indent:0;
+}
+.content .block ul{
+padding:7px 0 25px 15px;
+line-height:18px;
+color:#666;
+}
+.content #inner2, .content #inner4{
+padding:20px 0 0 20px;
+}
+.content #inner2 h2{
+text-align:center;
+}
+.content #inner2 p{
+margin:0 0 0 -10px;
+}
+.content #inner2 ul{
+margin:0 0 0 20px;
+}
+.content #inner2 li{
+background:url(../images/page1ularrow.gif) left center no-repeat;
+padding:0 0 0 15px;
+margin:5px 0 0 0;
+}
+.content #inner3{
+padding:40px 0 0 0;
+}
+.content #inner3 h4{
+font-weight:normal;
+font-size:14px;
+padding:0 0 5px 0;
+border:solid 1px #CCC;
+border-width:0 0 1px 0;
+display:block;
+}
+
+.content #inner3 li{
+margin-bottom:5px;
+
+}
+.content #inner3 li a{
+color:#06F;
+right:10px;
+margin:0 0 0 400px;
+}
+.content #inner4 h2{
+margin:5px 0 0 0;
+}
+.content #inner4 p{
+text-indent:0;
+padding:5px 0;
+}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+Kcx IE6 FIX Style Sheet
+
+Verison: 1.0
+autor:Adrian Cheng
+Email:me@adriancheng.name
+Website:http://avenirzheng.net
+date:2009/05/10
+--------------------------------------------------------------------*/
+body{ background:none;}
+#header ul.subnav li a{line-height:16px;}
+li.about ul.subnav{margin-left:-225px;}
+li.product ul.subnav{margin-left:-350px;}
+li.news ul.subnav{margin-left:-150px;}
+
+.nav ul.subnav li a:link, .nav ul.subnav li a:visited{{display:inline;}
+
+
+div.productlist{width:540px;}
+.blk_29 {width:540px;}
+
+.RightBotton, .LeftBotton {	right:0px;}
+.LeftBotton { left: 0px;}
+p.ptitle{ background:none; height:25px;}
+p.ptitle a{background:url(../images/bg.jpg) 0 -474px  repeat-x;}
+ul.pitem li p{ height:25px; width:150px; line-height:25px; margin:10px 0 0 13px;}
+div.pinfo dt{margin-right:-3px;}
+#feedback input{ height:18px;}
+#feedback textarea{ overflow:hidden;}
+input#submit, input#reset{ height:26px; margin-top:15px;}
+
+.content ul.item li{height:25px;}
+#secondaryContent{margin-right:-3px;}
+#secondaryContent .mark{display:none;}
+p.pageNum{zome:1;}

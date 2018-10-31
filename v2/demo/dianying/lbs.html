@@ -1,0 +1,53 @@
+﻿<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+<title>QQ电影票</title>
+<link rel="stylesheet"  href="static/global.css" />
+<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+
+<script type="text/javascript" src="static/iscroll.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=cn"></script> 
+</head>
+<body>
+<div data-role="page" id="detail" data-theme="q" class="ui-body-q">
+  <div data-role="header" data-theme="q"  class="ui-header" id="header"> <a onClick="history.go(-1);return false;" href="#" data-role="button" data-icon="back" class="ui-btn ui-btn-left back-btn"><span class="ui-btn-inner"><span class="ui-btn-text">返回</span><span class="ui-icon ui-icon-back"></span></span></a>
+    <h1>大家说</h1>
+  </div>
+  <!-- /header -->
+  <div data-role="content" id="wrapper"  class="">
+    <div class="" id="scroller">
+    	<div class="comment_detail" id="comment_detail">
+        	<div class="moives_one">
+            	<h3 class="moives_detail">《月满轩尼诗》</h3>
+                  <p class="moives_grade"><span class="star_4"></span></p>
+                  <a href="detail.html" class="moives_poster">
+                      <span class="moives_mask"></span>
+                      <img src="static/1.jpg" />
+                 </a>
+            </div>
+            <div class="comment_content">
+            	<p class="comment_author">AVENIR</p>
+                <p class="comment_desc">烂片,冲着苏有朋才选择收看此片,没想到吴佩慈的演技那么差,刚开始看这部影片就觉得她演得好假,感觉是在演舞台剧一样，"演戏"的感觉太强烈，跟《风声》相比太差了，不值得观看，我片,没想到吴佩慈的演技那么差,刚开始看这部影片就觉得她演得好假,片,没想到吴佩慈的演技那么差,刚开始看这部影片就觉得她演得好假,是看了十...</p>    
+            </div>
+        </div>
+      <div id="map_canvas" style="width:100%; height:100%"></div>
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed" id="footer">
+    <div data-role="navbar" class="ui-footer" role="navigation">
+      <ul class="ui-grid-q">
+        <li class="ui-block-a"><a href="index.html" class="ui-btn-movie"><span class="ui-btn-text">电影</span></a></li>
+        <li class="ui-block-b"><a href="cinema.html" class="ui-btn-cenima"><span class="ui-btn-text">影院</span></a></li>
+        <li class="ui-block-c"><a href="lbs.html" class="ui-btn-talk ui-btn-active"><span class="ui-btn-text">大家说</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /header --> 
+</div>
+<script type="text/javascript" src="static/swipe.js"></script>
+<script type="text/javascript" src="static/gears_init.js"></script> 
+<script type="text/javascript" src="static/geo.js"></script> 
+<script type="text/javascript" src="static/map2.js"></script>
+</body>
+</html>

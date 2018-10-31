@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<script language="JavaScript" type="text/javascript" src="jquery.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="jquery.corner.js"></script>
+	<script language="JavaScript" type="text/javascript" src="jVal.js"></script>
+	<link rel="stylesheet" type="text/css" href="jVal.css">
+	<style>
+		body {
+			font-family: Tahoma;
+			font-size: 9pt;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td align=right style="padding-right:5px; color:#000;">
+				First Name
+			</td>
+			<td align=left style="padding:5px; color:#000;">
+				<input id="f1" type=text size=20
+					jVal="{valid:function (val) { if (val.length < 3) return false; else return true; }, message:'Required Field', styleType:'cover'}">
+			</td>
+		</tr>
+		<tr>
+			<td align=right style="padding-right:5px;color:#000;">
+				Email Address
+			</td>
+			<td align=left style="padding:5px; color:#000;">
+				<input  type=text size=40
+					jVal="{valid:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/, message:'Invalid Email Address', styleType:'cover'}"
+					jValKey="{valid:/[a-zA-Z0-9._%+-@]/, cFunc:'alert', cArgs:['Email Address: '+$(this).val()]}">
+			</td>
+		</tr>
+		<tr>
+			<td align=right style="padding-right:5px;color:#000;">
+				Phone Number<br>
+				<span style="color:#808080; font-size:8pt;">10 digits, no dashes</span>
+			</td>
+			<td align=left style="padding:5px; color:#000;">
+				<input id="f5" type=text maxlength=10 size=10
+					jVal="{valid:function (val) { if (val.length != 10) return false; else return true; }, message:'10 Digits for Phone Required', styleType:'cover'}"
+					jValKey="{valid:/[0-9]/, message:'&quot;%c&quot; Invalid Character - Only Digits Allowed', cFunc:'$(\'#formContainer\').jVal()'}">
+			</td>
+		</tr>
+		<tr>
+			<td align=right style="padding-right:5px;color:#000;">
+				Password
+			</td>
+			<td align=left style="padding:5px; color:#000;">
+				<input id="password" type=text
+					jVal="{valid:function (val) { if (val.length < 4) return false; else return true; }, message:'Password of 4 or more characters required', styleType:'pod'}">
+			</td>
+		</tr>
+		<tr>
+			<td align=right style="padding-right:5px;color:#000;">
+				Verify Password
+			</td>
+			<td align=left style="padding:5px; color:#000;">
+				<input id="passwordVerify" type=text
+					jVal="{valid:function (val) { if ( val != eval('$(\'#password\').val()') ) return false; else return true; }, message:'Password and Verify Password Must Match', styleType:'pod'}">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="padding:5px;">
+				<input type=button value="submit form" onClick="if ( $('#formContainer').jVal() ) alert('success - submit form');">
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+$(document).ready(function() {
+    $('#home ul.nav>li').hover(function(){
+    	 $('<div class="navMark"></div>').css("backgroundColor","#dcdcdc").animate({ top : "-0" } , "fast" ).appendTo(this);
+    },function(){ 
+    	$('.navMark').remove();
+    });
+});
+
+
+$(document).ready(function() {
+    $("ul.newsList>li:even").addClass("odd");
+	$("ul.item>li").hover(function(){
+    	 $(this).addClass("hover");
+    },function(){ 
+    	 $(this).removeClass("hover");
+    });
+});

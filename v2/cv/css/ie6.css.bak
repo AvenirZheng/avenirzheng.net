@@ -1,0 +1,117 @@
+﻿@charset "utf-8";
+/*------------------------------------------------------------------
+ADRIAN CHENG Style Sheet for ie6
+
+Verison: 1.0
+Date:17/03/2009
+autor:Adrian Tsang
+Email:div.adrian@gmail.com
+Website:http://www.adriancheng.name
+--------------------------------------------------------------------*/
+
+#bg1,#bg2,#bg3,#bg4{width:100%;}/*= ie6 can't understand min-width*/
+#portfolioContent,#contactContent, #aboutContent, #favContent{/*= ie6 can't understand min-height*/
+	height:1000px;
+}
+#footer{/*= ie6 can't understand fixed*/
+		height:130px;
+		position: absolute;  
+		z-index:10;
+    bottom: auto;   
+    clear: both;   
+    top:expression(eval(document.compatMode &&   
+        document.compatMode=='CSS1Compat') ?   
+        documentElement.scrollTop   
+        +(documentElement.clientHeight-this.clientHeight) + 115  
+        : document.body.scrollTop   
+        +(document.body.clientHeight-this.clientHeight) + 115);   
+}   
+
+#top{position:absolute; top:0; background:none; background:#000; height:20px; filter:alpha(opacity=60)}
+
+/*------
+#top{
+		position:absolute;top:expression(eval(document.documentElement.scrollTop));z-index:10;left:0;top:0;  
+} */  
+
+.header{	border:solid 1px #ff0000;}
+
+.header h1{
+		
+		border:solid 1px #ff0000;
+	}
+/*= fix nav*/
+
+.nav li{display:inline;}
+.nav li a{
+			width:85px;
+			text-align:center;
+			overflow:hidden;
+			padding:5px 0;
+		}
+
+.nav a:hover,.nav a.current{width:85px;border:solid 1px #fff;}
+.nav a:hover span,.nav a.current span{width:85px;}
+.nav a:hover span{cursor:pointer;border:solid 1px #ff0000;}
+
+/*= fix hr ie6以字体大小为最小高度*/
+hr{display:none;}
+span.line{font-size:2px; margin-top:19px;}
+
+/*= pngfix can't use position*/
+.contactForm legend{height:60px;margin:0;padding:0;/* =ie6 can give legend width and height*/	 }
+.contactForm legend{ background:url(../images/bg-title-contact.png) no-repeat;}
+#aboutContent h2.tittle{background:url(../images/bg-title-about.png) no-repeat;}
+#favContent h2.tittle{background:url(../images/bg-title-fav.png) no-repeat;}
+
+
+/*= ie6 can't understand child selector*/
+#portfolioContent div.content  p{
+		font-size:18px;
+		font-family:Georgia, Times, "Times New Roman", serif;
+		line-height:150%;
+		text-indent:2em;
+		margin:0 0 30px 0;padding:0 10px;
+		}
+
+/*= ie6 ul空格bug holly hack fix*/
+ul.caseList li{height:1%;}
+
+/* ie6 could't suppose png-24 */
+#footer p,#portfolioContent h2.tittle,.casePic span.magnifier, .casePic span.mark,.contactForm legend,#aboutContent h2.tittle,#favContent h2.tittle,p.topBtn a{/*bg*/ behavior:url(iepngfix.htc); }
+
+h1 img{width:436px;height:68px;}
+.me{width:121px;height:154px;}
+.pdf{width:30px;height:37px;}
+h1 img,img.me,img.pdf{/*img*/ behavior:url(iepngfix.htc); }
+
+.nav a,ul.caseList a:hover,ul.caseList a.current,div.pane,form.contactForm{background:#000;}
+a.shadow{background:none;}
+
+/* fix slider */
+ul.caseList a{width:100%;}
+
+ul.albumList{/* double margin */
+			margin-left:30px;
+		}
+
+
+/* i6 a优先级*/
+.nav a:visited, #top a:visited, p.topBtn a:visited{text-decoration:none;}
+
+/* i6 不支持子选择器 》*/
+.bookList li{
+				width:93px;
+				margin-right:-6px;
+				margin-bottom:5px;
+				float:left;
+				position:relative;
+				cursor:pointer;
+				z-index:1;
+			}
+.bookList li li{
+	width:189px;
+	margin:0;
+	float:none;
+	position:static;
+	}

@@ -1,0 +1,47 @@
+ul.nav li.ie6hover{
+	height:46px;
+	background:url(../images/bg-navlihover.jpg) 50% 66% no-repeat;
+}
+ul.nav li.ie6hover a{
+	color:#fff;
+	text-decoration:none;
+	background:#8d7642;
+}
+ul.nav li.ie6hover ul a{	background:none;}
+ul.nav li.ie6hover ul{
+	width:300px;
+	display:block;
+	position:absolute;
+	top:29px;
+	z-index:1000;
+
+}
+ul.nav li.ie6hover ul li a:hover{text-decoration:underline;}
+
+ul.subnav li{
+	width:81px;
+	padding:0;
+	margin:0;
+	position:relative;
+}
+ul.subnav li.current{
+	padding:0;
+	margin-top:-6px;
+}
+ul.subnav li a{
+	position:absolute;
+	top:0px;
+	left:0;
+}
+ul.subnav li.current a{
+	top:6px;
+}
+ul.productList li ul li.itemID,  ul.productList li ul li.data{
+	height:65px;
+}
+ul.productList li ul li.itemPic{height:63px;padding-top:2px;}
+ul.productList li ul li.summary{height:53px;}
+#mainContent p{
+	margin:0;
+}
+ul.productList{margin-top:-10px;}

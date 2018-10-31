@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url(global.css);
+/*-== 内容 ==-*/
+#login{
+	background:url('../img/shadow.png') center 160px no-repeat;
+}
+#content{
+	padding:5px;
+	margin-top:15px;
+}
+#content .login_form .logo{
+	margin:0 auto;
+	padding:20px 0 20px;
+	background:url('../img/line.png') center 58px no-repeat;
+}
+#content .login_form{
+	margin:40px auto;
+}
+#content .login_form form{
+	padding:30px 30px 50px;
+}
+#content .login_form legend{
+	display:none;
+}
+#content .login_form label{
+	display:block;
+	margin-bottom:10px;
+}
+#content .login_form .title{
+	font-family: "Microsoft YaHei", "微软雅黑", Simsun, Mingliu, Arial, Helvetica;
+	font-size:18px;
+}
+#content .login_form .normal_txt{
+	width:329px;
+}
+#content .login_form .btns{
+	padding:20px 0 0;
+}
+#content .login_form .form_rel{
+	position:absolute;
+	bottom:105px;
+	right:30px;
+	
+}
+#content .login_form .form_rel a{
+	padding:0 5px;
+}

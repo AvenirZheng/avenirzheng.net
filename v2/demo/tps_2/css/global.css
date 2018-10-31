@@ -1,0 +1,200 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+TPS&TMS General Style Sheet
+Verison: 1.0
+Date: 9/27/2010 
+Autor: elwinzheng
+--------------------------------------------------------------------*/
+/*-== RESET ==-*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:12px;vertical-align:baseline;background:transparent;}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;}ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}a{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;}ins{background-color:#ff9;color:#000;text-decoration:none;}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}del{text-decoration:line-through;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,select{vertical-align:middle;}
+
+/*-== 布局 ==-*/
+#head{
+	background-color:#27292c;
+	height:85px;
+	position:relative;
+	overflow:hidden;
+}
+.one_col #head{
+	height:15px;
+}
+#content{
+	width:968px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#content .main{
+	width:800px;
+	float:right;
+	padding-bottom:10000px;
+	margin-bottom:-10000px;
+}
+.one_col #content .main{
+	width:968px;
+	float:none;
+}
+#content .side{
+	width:168px;
+	float:left;
+	padding-bottom:10000px;
+	margin-bottom:-10000px;
+}
+#foot{
+	clear:both;
+}
+/*-== 颜色 ==-*/
+body{
+	color:#454a4e;
+	background-color:#f4f4f4;
+}
+a{
+	color:#5f7faf;
+	text-decoration:underline;
+}
+strong{
+	color:#9a691b;
+}
+.unwary{
+	color:#b0b0b0;
+}
+.btn{
+	color:#ffffff;
+}
+/*-== LOGO ==-*/
+.logo{
+	display:block;
+	width:338px;
+	height:26px;
+	overflow:hidden;
+}
+.logo span{
+	display:none;
+}
+/*-== 头部 ==-*/
+#head h1{
+	display:none;
+}
+#head .main{
+	width:980px;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+}
+#head .nav{
+	background-image:url('../img/bg_nav.png');
+	background-position:-25px -100px;
+	height:60px;
+	width:395px;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+}
+#head .nav a{
+	display:block;
+	height:43px;
+	margin-top:17px;
+	margin-right:12px;
+	width:180px;
+	float:left;
+}
+#head .nav span{
+	display:none;
+}
+#tps_panel .nav .tps_nav a{
+	background:url('../img/bg_nav.png') no-repeat;
+	background-position:-25px -37px;
+}
+#head .top_tools{
+	position:absolute;
+	right:0px;
+	bottom:10px;
+}
+#head .shortcut{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:120px;
+	height:32px;
+	background:url('../img/bg_shortcut.png') no-repeat;
+	line-height:30px;
+	text-align:center;
+	text-indent:-10px;
+	margin-right:10px;
+}
+#head .shortcut a{
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+}
+#head .welcome{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	color:#878f9b;
+}
+/*-== 表单 ==-*/
+.form{
+	width:448px;
+	background:url(../img/form_bg.png) no-repeat;
+	padding-top:20px;
+}
+.form .form_detail{
+	width:448px;
+	position:relative;
+	background:url(../img/form_bg.png) no-repeat -466px bottom;
+}
+.form .normal_txt{
+	background-color:f9f9f9;
+	border:solid 1px #dfdcdc;
+	padding:5px 0;
+}
+.form .normal_txt:focus{
+	background-color:#fff;
+	border:1px solid #4b80b6;
+}
+.form .btns{
+	text-align:right;
+}
+/*-== 按钮 ==-*/
+.btn{
+	background:transparent url(../img/btn.png) no-repeat;
+	width:93px;
+	height:33px;
+	line-height:30px;
+	text-align:;
+	font-weight:bold;
+	border:none;
+	padding:0;
+	cursor:pointer;
+}
+.btn:hover{
+	background-position:0 -80px;
+}
+.btn:active{
+	background-position:0 -160px;
+}
+/*-== 分页 ==-*/
+.pageNum .current{
+	font-weight:bold;
+	border-width:0;
+}
+.pageNum .disable{
+	border:1px solid #E9E9E9;
+	color:#B0B0B0;
+	padding:3px 8px;
+}
+.pageNum a, .pageNum span{
+	padding:3px 8px;
+	margin-right:5px;
+	border:1px solid #E9E9E9;
+	text-decoration:none;
+}
+.pageNum a:hover{
+	background-color:#5F7FAF;
+	color:#fff;
+}
+/*-== 脚部 ==-*/
+#foot{
+	margin:40px 0;
+	text-align:center;
+}

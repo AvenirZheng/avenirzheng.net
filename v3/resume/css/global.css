@@ -1,0 +1,635 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+ADRIAN CHENG General Style Sheet
+Verison: 1.0
+Date:11/10/2009 
+autor:Adrian Cheng
+Email:div.adrian@gmail.com
+Website:http://www.adriancheng.name
+--------------------------------------------------------------------*/
+@import url("reset.css");/* =Eric Meyer样式初始化*/
+
+/*------------------------全局----------------------*/
+	
+body{
+  font-family:Tohamo,Arial,helvetica, sans-serif;
+  font-size:12px;
+  color:#fff;
+  background:#000 url(../images/bg.jpg) fixed;
+}    
+a{/*link*/
+	color:#fff;
+	font-weight:normal;
+	/*outline:none; tips:1010 outline对键盘操作太重要了，坚决鄙视自己outline:none的行*/
+}	  
+a:visited{text-decoration:line-through;}
+a:hover{color:#000;}  
+a:hover img{background:none;}
+hr, span.line{
+	height:2px;
+	border:none;
+	background:url(../images/bg-repeatx.jpg) left top repeat-x;
+	clear:both;
+}	
+span.line{
+  	width:1003px;
+	margin-top:-9px;
+	display:block; 
+}
+em{color:#8abb06;}
+p em{
+	font-style:italic;
+	text-transform:uppercase;
+	padding:0 0.3em;
+}
+.clearfix:after, .pane dl:after{/* =清除浮动*/
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}* html .clearfix, .pane dl{height:1%;}
+h2.tittle{text-indent:-3000px;}
+h3{
+	font-size:18px;
+	font-family:Georgia, Times, "Times New Roman", serif;
+}
+a.viewResume:link, a.viewResume:visited{
+	font-size:14px;
+	font-weight:bold;
+	line-height:1.9em;
+	color:#fff; 
+	height:24px;
+	padding-left:23px; 
+	background:url(../images/bg-icon.gif) 0 -87px no-repeat;
+	display:inline-block;
+}
+a:hover.viewResume{color:#8abb06;}
+p.topBtn{
+	width:800px;
+	height:100px;
+	margin-top:100px;
+	float:right;
+ 	position:relative;
+	display:block;
+	}
+p.topBtn a{
+	font-size:14px;
+	font-family:Georgia, Times, "Times New Roman", serif;
+	text-decoration:underline;
+	position:absolute;
+	right:0;
+	top:-50px;
+	z-index:8;
+	display:block;
+	}
+p.topBtn a:hover{
+	color:#8abb06;
+	z-index:8;
+	}
+dfn{
+	border-bottom:dashed 1px #999;
+	cursor:help;
+}
+/*------------------------布局----------------------*/		
+#top{/* =顶部*/	
+	width:100%;
+	height:83px;
+	background:url(../images/bg-top.png) center top no-repeat;
+	position:fixed;
+	top:0;
+	z-index:10;
+	display:block;
+}   
+#footer{/* =底部*/
+	width:1003px;
+	height:130px;
+	margin-left:-502px;
+	position:fixed;
+	bottom:0;
+	left:50%;
+	z-index:7;
+	display:block;
+} 
+#warpper{/* =页面容器*/	 
+  width:1003px;
+  margin:0 auto;
+  overflow:hidden;/*tips: ff ie7高度自适应 闭合浮动 ie中键失效*/
+}   
+atricle, section, header, footer, aside, nav{display:block;}
+/*------------------------头部----------------------*/	
+.header{
+	width:1003px;
+	position:fixed;
+	background:#000 url(../images/bg.jpg) fixed;
+	z-index:9;
+	overflow:hidden;
+	}
+	.header h1{
+		width:430px;
+		height:68px;
+		margin-top:70px;
+		float:left;
+		overflow:hidden;
+	}
+.header nav{display:block;}
+#warpper .header ul.nav{
+	margin-top:103px;
+	float:right;
+}
+	.nav li{
+		margin:0 7px;
+		float:left;
+		position:relative;
+	}
+		.nav a{
+			font-size:18px;
+			font-family:Georgia, Times, "Times New Roman", serif;
+			font-variant:small-caps;
+			font-weight:bold;
+			color:#8abb06;
+			text-decoration:none;
+			text-shadow: 1px 1px 2px #3f5503; /* css 3属性 */
+			height:19px;
+			padding:5px 10px;
+			background:url(../images/bg-navlist.png) repeat-x;
+			display:block;
+			-moz-border-radius:5px;
+			-khtml-border-radius:5px;
+			-webkit-border-radius:5px;
+			border-radius: 5px; /* css 3属性 */
+		}
+
+		.nav a:hover, .nav a.current{
+			color:#fff;
+			background:#8abb06;
+			overflow:hidden;
+		}
+		/*
+		#navPortfolio a:hover{-webkit-transform: rotate(-5deg);} 
+		#navAbout a:hover{-webkit-transform: rotate(2deg);}
+		#navContact a:hover{-webkit-transform: rotate(6deg);}
+		#navFav a:hover{-webkit-transform: rotate(-8deg);}
+		*/
+		.nav a.current{cursor:default;}
+		.nav a kbd{
+			text-decoration:underline;
+			font-family:"微软雅黑", "Microsoft YaHei", "yahei", "宋体", simsun;
+			font-weight:normal;
+			}
+			.nav span{
+				font-family:"微软雅黑", "Microsoft YaHei", "yahei", "宋体", simsun;
+				font-weight:normal;
+				text-align:center;
+				padding-bottom:5px;
+				display:none;
+			}
+			.nav a:hover span, .nav a.current span{
+				color:#fff;
+				display:block;
+			}
+
+/*---------------------内容块---------------------*/	 
+#portfolioContent,#contactContent, #aboutContent, #favContent{
+	width:1003px;
+	min-height:1000px;
+	padding-top:100px;
+}
+*+html #portfolioContent, *+html #contactContent,*+html #aboutContent,*+html #favContent{/* 华丽地对 ie7用了hack */
+	padding-top:160px;
+	}
+	div.content{
+		width:980px;
+		margin:60px auto 0;
+	}
+/*---------------------portfolio---------------------*/	 
+		#portfolioContent div.content > p{
+			font-size:18px;
+			font-family:Georgia, Times, "Times New Roman", serif;
+			line-height:150%;
+			text-indent:2em;
+			text-shadow: 1px 1px 1px #666;  /* css 3属性 */
+			margin:0 0 30px 0;padding:0 10px 0;
+			}
+			#portfolioContent div.content > p a{text-decoration:underline;}
+			#portfolioContent div.content > p a:hover{color:#8abb06;}
+		#portfolioContent ul{
+			padding-left:20px;
+			float:left;
+		}
+			ul.caseList{
+				width:209px;
+				display:none;
+				}
+			ul.show{display:block;}
+				ul.caseList a:link,ul.caseList a:visited{
+					font-size:14px;
+					color:#ae9785;
+					text-decoration:none;
+					text-shadow:2px 2px 2px #000;
+					padding:3px 0;
+					display:block;
+				}
+				ul.caseList a:before{content:"- ";}
+				ul.caseList a.current:before{content:"+ ";}/* =伪元素can't work in ie*/ 
+				ul.caseList a:hover,ul.caseList a.current{
+					color:#fff;
+					background:url(../images/bg-form.png) repeat;
+				}
+				ul.caseList a.current{cursor:default;}
+			div.pane{
+				width:750px;
+				margin:0 auto;
+				background:url(../images/bg-form.png) repeat;
+				position: relative; 
+				overflow:hidden;
+				-moz-border-radius:0px 10px 10px 0;
+				-webkit-border-top-left-radius:0px;
+ 				-webkit-border-top-right-radius:10px;
+ 				-webkit-border-bottom-left-radius:0px;
+ 				-webkit-border-bottom-right-radius:10px;
+				border-radius:0px 10px 10px 0; 
+			}
+			div.paneHeight{
+				height:250px;
+				float:left;
+				}
+ 			.pane dl{
+				height:250px;
+ 				padding:15px;
+ 				clear:both;
+ 			} 
+ 			.pane dd a:hover{background:#8abb06;}
+				dt.casePic{
+					float:left;
+					overflow:hidden;
+					position:relative;
+				}
+				.pane dt{
+					font-family:Georgia, Times, "Times New Roman", serif;
+					text-shadow:2px 2px 2px #000;
+					}
+				.pane em{font-weight:bold;}
+				.pane dd{margin-bottom:10px;}
+				.pane dd.descrie{
+         			height:110px;
+          		   	display:block;
+					}
+				.casePic a.shadow{
+					width:489px;
+					height:223px;
+					padding:0 9px 9px 0;
+					background-position:89px -177px;
+				}
+				.casePic img{border:solid 1px #000;}
+				.casePic a:hover span.mark{display:none}
+				.casePic a:hover img{border:solid 1px #8abb06;}
+					.casePic span.magnifier, .casePic span.mark{
+						text-indent:-9999px;
+						width:100%;
+						height:100%;
+						background:url(../images/mark.png) no-repeat;
+						display:block;
+						position:absolute;
+						z-index:7;
+						top:0;
+						cursor:pointer;
+					}
+					.casePic span.magnifier{
+						width:32px;
+						height:34px;
+						background:url(../images/magnifier.png) no-repeat;
+						right:22px;
+						top:180px;
+						z-index:8;
+						display:none;
+					}
+					
+/*------------------------about-----------------------*/	 
+		#aboutContent h2.tittle{
+			width:125px;
+			height:30px;
+			background:url(../images/bg-title.png) 0 2px no-repeat;
+		}
+		.imgFloat{
+			margin:10px 10px 0 0;
+			float:left;
+		}
+		#aboutContent div.content p{
+			font-size:14px;
+			line-height:1.5em;
+			text-indent:2em;
+			text-shadow:2px 2px 5px #000;
+			margin-bottom:0.5em;
+		}
+		#aboutContent div.content img + p{ text-indent:0em;}
+		#aboutContent div.content img + p:first-letter{font-size:2.5em;}
+		#aboutContent div.content p a:visited{text-decoration:underline;}
+		#aboutContent div.content p a:hover{
+			text-shadow:1px 1px -1px #8bc171;
+			background:#8abb06;
+			}
+		#aboutContent div.content p.translate{font-size:12px;}
+		#aboutContent div.content p.translate em{font-style:normal;}
+		ul.skillLevel{
+			width:800px;
+			margin:10px auto 0;
+		}	
+			.skillLevel li{
+				font-size:18px;
+				font-family:Georgia, Times, "Times New Roman", serif;
+				text-shadow:1px 1px -1px #000;
+				width:340px;
+				margin:0 50px 5px 0;
+				background:url(../images/bg-skilllevel.jpg) right center no-repeat ;
+				float:left;
+				position:relative;
+			}
+				.skillLevel span{
+					position:absolute;
+					right:230px;
+				}
+				.skillLevel span.bar{
+					text-indent:-3000px;
+					width:220px;
+					background:url(../images/bg-repeatx.jpg) 0 -159px repeat-x;
+					top:4px;
+					left:120px;
+				}
+					.xhtml span.bar{width:100px;}
+					.javascript span.bar{width:70px;}
+					.css span.bar{width:98px;}
+					.flash span.bar{width:33px;}
+					.photoshop span.bar{width:133px;}
+					.imagination span.bar{width:350px;}
+/*----------------------contact---------------------*/	 		
+		form.contactForm{
+			text-shadow:1px 1px 1px #000;
+			width:460px;
+			min-height:20px;
+			margin-right:70px;padding:20px;
+			float:left;
+			background:url(../images/bg-form.png) repeat;
+			overflow:hidden;
+		}
+			.contactForm legend{
+				width:140px;
+				height:30px;
+				text-indent:-3000px;
+				margin:-60px 0 0 -20px;padding:30px 0 0 140px;/* =在ff下给legend设宽度和高度*/	 
+				background:url(../images/bg-title.png) 20px -82px no-repeat;
+				display:block;
+			}			
+			.contactForm label{
+				width:420px;
+				margin-bottom:10px;
+				text-align:right;
+				float:left;
+			}
+			label.message{
+				text-align:left;
+				width:95px;
+			}
+			.contactForm input,.contactForm textarea{
+				font:12px/150% Tohamo,Arial,helvetica, sans-serif;
+				color:#333232;
+				width:325px;
+				height:20px;
+				border:none;
+				background:url(../images/bg-repeatx.jpg) 0 -8px repeat-x;
+			}
+			.contactForm textarea{
+				height:100px;
+				float:left;
+				background:url(../images/bg-repeatx.jpg) 0 -27px repeat-x;
+			}
+			.contactForm input.submit{
+				width:165px;
+				height:35px;
+				margin:22px 10px 0 95px;
+				background:url(../images/bg-btn-sumit.gif) left bottom no-repeat;
+				cursor:pointer;
+				clear:left;
+			}
+			.contactForm input.hover{background:url(../images/bg-btn-sumit.gif)no-repeat;}
+		.print{display:none;}
+		#contactContent h3{
+			color:#8abb06;
+			width:400px;
+			margin-bottom:5px;
+			border-bottom:solid 1px #8abb06;
+			float:left;
+		}
+		ul.contactList{
+			text-shadow:1px 2px 4px #000;
+			width:410px;
+			margin-bottom:0px;
+			float:left;
+			display:block;
+			}
+			ul.contactList li{
+				font-weight:bold;
+				margin-bottom:1px;
+			}
+				ul.contactList a{text-decoration:none;}
+				ul.contactList a:hover{background:#8abb06;}
+				ul.contactList li span{
+					width:60px;
+					text-align:right;
+					display:inline-block;
+				}
+				ul.contactList li em{font-weight:bold;}					
+					
+/*------------------------fav-----------------------*/	 		
+		#favContent h2.tittle{
+			width:155px;
+			height:30px;
+			margin-bottom:15px;
+			background:url(../images/bg-title.png) 0 -55px no-repeat;
+		}
+		#favContent h3{margin-bottom:5px;}
+		a.shadow{
+				background:url(../images/shadow.png) no-repeat;
+				float:left;
+				display:block;
+				overflow:hidden;
+			}
+		ul.bookList,div.album ul{margin:0.5em 0 0.5em 4.5em;}
+			.bookList > li{
+				width:100px;
+				margin-right:5px;
+				margin-bottom:5px;
+				float:left;
+				position:relative;
+				cursor:pointer;
+			}
+			.bookList li.hover{ z-index:3;}
+				.bookList a.shadow{
+					width:102px;
+					height:128px;
+					padding:0 9px 3px 0;
+					background-position:-298px -272px;
+				}
+				.bookList img{border:solid 1px #000;}
+				.bookList a:hover img{border:solid 1px #8abb06;}
+				.bookList li ul{
+					width:190px;
+					height:122px;
+					padding:5px 0px 0 10px;
+					background:#000;
+					position:absolute;
+					z-index:10;
+					float:left;
+					left:0px;
+					display:none;
+					z-index:2;
+					}
+				.bookList li:hover .space{
+					z-index:1;
+					}
+				.bookList li .space{/* z-index和hover的应用 */
+					width:93px;
+					height:122px;
+					background:url(../images/spacer.gif);
+					display:block;
+					position:absolute;
+					top:0;
+					left:0;
+					z-index:4;
+					}
+				.bookList li li a{
+					font-size:14px; 
+					font-weight:bold; 
+					text-decoration:none;
+				}
+				.bookList li li a:hover{background:#8abb06;}
+				.bookList li li.last{
+					color:#c6d3a3;
+					margin-top:5px;
+					width:180px;
+					position:absolute;
+					bottom:10px;	
+				} 
+		#favContent div.content div{
+			margin-top:15px;
+			float:left;
+			}
+		div.articles{width:600px;}
+		div.album{
+			width:350px;
+			clear:left;
+			}
+		div.articles ul{
+			float:left;
+			display:block;
+		}
+			div.album li{
+				margin-bottom:3px;			
+				float:left; 
+			}
+				div.album ul a.shadow{
+					width:76px;
+					height:76px;
+					padding:0 5px 3px 0;
+					margin:0 2px 3px 0;
+					background-position:-315px -318px;
+				}
+				div.album ul img{border:solid 1px #000;}
+				div.album ul a:hover img{border:solid 1px #8abb06;}
+			div.articles ul li{
+				font-weight:bold;
+				text-indent:2em;
+				text-overflow:ellipsis; /* ff 不支持*/
+				-moz-text-overflow:ellipsis;
+				-o-text-overflow:ellipsis;	
+				white-space:nowrap;
+				width:270px;
+				height:16px;
+				margin:0 0 0.3em 0;
+				float:left;
+				overflow:hidden;
+				position:relative;
+				display:block;
+			}
+			div.articles ul a:link{
+				text-decoration:none;
+				}
+			div.articles ul a:hover{background:#8abb06;}
+		div.friendlylink ul li{
+			font-weight:bold;
+			padding:0 5px;
+			display:inline;
+			}
+			div.friendlylink a:hover{background:#8abb06;}
+/*---------------------顶部---------------------*/	
+.topWarp{
+	width:1003px;
+	margin:0 auto;
+	position:relative;
+}
+.topWarp a{
+	text-decoration:none;
+	background:none;
+}
+	.topWarp img{
+		margin-right:5px;
+		float:left;
+	}
+	.topWarp dd.resumeLink{font-size:14px;}	
+		.topWarp dd.resumeLink a, .topWarp  dd.resumeLink a:hover{
+			font-weight:bold;
+			color:#7a0303;
+		}
+		.topWarp a:hover{color:#fff;}
+		address{
+			position:absolute;
+			top:10px;
+			right:40px;
+		}
+			.topWarp address a{ 
+				color:#8abb06; 
+				padding:0 14px; 
+				background:url(../images/bg-icon.gif) 0 4px no-repeat;
+			}
+			.topWarp address a:hover{
+				color:#8abb06; 
+				text-decoration:underline;
+			}
+				a.last{background:none;}
+/*---------------------底部---------------------*/	
+#footer p{
+	color:#000;
+	text-align:right;
+	line-height:245px;
+	width:100%;
+	height:100%;
+	background:url(../images/bg-footer.png) center bottom no-repeat;
+	display:block;
+}
+#footer p a{
+	text-decoration:underline;
+	color:#000;
+}
+/*---------------------背景-------------------
+#bg1,#bg2,#bg3,#bg4{
+	min-width:1003px;
+	width:100%;
+	height:1000px;
+	background:#060913 url(../images/bg1.jpg) center top no-repeat;
+	position:absolute; 
+	top:0;
+	z-index:-10; 
+}
+#bg2{
+	top:1000px;
+	background:#060913 url(../images/bg2.jpg) center top no-repeat;
+}
+#bg3{
+	top:2000px;
+	background:#08202c url(../images/bg3.jpg) center top no-repeat;
+}
+#bg4{
+	top:3000px;
+	background:#08202c url(../images/bg4.jpg) center top no-repeat;
+}
+--*/

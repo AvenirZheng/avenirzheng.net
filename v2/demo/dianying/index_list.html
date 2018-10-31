@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<title>QQ电影票</title> 
+	<link rel="stylesheet"  href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
+    <link rel="stylesheet"  href="static/global.css" />
+	<!--
+	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+	-->
+	<script type="text/javascript" src="static/jquerymobile.js"></script>
+</head> 
+<body> 
+<!-- Start of first page -->
+<div data-role="page" id="foo" data-theme="q">
+	<div data-role="header" data-theme="q">
+		<h1><img src="static/slogo.png" alt="QQ电影票"/></h1>
+	</div><!-- /header -->
+	<div data-role="content">	
+        	<ul data-role="listview" class="moives_list" data-theme="q" data-inset="true"> 
+            	<li>
+                	<img src="static/s1.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《月满轩尼诗》</a></h3>
+                    <p class="moives_grade"><span class="star_4"></span></p>
+                </li><li>
+                	<img src="static/s2.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《华尔街 2》</a></h3>
+                    <p class="moives_grade"><span class="star_3"></span></p>
+                </li><li>
+                	<img src="static/s3.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《南极大冒险》</a></h3>
+                    <p class="moives_grade"><span class="star_2"></span></p>
+                </li><li>
+                	<img src="static/s4.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《海豚湾》</a></h3>
+                    <p class="moives_grade"><span class="star_5"></span></p>
+                	                    	
+                </li><li>
+                	<img src="static/s5.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《月满轩尼诗》</a></h3>
+                    <p class="moives_grade"><span class="star_5"></span></p>
+                	                    	
+                </li><li>
+                	<img src="static/s6.jpg" />
+                	<h3 class="moives_detail"><a href="detail.html" class="moives_poster">《剑雨》</a></h3>
+                    <p class="moives_grade"><span class="star_5"></span></p>
+                	                    	
+                </li>
+            </ul>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" class="ui-navbar" role="navigation">
+			<ul class="ui-grid-q">
+				<li class="ui-block-a"><a href="footer-persist-a.html" class="ui-btn ui-btn-movie ui-btn-active"><span class="ui-btn-text">电影</span></a></li>
+				<li class="ui-block-b"><a href="footer-persist-b.html" class="ui-btn ui-btn-cenima"><span class="ui-btn-text">影院</span></a></li>
+				<li class="ui-block-c"><a href="footer-persist-c.html" class="ui-btn ui-btn-talk"><span class="ui-btn-text">大家说</span></a></li>
+			</ul>
+		</div>
+	</div><!-- /header -->
+</div><!-- /page -->
+<!-- Start of second page -->
+<div data-role="page" id="detail">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm first in the source order so I'm shown as the page.</p>		
+		<p><a href="#foo">Back to foo</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /header -->
+</div><!-- /page -->
+<script type="text/javascript" src="static/swipe.js"></script>
+</body> 
+</html> 

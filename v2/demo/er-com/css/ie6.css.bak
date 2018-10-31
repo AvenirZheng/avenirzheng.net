@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+#ad{
+width:288px;
+}
+
+#bannerList a{
+margin-bottom:-15px;
+}
+#bannerList #list1 a{
+margin-top:0;
+}
+#function {
+margin:0;
+padding:0;
+background:none;
+}

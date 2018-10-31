@@ -1,0 +1,6 @@
+
+.navMark{
+	width:103px;
+	height:588px;
+	position:absolute;
+}

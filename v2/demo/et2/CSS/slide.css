@@ -1,0 +1,32 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+UL{list-style-type:none; margin:0px; }
+/* 标准盒模型 */
+.tb_{margin-top:30px; }
+.ttl{height:18px;}
+.ctt{height:162px; #height:172px; _height:166px;  clear:both}
+
+
+.hotnews{margin:2px 0;clear:both;}
+/* TAB 切换效果 */
+.tb_ ul{height:24px;}
+.tb_ li{float:left;height: 24px;padding-top: 6px;width: 80px;cursor:pointer;}
+.normaltab, .hovertab  {    
+                 color:#4b4949; 
+                 background:url(../images/sub-a.jpg) no-repeat 0px -3px;
+				 display:block;
+				 width:83px;
+				 height:30px;
+				 text-align:center;
+				 }
+.hovertab    {  font-weight:bold; 
+                color:#0d53aa; 
+                background:url(../images/sub-h.jpg) no-repeat 0px -3px;
+
+				 }
+.dis{display:block;}
+.undis{display:none;}
+
+
+

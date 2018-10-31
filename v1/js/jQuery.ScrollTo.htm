@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0041)http://demos.flesler.com/jquery/scrollTo/ -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	
+	<META name="keywords" content="javascript, jquery, plugins, scroll, scrollTo, smooth, animation, to, effect, window, overflow, element, navigation, customizable, ariel, flesler">
+	<META name="description" content="Demo of jQuery.ScrollTo. A very light and highly customizable jQuery plugin, to scroll overflowed elements or the window itself, made by Ariel Flesler.">
+	<META name="robots" content="all">
+	<META name="author" content="Ariel Flesler, aflesler(at)gmail(dot)com">
+	<META name="copyright" content="(c) 2007-2008 Ariel Flesler">
+	<TITLE>jQuery.ScrollTo</TITLE>
+	<LINK rel="shortcut icon" href="http://jquery.com/favicon.ico" type="image/x-icon">
+	<LINK href="./jQuery.ScrollTo_files/base.css" type="text/css" rel="stylesheet">
+	<LINK href="./jQuery.ScrollTo_files/style.css" type="text/css" rel="stylesheet">
+	<SCRIPT type="text/javascript" src="./jQuery.ScrollTo_files/jquery.min.js"></SCRIPT>
+	<SCRIPT type="text/javascript" src="./jQuery.ScrollTo_files/jquery.scrollTo-min.js"></SCRIPT>
+	<SCRIPT type="text/javascript" src="./jQuery.ScrollTo_files/init.js"></SCRIPT>
+	
+	<!-- Timestamp: 1236819871 -->
+</HEAD><BODY>
+	<H1>jQuery.ScrollTo&nbsp;<STRONG>by Ariel Flesler</STRONG></H1>
+	<DIV class="sidebar">
+			<DIV id="links">
+			<H3>Links</H3>
+			<UL>
+			<LI><A target="_blank" href="http://plugins.jquery.com/project/ScrollTo">Project Page</A></LI>
+<LI><A target="_blank" href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">Main blog article</A></LI>
+<LI><A target="_blank" href="http://flesler.blogspot.com/search/label/jQuery.ScrollTo">All articles</A></LI>
+<LI><A href="http://demos.flesler.com/jquery/localScroll/">LocalScroll Demo</A></LI>
+<LI><A href="http://demos.flesler.com/jquery/serialScroll/">SerialScroll Demo</A></LI>
+<LI><A href="http://demos.flesler.com/jquery/scrollTo/old/">Old Demo</A></LI>
+			</UL>
+		</DIV>
+		</DIV>
+		<DIV id="toc" class="part">
+		<H3>Table of contents&nbsp;<STRONG>(try these)</STRONG></H3>
+		<UL>
+			<LI><A title="$.scrollTo( &#39;#target-examples&#39;, 800, {easing:&#39;elasout&#39;} );" href="http://demos.flesler.com/jquery/scrollTo/#target-examples">Ways to specify the target</A></LI>
+			<LI><A title="$.scrollTo( &#39;#options-examples&#39;, 800, {easing:&#39;elasout&#39;} );" href="http://demos.flesler.com/jquery/scrollTo/#options-examples">Options</A></LI>
+		</UL>
+	</DIV>
+
+	<DIV id="target-examples" class="section part">
+		<H3>Ways to specify the target&nbsp;<SPAN id="target-message" class="message">$.scrollTo( '#target-examples', 800, {easing:'elasout'} );</SPAN></H3>
+		<UL class="links">
+			<LI><A title="$(...).scrollTo( &#39;li:eq(14)&#39;, 800 );" id="relative-selector" href="http://demos.flesler.com/jquery/scrollTo/#">Relative selector</A></LI>
+			<LI><A title="$(...).scrollTo( $(&#39;div li:eq(14)&#39;), 800 );" id="jquery-object" href="http://demos.flesler.com/jquery/scrollTo/#">jQuery object</A></LI>
+			<LI><A title="$(...).scrollTo( $(&#39;ul&#39;).get(2).childNodes[20], 800 );" id="dom-element" href="http://demos.flesler.com/jquery/scrollTo/#">DOM Element</A></LI>
+			<LI><A title="$(...).scrollTo( 150, 800 );" id="absolute-number" href="http://demos.flesler.com/jquery/scrollTo/#">Absolute number</A></LI>
+			<LI><A title="$(...).scrollTo( { top:800, left:700}, 800 );" id="absolute-number-hash" href="http://demos.flesler.com/jquery/scrollTo/#">Absolute number(hash)</A></LI>
+		</UL>
+		<UL class="links">
+			<LI><A title="$(...).scrollTo( &#39;520px&#39;, 800 );" id="absolute-position" href="http://demos.flesler.com/jquery/scrollTo/#">Absolute position</A></LI>
+			<LI><A title="$(...).scrollTo( {top:&#39;110px&#39;, left:&#39;290px&#39;}, 800 );" id="absolute-position-hash" href="http://demos.flesler.com/jquery/scrollTo/#">Absolute position(hash)</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;+=100px&#39;, 800 );" id="relative-position" href="http://demos.flesler.com/jquery/scrollTo/#">Relative position</A></LI>
+			<LI><A title="$(...).scrollTo( {top:&#39;-=100px&#39;, left:&#39;+=100&#39;}, 800 );" id="relative-position-hash" href="http://demos.flesler.com/jquery/scrollTo/#">Relative position(hash)</A></LI>
+		</UL>
+		<DIV id="pane-target" class="pane">
+			<UL class="elements" style="height:1011px; width:1820px;">
+				<LI><P>0</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>1</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>2</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>3</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>4</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>5</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>6</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>7</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>8</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>9</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>10</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>11</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>12</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>13</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>14</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>15</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>16</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>17</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>18</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>19</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>20</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>21</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>22</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>23</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>24</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>25</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>26</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>27</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>28</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>29</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI>
+			</UL>
+		</DIV>
+	</DIV>
+
+	<DIV id="options-examples" class="section part">
+		<H3>Options&nbsp;<SPAN id="options-message" class="message">$.scrollTo( '#options-examples', 800, {easing:'elasout'} );</SPAN></H3>
+		<UL class="links">
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 1000 );" id="options-no" href="http://demos.flesler.com/jquery/scrollTo/#">no options</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 1000, {axis:&#39;x&#39;} );//only scroll on this axis (can be x, y, xy or yx)" id="options-axis" href="http://demos.flesler.com/jquery/scrollTo/#">axis</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, {duration:3000} );//another way of calling the plugin" id="options-duration" href="http://demos.flesler.com/jquery/scrollTo/#">duration</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 2500, {easing:&#39;elasout&#39;} );//specify an easing equation" id="options-easing" href="http://demos.flesler.com/jquery/scrollTo/#">easing</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 1000, {margin:true} );//deduct the margin and border from the final position" id="options-margin" href="http://demos.flesler.com/jquery/scrollTo/#">margin</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 1000, {offset:-50} );//add or deduct from the final position" id="options-offset" href="http://demos.flesler.com/jquery/scrollTo/#">offset</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 1000, {offset: {top:-5, left:-30} });" id="options-offset-hash" href="http://demos.flesler.com/jquery/scrollTo/#">offset(hash)</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 1000, {over:0.5} );//add or deduct a fraction of its height/width" id="options-over" href="http://demos.flesler.com/jquery/scrollTo/#">over</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 1000, {over:{top:0.2, left:-0.5} );" id="options-over-hash" href="http://demos.flesler.com/jquery/scrollTo/#">over(hash)</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 1600, {queue:true} );//scroll one axis, then the other" id="options-queue" href="http://demos.flesler.com/jquery/scrollTo/#">queue</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 1600, {onAfter:function(){ } } );//called after the scrolling ends" id="options-onAfter" href="http://demos.flesler.com/jquery/scrollTo/#">onAfter</A></LI>
+			<LI><A title="$(...).scrollTo( &#39;li:eq(15)&#39;, 1600, {queue:true, onAfterFirst:function(){ } } );//called after the first axis scrolled" id="options-onAfterFirst" href="http://demos.flesler.com/jquery/scrollTo/#">onAfterFirst</A></LI>
+		</UL>
+		<DIV id="pane-options" class="pane">
+			<UL class="elements" style="height:1062px;width:1877px;">
+				<LI><P>0</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>1</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>2</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>3</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>4</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>5</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>6</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>7</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>8</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>9</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>10</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>11</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>12</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>13</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>14</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>15</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>16</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>17</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>18</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>19</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>20</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>21</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>22</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>23</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>24</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>25</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>26</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>27</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>28</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI><LI><P>29</P><A href="http://demos.flesler.com/jquery/scrollTo/#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</A></LI>
+			</UL>
+		</DIV>
+		<P class="message">$.scrollTo.defaults.axis has been set to 'xy' for the demo, normally it's only 'y'. Note that 'xy' or 'yx' matters when queue is set to true.</P>
+		<P class="message">Don't use a hash for the target to scroll only one axis, use the option 'axis' instead. The hash is used to scroll both axes with different positions.</P>
+	</DIV>
+	<SCRIPT type="text/javascript" src="./jQuery.ScrollTo_files/ga.js"></SCRIPT>
+	<SCRIPT type="text/javascript" src="./jQuery.ScrollTo_files/tracker.js"></SCRIPT>
+
+
+</BODY></HTML>

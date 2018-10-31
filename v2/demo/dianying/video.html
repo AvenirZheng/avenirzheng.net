@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<title>QQ电影票</title> 
+    <link rel="stylesheet"  href="static/global.css" />
+	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="static/init.js"></script>
+</head> 
+<body> 
+<div data-role="dialog" class="ui-dialog ui-page ui-body-q" role="dialog">
+		<div data-role="header" data-theme="q" data-position="inline" class="ui-header" role="banner">
+        <a onClick="history.go(-1);return false;" href="#" data-role="button" data-icon="back" class="ui-btn ui-btn-left back-btn"><span class="ui-btn-inner"><span class="ui-btn-text">返回</span><span class="ui-icon ui-icon-back"></span></span></a>
+		<h1 class="ui-title" tabindex="0" role="heading" >月满轩尼诗</h1>
+		</div>
+
+		<div data-role="content" data-theme="q" class="ui-content" role="main">
+        	<div class="video_container">
+			<video width="300px" height="180px" autobuffer="true" autoplay="1" controls="1" id="qqlivevideo" tabindex="0"><source src="http://vtopws.video.qq.com/flv/55/141/7nT2ZeJ6E7g.mp4" onerror="Live.html5Video.onError(evt);"></video>    
+            </div>
+		</div>
+	</div>
+</body> 
+</html> 

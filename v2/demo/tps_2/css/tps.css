@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import url(global.css);
+/*-== 内容 ==-*/
+#content{
+	border:1px solid #dfe9f4;
+	padding:5px;
+	margin-top:15px;
+	border-radius:2px;
+	background-color:#fff;
+}
+#content .main{
+	background-color:#f4f4f4;
+	border-radius:2px;
+	min-height:500px;
+}
+#content .main .bread_crumbs{
+	background:url('../img/bread_crumb_line.png') -245px bottom no-repeat;
+	padding:10px 20px;
+}
+#content .main .upload_panel{
+	padding:20px;
+}
+#content .main .file_status{
+	border:1px solid #e9e9e9;
+	text-indent:10px;
+	width:100%;
+}
+#content .main .file_status th{
+	font-weight:bold;
+	color:#b0b0b0;
+	border-right:1px solid #eaf0f1;
+	line-height:26px;
+}
+#content .main .file_status thead tr{
+	background:url('../img/bg_th.png') no-repeat;
+}
+#content .main .file_status tbody tr{
+	background-color:#fff;
+	line-height:20px;
+}
+#content .main .file_status tbody tr:nth-child(even) {
+	background-color:#f6f6f6;
+}
+#content .main .file_status .progressBarComplete .bar{
+	width:15px;
+	height:15px;
+	background:url('../img/loading.gif') no-repeat;
+}
+#content .main .upload_result{
+	margin-top:10px;
+}
+#content .main .upload_result .icon_success{
+	padding:10px 0 10px 40px;
+	background:url('../img/icon_succes.png') no-repeat;
+}
+#content .main .cancel_btn{
+	height:29px;
+	margin-top:-30px;
+}
+#content .main .pageNum{
+	padding:20px;
+}
+#content .side .page_nav{
+	text-align:right;
+}
+#content .side .page_nav a{
+	display:block;
+	height:30px;
+	border-bottom:1px solid #dddddd;
+	background-color:#f6f6f6;
+	margin:1px;
+	line-height:30px;
+	padding-right:25px;
+	text-decoration:none;
+}
+#content .side .page_nav .on a{
+	background:url('../img/bg_page_nav.png') no-repeat;
+	height:37px;
+	font-weight:bold;
+	width:145px;
+	color:#fff;
+	margin:0 0 0 0px;
+	padding-right:40px;
+	border:none;
+}

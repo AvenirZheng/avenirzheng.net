@@ -1,0 +1,60 @@
+<article id="J_bio">
+		<section class="about_content">
+			<h1 class="level_1"><a href="#aboutme">ABOUT ME</a></h1>
+			<article id="aboutme" class="aboutme">
+				<section>
+					<h1 class="level_2">Who am I?</h1>
+					<p>Hello, dude. I am Avenir Zheng, twenty three y.o, a <a href="http://webrebuild.org/" rel="external"><dfn title="网站重构应包含结构、行为、表现三层次的分离以及优化，行内分工优化，以及以技术与数据、人文为主导的交互优化等">Web Rebuilder</dfn></a> & Web Designer live in <a href="#">Shenzhen - China</a>. Previous version of my personal website was available on <a href="http://avenirzheng.net/v2">http://avenirzheng.net/v2</a></p>
+                    <p><audio controls autobuffer><source src="avenir.ogg" /><source src="avenir.mp3" /></audio></p>
+                    
+				</section>
+				<section>
+					<h1 class="level_2">Currently?</h1>
+					<p>I am currently graduating a BEcon at <a href="http://gdufs.edu.cn/" rel="external"><abbr title="Guangdong University of Foreign Study">GDUFS</abbr></a> and going to join the <a href="http://isd.tencent.com/" rel="external">Tencent ISD Webteam</a>, also as the co-founder of a small but marvelous web studio called <a href="http://www.i-wui.com/" rel="external">i-Wui Team.</a></p>
+				</section>
+				<section>
+					<h1 class="level_2">I'like?</h1>
+					<p>I am extremely passionate about Design, <dfn title="Web standards is a general term for the formal standards and other technical specifications that define and describe aspects of the World Wide Web">Web Standards</dfn>, <abbr title="User eXperience">UX</abbr> & Front-end technique. In my spare time, I enjoy reading books, those books with reviews could be found in <a href="http://book.douban.com/doulist/452247/" rel="external">my douban page</a>.</p>
+				</section>
+				<section>
+					<h1 class="level_2">How to contact?</h1>
+					<ul itemscope itemtype="http://avenirzheng.net/person">
+						<li class="hide">Name:<span itemprop="name">AvenirZheng/郑焕义</span></li>
+						<li class="hide"><img src="img/avatar_avenir.jpg" alt="AvenirZheng" itemprop="photo"/></li>
+						<li class="hide">URL:<a href="http://AvenirZheng.net" itemprop="url">http://AvenirZheng.net</a></li>
+						<li>Mail/Gtalk/QQ:<a href="mailto:AvenirZheng@gmail.com" itemprop="contact">AvenirZheng@gmail.com</a></li>
+						<li>Organization:<a href="http://isd.tencent.com/" rel="external"><span itemprop="affiliation">Tencent ISD Webteam</span></a> // <a href="http://webrebuild.org/" rel="external">WebReBuild.ORG</a> // <a href="http://www.i-wui.com/" rel="external">i-Wui Team.</a></li>
+						<li>Work Address:<span>FIYTA Hi-tech Building, Gaoxinnanyi Avenue,Southern District of Hi-tech Park, Shenzhen</span></li>
+					</ul>
+				</section>
+			</article>
+		</section>
+		<section class="link_content">
+			<h1 class="level_1"><a href="#link">FRIEND LINK</a></h1>
+			<ul id="friend_link" class="clearfix">
+					<li>一棵树：<a href="http://www.eddsoft.com/" title="持续低调的德哥" rel="external" target="_blank">[一丁点软件]</a></li>
+					<li>小Joe：<a href="http://www.xiebiji.com/" title="由设计到页面，由页面到交互，由交互到后台，他不是一个人在战斗。" rel="external" target="_blank">[写笔记]</a></li>
+					<li>偷米饭：<a href="http://tommyfan.com/blog/" title="他永无止境地重构最专业的页面，永无止境地重构最进取的人生。" rel="external" target="_blank">[偷米寄居]</a></li>
+					<li>南芝：<a href="http://www.12sui.cn/" title="他才12岁" rel="external" target="_blank">[我才12岁]</a></li>
+					<li>Hermes.Cheung：<a href="http://www.hicrokee.com/blog/"  title="他完美地阐释了宅的定义" rel="external" target="_blank">[HicroKee]</a></li>
+					<li>胖子：<a href="http://liupangzi.org/wordpress/index.php"  title="史上最灵活，转身最犀利的胖子" rel="external" target="_blank">Liupangzi</a></li>
+					<li>杨晟：<a href="http://ysheen.com/" title="工作室的师弟" rel="external" target="_blank">SHEEN.YEUNG</a></li>
+					<li>黎瀚：<a href="http://sophantasy.com/" title="设计非常惊艳" rel="external" target="_blank">Phantasy</a></li>
+					<li>杨德华：<a href="http://dbahacker.com/" title="Quanta的传说" rel="external" target="_blank">DBA Hacker</a></li>
+					<li>pufen：<a href="http://www.pufen.net/" title="懂得享受生活的谭博士" rel="external" target="_blank">飘飘的生活空间</a></li>
+                    <li>bluefly：<a href="http://www.gzlinyi.cn/" title="看起来很憨厚的林毅大哥" rel="external" target="_blank">蓝色飞扬's blog</a></li>
+                    <li>yuguo：<a href="http://yuguo.us/weblog/" title="我们一般叫他果果" rel="external" target="_blank">Yuguo Blog</a></li>
+                    <li>Harika：<a href="http://bu-anjing.com/" title="我们一般叫她呵呵" rel="external" target="_blank">Harika の碎碎念</a></li>
+                    <li>Allen.M：<a href="http://blog.allenm.me/" title="阿里爸爸的前端攻城湿" rel="external" target="_blank">Allen.M成长的路</a></li>
+					<li>i-Wui Team：<a href="http://www.i-wui.com/" title="不一样的企业建站，专注前端，优质服务" rel="external" target="_blank">[艾维前端工作室]</a></li>
+			</ul>
+		</section>
+		<section class="avatar_content">
+			<h1 class="level_1"><a href="#avatar">CAPTURE</a></h1>
+			<ul id="avatar" class="clearfix">
+				<li><a href="http://www.flickr.com/photos/avenirzheng/4970868431/"><img src="http://farm5.static.flickr.com/4086/4970868431_031364474d_s.jpg" alt="1 001"><span>1 001</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4970864897/"><img src="http://farm5.static.flickr.com/4125/4970864897_e7d437fd2b_s.jpg" alt="DSC_0045"><span>DSC_0045</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4970859139/"><img src="http://farm5.static.flickr.com/4132/4970859139_e2cb43873a_s.jpg" alt="IMG_6621"><span>IMG_6621</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4970858201/"><img src="http://farm5.static.flickr.com/4126/4970858201_97d5cf314c_s.jpg" alt="IMG_6620"><span>IMG_6620</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4970857193/"><img src="http://farm5.static.flickr.com/4152/4970857193_1d773964a3_s.jpg" alt="IMG_6619"><span>IMG_6619</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4971469696/"><img src="http://farm5.static.flickr.com/4151/4971469696_3290443d7d_s.jpg" alt="DSC_0040"><span>DSC_0040</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4971459740/"><img src="http://farm5.static.flickr.com/4086/4971459740_d06e834e5d_s.jpg" alt="WebRebuild第四届年会 - 深圳站"><span>WebRebuild第四届年会 - 深圳站</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4971458812/"><img src="http://farm5.static.flickr.com/4112/4971458812_419173e9dc_s.jpg" alt="WebRebuild第四届年会 - 深圳站"><span>WebRebuild第四届年会 - 深圳站</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4971457930/"><img src="http://farm5.static.flickr.com/4126/4971457930_58903bbb5c_s.jpg" alt="WebRebuild第四届年会 - 深圳站"><span>WebRebuild第四届年会 - 深圳站</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4970843911/"><img src="http://farm5.static.flickr.com/4104/4970843911_01aa76a0f0_s.jpg" alt="WebRebuild第四届年会 - 深圳站"><span>WebRebuild第四届年会 - 深圳站</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4970843039/"><img src="http://farm5.static.flickr.com/4144/4970843039_8c336ebd11_s.jpg" alt="WebRebuild第四届年会 - 深圳站"><span>WebRebuild第四届年会 - 深圳站</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4971455438/"><img src="http://farm5.static.flickr.com/4090/4971455438_439e871ccd_s.jpg" alt="WebRebuild第四届年会 - 深圳站"><span>WebRebuild第四届年会 - 深圳站</span></a></li><li><a href="http://www.flickr.com/photos/avenirzheng/4970841233/"><img src="http://farm5.static.flickr.com/4152/4970841233_778de20417_s.jpg" alt="WebRebuild第四届年会 - 深圳站"><span>WebRebuild第四届年会 - 深圳站</span></a></li>
+			</ul>
+		</section>
+		<footer>
+		<a href="http://cv.avenirzheng.net">More information on my CV</a></footer>
+	</article>

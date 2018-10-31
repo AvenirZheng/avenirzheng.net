@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*=== LAYOUT ===*/
+.warp{
+	background:url('../img/bg_warp_png8.png') no-repeat;
+}
+
+#portfolio .buttons{
+	background-image:url(../img/arrows_png8.png);
+}
+#portfolio .prev{
+	left:0px;
+}
+#portfolio .next{
+	right:0px;
+}
+#weblog .log_list .num{
+	left:-20px;
+}
+#photo .photo_list img{
+	width:65px;
+}
+.popup_mark,
+.loading{
+	position:absolute;
+	z-index:1000;
+}

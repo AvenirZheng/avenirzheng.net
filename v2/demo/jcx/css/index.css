@@ -1,0 +1,120 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+Kcx Homepage Style Sheet
+
+Verison: 1.0
+autor:Adrian Cheng
+Email:me@adriancheng.name
+Website:http://avenirzheng.net
+date:2009/05/10
+--------------------------------------------------------------------*/
+
+@import url("global.css");
+
+/*--------Common------------*/
+h2{
+	height:28px;
+	width:233px;
+	text-indent:-9999px;
+	background:url(../images/bg_no_repeat.gif);
+	}
+a.more{
+	color:#546d81;
+	position:absolute;
+	top:14px;
+	right:23px;
+	}	
+#main{
+	width:960px;
+	height:354px;
+	margin:20px 0 1px;
+	background:url(../images/bg.jpg) 0 -101px repeat-x;
+	}
+
+/*--------新闻------------*/
+div.newslist{
+	width:390px;
+	height:180px;
+	position:relative;
+	float:left;
+	}
+	.newslist h2{background-position:0 -78px;}
+	.newslist ul{margin:15px 46px 0;}
+		.newslist li{
+			width:320px;
+			position:relative;
+			}
+			.newslist li span{
+				color:#919192;
+				position:absolute;
+				right:0;
+				}
+			.newslist li a{
+				display:inline-block;
+				width:240px;
+				height:15px;
+				overflow:hidden;
+				}
+/*-----------产品---------------*/
+div.productlist{
+	width:570px;
+	height:180px;
+	float:left;
+	}
+	.productlist h2{display:none;}
+.blk_29 {	 
+   height:180px;
+   width:570px;
+   overflow: hidden;  
+   zoom:1; 
+   position: relative;
+  }
+	.RightBotton, .LeftBotton {	
+	   text-indent:-9999px;
+	   width:8px;
+	   height:86px;
+	   background:#dedfdf url(../images/bg_no_repeat.gif) -267px -35px no-repeat; 
+	   float:left; 
+	   cursor:pointer; 
+	   position:absolute; 
+	   top:20px;
+	   right:20px;
+   		}.LeftBotton { background-position:-245px -35px; left: 20px;}
+			
+
+.blk_29 .Cont {	
+   margin: 0px auto; 
+   overflow: hidden; 
+	}
+	.blk_29 li.box {	
+	  	 width: 140px; 
+	  	 margin-top:20px;
+	   	 text-align: center;
+	   	 display:block;
+	   	 float: left; 
+	   	 }
+		li.box img{
+			width:120px;
+			height:80px;
+			margin-bottom:5px;
+			} 
+		
+		 
+/*-----------服务指南---------------*/
+div.guide{
+	width:960px;
+	clear:both;
+	}
+	.guide h2{
+		margin:0 0 12px;
+		background-position:0 -124px;
+		}
+	.guide img{
+		margin:0 23px 0 40px;
+		float:left;
+		}
+	.guide p{
+		text-indent:2em;
+		width:415px;
+		float:left;
+		}

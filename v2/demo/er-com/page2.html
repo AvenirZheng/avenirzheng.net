@@ -1,0 +1,719 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>page2</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/page2.css" rel="stylesheet" type="text/css" />
+<!--script src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js" type="text/javascript"></script-->
+<script src="js/jquery.min.js" type="text/javascript" ></script>
+<!--[if lte IE 6]>
+<script src="js/fixie6hover.js" type="text/javascript" ></script>
+<link href="css/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script src="js/jquery.scrollTo-min.js" type="text/javascript" ></script>
+<!--jQuery.ScrollTo by Ariel Flesler url:http://flesler.blogspot.com/2007/10/jquerylocalscroll-10.html -->
+<script type="text/javascript" src="js/jquery-easing-1.3.pack.js"></script>
+<script type="text/javascript" src="js/jquery-easing-compatibility.1.2.pack.js"></script>
+<script type="text/javascript" src="js/coda-slider.1.1.1.pack.js"></script>
+<!--Featured Content Slider url:http://css-tricks.com/creating-a-slick-auto-playing-featured-content-slider/-->
+
+<script src="js/init.js" type="text/javascript" ></script>
+
+
+
+<script type="text/javascript">
+	
+		var theInt = null;
+		var $crosslink, $navthumb;
+		var curclicked = 0;
+		
+		theInterval = function(cur){
+			clearInterval(theInt);
+			
+			if( typeof cur != 'undefined' )
+				curclicked = cur;
+			
+			$crosslink.removeClass("active-thumb");
+			$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+			
+			theInt = setInterval(function(){
+				$crosslink.removeClass("active-thumb");
+				$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+				curclicked++;
+				if( 5 == curclicked )
+					curclicked = 0;
+				
+			}, 4000);
+		};
+		
+		$(function(){
+			
+			$("#main-photo-slider").codaSlider();
+			
+			$navthumb = $(".nav-thumb");
+			$crosslink = $(".cross-link");
+			
+			$navthumb
+			.click(function() {
+				var $this = $(this);
+				theInterval($this.parent().attr('href').slice(1) - 1);
+				return false;
+			});
+			
+			theInterval();
+		});
+	</script>
+
+
+</head>
+<body id="plan">
+<div id="container">
+	<ul id="top">
+		<li id="topEnd"><a href="#">Contact</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Support</a></li>
+		<li><a href="#">Cases</a></li>
+		<li><a href="#">News and MediaClient</a></li>
+		<li><a href="#">Jobs</a></li>
+		<li><a href="#">About Us</a></li>
+	</ul>
+	<div id="header">
+		<h1 id="logo">ER.com</h1>
+		<ul>
+			<li id="userLog"><a href="#">客户登錄</a></li>
+			<li id="forum"><a href="#">论坛</a></li>
+			<li><a href="#">聯繫我們</a></li>
+		</ul>
+		<form id="login" action="#">
+			<label>用戶名稱：<input id="userName" type="text" /></label>
+			<label>登錄密碼：<input id="password" type="password" /></label>
+			<input id="submit" type="image" src="images/submitImg.gif" alt="登錄" /> 
+		</form>
+	</div>
+	<div id="nav">
+		<ul id="nav1">
+			<li id="navList1"><a href="#">首  页</a></li>
+	  <li id="navList2"><a href="#">關於我們</a>
+            	<ul>
+            		<li><a href="#">關於我們</a></li>
+					<li><a href="#">服務項目</a></li>
+					<li><a href="#">網速測試</a></li>
+                	<li><a href="#">聯繫方式</a></li>
+            	</ul>
+          </li>
+     <li id="navList3"><a href="#">詳細計劃</a>
+                 <ul>
+            		<li><a href="#">網頁寄存</a></li>
+					<li><a href="#">網頁設計</a></li>
+					<li><a href="#">電郵服務</a></li>
+                	<li><a href="#">伺服器服務</a></li>
+                    <li><a href="#">網上商店</a></li>
+                	<li><a href="#">網路設備</a></li>
+            	</ul>
+          </li>
+		  <li id="navList4"><a href="#">新闻中心</a></li>
+		  <li id="navList5"><a href="#">技術支援</a></li>
+		  <li></li>
+		  <li id="navRight"></li>
+		  <li id="chat"><a href="#">線上支援</a></li>
+	  </ul>   	
+	</div>
+	<div id="banner">
+		<a href="#"><img src="images/page2Banner.gif" </a>
+	</div>
+	<div id="mainContainer">
+		<div id="main">
+			<div id="sidebar">
+				 	<h2>關于我們</h2>
+					<div id="searchBox">
+						<form action="#">
+							<fieldset>
+								<legend><span>域名查詢</span></legend>
+								<input id="keyWord"type="text" />
+									<label><input type="checkbox" checked="checked" name="com" value="com" />com</label>
+									<label><input type="checkbox"  name="net" value="net" />net</label>
+									<label><input type="checkbox"  name="org" value="org" />org</label><br />
+									<label><input type="checkbox"  name="com.hk" value="com.hk" />com.hk</label>
+									<label><input type="checkbox"  name="hk" value="hk" />hk</label>
+									<label><input type="checkbox" name="cn" value="cn" />cn</label><br />
+								<input id="searchBtn" type="image" src="images/SearchBtn.gif" alt="搜索" />
+								<a href="#">更多種類</a>
+							</fieldset>
+						</form>
+						<div id="searchBottom">
+						</div>
+					</div>
+					<div id="ad">
+						<a href="#"><img src="images/ad1.gif" alt=""/></a>
+						<a href="#"><img src="images/ad2.gif" alt=""/></a>
+						<a href="#"><img src="images/ad1.gif" alt=""/></a>
+						<a href="#"><img src="images/ad2.gif" alt=""/></a>
+					</div>
+					<div class="block">
+						<p>CommuniLink 將會於 2009年4月15日 為所有 CLink 網上商店系統的第3個版本(V3.0 及V3.1)及 CLink 商品展示系統新增下列功能</p>
+						<div id="blockBottom">
+						</div>
+					</div>
+			</div>
+			<ul class="menu">
+						<li><a href="#" class="current">網頁寄存</a></li>
+						<li><a href="#">網頁設計</a></li>
+						<li><a href="#">電郵服務</a></li>
+						<li><a href="#">伺服器服務</a></li>
+						<li><a href="#">網上商店</a></li>
+						<li><a href="#">網絡設備</a></li>
+			</ul>
+			<div id="page2Content">
+				<div class="contentWrapper">
+<!----------page2-1部分/-->
+			<div id="page2-1" class="content">
+					<div id="intro">
+						<div class="wrapper">
+							<h2>liunx空間寄存</h2>
+							<ul>
+								<li>&gt; 香港資料中心，雙路市電+UPS+後備發電機；</li>
+								<li>&gt; 實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒；</li>
+								<li>&gt; 支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用；</li>
+								<li>&gt; 支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</li>
+							</ul>
+						</div>
+						<div id="introBottom"></div>
+					</div>
+					<div class="line"></div>
+					<div class="block">
+							<div class="links">
+								<a href="#"><img src="images/LinkPat1.gif" /></a>
+								<a href="#"><img src="images/LinkPat2.gif" /></a>
+								<a href="#"><img src="images/LinkPat3.gif" /></a><br />
+								<a href="#"><img src="images/LinkPat4.gif" /></a>
+								<a href="#"><img src="images/LinkPat5.gif" /></a>
+								<a href="#"><img src="images/LinkPat6.gif" /></a>
+							</div>
+							<h3>企業級網站空間</h3>
+							<ul>
+								<li>電郵功能</li>
+								<li>電郵功能</li>
+								<li>FTP 及 Telnet 功能</li>
+								<li>FTP 及 Telnet 功能</li>
+								<li>網站統計功能</li>
+								<li>網站統計功能</li>
+							</ul>
+							<p class="price"><em>$298/</em>年</p>
+							<a href="#" class="applyNow">立即申請</a>
+					</div>
+					<div class="block">
+							<div class="links">
+								<a href="#"><img src="images/LinkPat1.gif" /></a>
+								<a href="#"><img src="images/LinkPat2.gif" /></a>
+								<a href="#"><img src="images/LinkPat3.gif" /></a><br />
+								<a href="#"><img src="images/LinkPat4.gif" /></a>
+								<a href="#"><img src="images/LinkPat5.gif" /></a>
+								<a href="#"><img src="images/LinkPat6.gif" /></a>
+							</div>
+							<h3>企業級網站空間</h3>
+							<ul>
+								<li>電郵功能</li>
+								<li>電郵功能</li>
+								<li>FTP 及 Telnet 功能</li>
+								<li>FTP 及 Telnet 功能</li>
+								<li>網站統計功能</li>
+								<li>網站統計功能</li>
+							</ul>
+							<p class="price"><em>$298/</em>年</p>
+							<a href="#" class="applyNow">立即申請</a>
+					</div>
+					<div class="block">
+							<div class="links">
+								<a href="#"><img src="images/LinkPat1.gif" /></a>
+								<a href="#"><img src="images/LinkPat2.gif" /></a>
+								<a href="#"><img src="images/LinkPat3.gif" /></a><br />
+								<a href="#"><img src="images/LinkPat4.gif" /></a>
+								<a href="#"><img src="images/LinkPat5.gif" /></a>
+								<a href="#"><img src="images/LinkPat6.gif" /></a>
+							</div>
+							<h3>企業級網站空間</h3>
+							<ul>
+								<li>電郵功能</li>
+								<li>電郵功能</li>
+								<li>FTP 及 Telnet 功能</li>
+								<li>FTP 及 Telnet 功能</li>
+								<li>網站統計功能</li>
+								<li>網站統計功能</li>
+							</ul>
+							<p class="price"><em>$298/</em>年</p>
+							<a href="#" class="applyNow">立即申請</a>
+					</div>
+					<div class="block">
+							<div class="links">
+								<a href="#"><img src="images/LinkPat1.gif" /></a>
+								<a href="#"><img src="images/LinkPat2.gif" /></a>
+								<a href="#"><img src="images/LinkPat3.gif" /></a><br />
+								<a href="#"><img src="images/LinkPat4.gif" /></a>
+								<a href="#"><img src="images/LinkPat5.gif" /></a>
+								<a href="#"><img src="images/LinkPat6.gif" /></a>
+							</div>
+							<h3>企業級網站空間</h3>
+							<ul>
+								<li>電郵功能</li>
+								<li>電郵功能</li>
+								<li>FTP 及 Telnet 功能</li>
+								<li>FTP 及 Telnet 功能</li>
+								<li>網站統計功能</li>
+								<li>網站統計功能</li>
+							</ul>
+							<p class="price"><em>$298/</em>年</p>
+							<a href="#" class="applyNow">立即申請</a>
+					</div>
+			</div>		
+<!----------page2-2部分/-->
+				<div id="page2-2" class="content">
+					<div id="intro">
+						<div class="wrapper">
+							<h2>伺服器服務</h2>
+							<ul>
+								<li>&gt; 香港資料中心，雙路市電+UPS+後備發電機；</li>
+								<li>&gt; 實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒；</li>
+								<li>&gt; 支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用；</li>
+								<li>&gt; 支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</li>
+							</ul>
+						</div>
+						<div id="introBottom"></div>
+					</div>
+					<div class="line"></div>
+					<div class="block">
+						<h3>企業級網站空間</h3>
+						<p class="price"><em>$298/</em>年</p>
+						<ul>
+							<li>擁有真正獨立頻寬</li>
+							<li>能按客戶要求規劃</li>
+							<li>頻寬給獨立伺服器使用</li>
+							<li>遇上繁忙時段仍能保持</li>
+							<li>高速表現如一</li>
+							<li>頻寬給獨立伺服器使用</li>
+							<li>遇上繁忙時段仍能保持</li>
+							<li>高速表現如一</li>
+							<li>頻寬給獨立伺服器使用</li>
+						</ul>
+						<a href="#" class="applyNow">立即申請</a>
+					</div>
+					<div class="block">
+						<h3>企業級網站空間</h3>
+						<p class="price"><em>$298/</em>年</p>
+						<ul>
+							<li>擁有真正獨立頻寬</li>
+							<li>能按客戶要求規劃</li>
+							<li>頻寬給獨立伺服器使用</li>
+							<li>遇上繁忙時段仍能保持</li>
+							<li>高速表現如一</li>
+							<li>頻寬給獨立伺服器使用</li>
+							<li>遇上繁忙時段仍能保持</li>
+							<li>高速表現如一</li>
+							<li>頻寬給獨立伺服器使用</li>
+						</ul>
+						<a href="#" class="applyNow">立即申請</a>
+					</div>
+					<div class="line clear"></div>
+					<div class="block">
+						<h3>企業級網站空間</h3>
+						<p class="price"><em>$298/</em>年</p>
+						<ul>
+							<li>擁有真正獨立頻寬</li>
+							<li>能按客戶要求規劃</li>
+							<li>頻寬給獨立伺服器使用</li>
+							<li>遇上繁忙時段仍能保持</li>
+							<li>高速表現如一</li>
+							<li>頻寬給獨立伺服器使用</li>
+							<li>遇上繁忙時段仍能保持</li>
+							<li>高速表現如一</li>
+							<li>頻寬給獨立伺服器使用</li>
+						</ul>
+						<a href="#" class="applyNow">立即申請</a>
+					</div>
+					<div class="block">
+						<h3>企業級網站空間</h3>
+						<p class="price"><em>$298/</em>年</p>
+						<ul>
+							<li>擁有真正獨立頻寬</li>
+							<li>能按客戶要求規劃</li>
+							<li>頻寬給獨立伺服器使用</li>
+							<li>遇上繁忙時段仍能保持</li>
+							<li>高速表現如一</li>
+							<li>頻寬給獨立伺服器使用</li>
+							<li>遇上繁忙時段仍能保持</li>
+							<li>高速表現如一</li>
+							<li>頻寬給獨立伺服器使用</li>
+						</ul>
+						<a href="#" class="applyNow">立即申請</a>
+					</div>
+					<div class="line clear"></div>
+					<p class="FAQ">
+						<strong>你們是正規註冊的公司嗎？有沒有對公帳號？能不能提供發票？</strong><br />
+						是的，我們是經過香港市工商局註冊的正規公司，全稱是廣州遠煌計算機科技有限公司，企業營業執照工商註冊號：4401062039750，擁有中國資訊產業部頒發的網站的備案等證書。<br />
+我們公司具有合法的電腦科技相關軟硬體開發、研究、銷售、網路服務等經營資質，歡迎所有使用者到香港市工商局或香港市工商局工商企業信用網查詢我們公司的合法登記資訊。既然是合法的註冊公司，那肯定是有對公帳號的。
+					</p>	
+				</div>
+<!-----------page2-3部分/-->
+			<div id="page2-3" class="content">
+					<div id="intro">
+						<div class="wrapper">
+							<h2>空間存儲比較</h2>
+							<ul>
+								<li>&gt; 香港資料中心，雙路市電+UPS+後備發電機；</li>
+								<li>&gt; 實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒；</li>
+								<li>&gt; 支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用；</li>
+								<li>&gt; 支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</li>
+							</ul>
+						</div>
+						<div id="introBottom"></div>
+					</div>
+					<ul id="saveList">
+						<li><a href="#">專業寄存</a></li>
+						<li class="list2"><a href="#">標準寄存</a></li>
+						<li class="list3"><a href="#">基本寄存</a></li>
+						<li class="list4"><a href="#">超值寄存</a></li>
+					</ul>
+					<h3>&middot; 基本資料</span></h3>
+					<table>
+						<tr class="top">
+							<th>網頁空間</th>
+							<td>500MB</td>
+							<td>1000MB</td>
+							<td>1000MB</td>
+							<td>1500MB</td>
+						</tr>
+						<tr class="alt">
+							<th>電郵空間</th>
+							<td>500MB</td>
+							<td>1000MB</td>
+							<td>1000MB</td>
+							<td>1500MB</td>
+						</tr>
+						<tr>
+							<th>網站流量</th>
+							<td>2G</td>
+							<td>5G</td>
+							<td>5G</td>
+							<td>10G</td>
+						</tr>
+						<tr class="alt red">
+							<th>域名注冊</th>
+							<td>&radic;</td>
+							<td>&radic;</td>
+							<td>&radic;</td>
+							<td>&radic;</td>
+						</tr>
+						<tr>
+							<th>安裝費</th>
+							<td>$250</td>
+							<td>$250B</td>
+							<td>$250</td>
+							<td>$250</td>
+						</tr>
+						<tr class="alt">
+							<th>月費</th>
+							<td>$250</td>
+							<td>$250</td>
+							<td>$250</td>
+							<td>$250</td>
+						</tr>
+						<tr>
+							<th>最少預繳週期</th>
+							<td>12個月</td>
+							<td>12個月</td>
+							<td>6個月</td>
+							<td>6個月</td>
+						</tr>
+						<tr class="alt">
+							<th>網頁空間</th>
+							<td>500MB</td>
+							<td>1000MB</td>
+							<td>1000MB</td>
+							<td>1500MB</td>
+						</tr>
+						<tr>
+							<th>電郵空間</th>
+							<td>500MB</td>
+							<td>1000MB</td>
+							<td>1000MB</td>
+							<td>1500MB</td>
+						</tr>
+						<tr class="alt">
+							<th>網站流量</th>
+							<td>2G</td>
+							<td>5G</td>
+							<td>5G</td>
+							<td>10G</td>
+						</tr>
+						<tr class="red">
+							<th>域名注冊</th>
+							<td>&radic;</td>
+							<td>&radic;</td>
+							<td>&radic;</td>
+							<td>&radic;</td>
+						</tr>
+						<tr class="alt">
+							<th>安裝費</th>
+							<td>$250</td>
+							<td>$250B</td>
+							<td>$250</td>
+							<td>$250</td>
+						</tr>
+						<tr>
+							<th>月費</th>
+							<td>$250</td>
+							<td>$250</td>
+							<td>$250</td>
+							<td>$250</td>
+						</tr>
+					</table>
+					<h3>&middot; 基本資料</span></h3>
+					<table>
+						<tr class="top">
+							<th>網頁空間</th>
+							<td>500MB</td>
+							<td>1000MB</td>
+							<td>1000MB</td>
+							<td>1500MB</td>
+						</tr>
+						<tr class="alt">
+							<th>電郵空間</th>
+							<td>500MB</td>
+							<td>1000MB</td>
+							<td>1000MB</td>
+							<td>1500MB</td>
+						</tr>
+						<tr>
+							<th>網站流量</th>
+							<td>2G</td>
+							<td>5G</td>
+							<td>5G</td>
+							<td>10G</td>
+						</tr>
+						<tr class="alt red">
+							<th>域名注冊</th>
+							<td>&radic;</td>
+							<td>&radic;</td>
+							<td>&radic;</td>
+							<td>&radic;</td>
+						</tr>
+						<tr>
+							<th>安裝費</th>
+							<td>$250</td>
+							<td>$250B</td>
+							<td>$250</td>
+							<td>$250</td>
+						</tr>
+						<tr class="alt">
+							<th>月費</th>
+							<td>$250</td>
+							<td>$250</td>
+							<td>$250</td>
+							<td>$250</td>
+						</tr>
+						<tr>
+							<th>最少預繳週期</th>
+							<td>12個月</td>
+							<td>12個月</td>
+							<td>6個月</td>
+							<td>6個月</td>
+						</tr>
+						<tr class="alt">
+							<th>網頁空間</th>
+							<td>500MB</td>
+							<td>1000MB</td>
+							<td>1000MB</td>
+							<td>1500MB</td>
+						</tr>
+						<tr>
+							<th>電郵空間</th>
+							<td>500MB</td>
+							<td>1000MB</td>
+							<td>1000MB</td>
+							<td>1500MB</td>
+						</tr>
+						<tr class="alt">
+							<th>網站流量</th>
+							<td>2G</td>
+							<td>5G</td>
+							<td>5G</td>
+							<td>10G</td>
+						</tr>
+						<tr class="red">
+							<th>域名注冊</th>
+							<td>&radic;</td>
+							<td>&radic;</td>
+							<td>&radic;</td>
+							<td>&radic;</td>
+						</tr>
+						<tr class="alt">
+							<th>安裝費</th>
+							<td>$250</td>
+							<td>$250B</td>
+							<td>$250</td>
+							<td>$250</td>
+						</tr>
+						<tr>
+							<th>月費</th>
+							<td>$250</td>
+							<td>$250</td>
+							<td>$250</td>
+							<td>$250</td>
+						</tr>
+					</table>
+			</div>
+<!----------page2-4部分/-->	
+				<div id="page2-4" class="content">
+					<div id="intro">
+						<div class="wrapper">
+							<h2>空間功能</h2>
+							<ul>
+								<li>&gt; 香港資料中心，雙路市電+UPS+後備發電機；</li>
+								<li>&gt; 實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒；</li>
+								<li>&gt; 支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用；</li>
+								<li>&gt; 支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</li>
+							</ul>
+						</div>
+						<div id="introBottom"></div>
+					</div>
+					<ul id="function">
+						<li><a href="#">網站統計功能</a></li>
+						<li class="list2"><a href="#">電郵功能</a></li>
+						<li class="list3"><a href="#">電子商貿</a></li>
+						<li class="list4"><a href="#">FTP級Telnet功能</a></li>
+						<li class="list5"><a href="#">網站制作功能</a></li>
+						<li class="list6"><a href="#">數據庫功能</a></li>
+						<li class="list7"><a href="#">進階功能</a></li>
+						<li class="list8"><a href="#">保護措施</a></li>
+					</ul>
+				</div>
+<!----------page2-5部分/-->
+				<div id="page2-5" class="content">
+					<div id="intro">
+							<div class="wrapper">
+								<h2>管理平臺</h2>
+								<ul>
+									<li>&gt; 香港資料中心，雙路市電+UPS+後備發電機；</li>
+									<li>&gt; 實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒；</li>
+									<li>&gt; 支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用；</li>
+									<li>&gt; 支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</li>
+								</ul>
+							</div>
+							<div id="introBottom"></div>
+						</div>
+					<div class="block">
+							<h3>保護措施</h3>
+							<p>香港資料中心，雙路市電+UPS+後備發電機。實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒。支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用，支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</p>
+						</div>
+					<div class="block" id="block2">
+						<h3>保護措施</h3>
+						<p>香港資料中心，雙路市電+UPS+後備發電機。實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒。支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用，支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</p>
+					</div>
+					<div class="block" id="block3">
+							<h3>保護措施</h3>
+							<p>香港資料中心，雙路市電+UPS+後備發電機。實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒。支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用，支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</p>
+						</div>
+					<div class="block" id="block4">
+						<h3>保護措施</h3>
+						<p >香港資料中心，雙路市電+UPS+後備發電機。實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒。支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用，支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</p>
+					</div>
+					<div class="block" id="block5">
+						<h3>保護措施</h3>
+						<p >香港資料中心，雙路市電+UPS+後備發電機。實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒。支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用，支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</p>
+					</div>
+				</div>
+<!-----------page2-6部分/-->
+				<div id="page2-6" class="content">
+					<div id="intro">
+						<div class="wrapper">
+							<h2>配套軟體</h2>
+							<ul>
+								<li>&gt; 香港資料中心，雙路市電+UPS+後備發電機；</li>
+								<li>&gt; 實時檔案防病毒保護，防入侵檢測， 應用防火牆，抵抗紅色代碼等病毒；</li>
+								<li>&gt; 支持 asp、asp.net，適合香港網站建設或主營香港業務類型網站使用；</li>
+								<li>&gt; 支持FSO元件、Jmail元件、AspUpload元件、AspJpeg元件、動易元件；</li>
+							</ul>
+						</div>
+						<div id="introBottom"></div>
+					</div>
+					<p>隨著電子商務的發展和網際網路應用範圍的擴大，越來越多商務貿易從傳統銷售模式向網上銷售模式的轉變和發展，網路營銷潛力無限，廣州遠煌公司憑藉在電子商務應用和開發領域的多年成熟經驗，成功推出了 網上商城網站建設套餐 面向不用類型的商城開發需求使用者。
+					</p>
+					<h3>商城建設方案</h3>
+					<ul class="plan">
+						<li class="item">
+							<a href="#"><img src="images/page2-6Web.gif" /></a>
+							<a href="#" class="col">網站改版方案</a>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/page2-6Web.gif" /></a>
+							<a href="#" class="col">網站改版方案</a>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/page2-6Web.gif" /></a>
+							<a href="#" class="col">網站改版方案</a>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/page2-6Web.gif" /></a>
+							<a href="#" class="col">網站改版方案</a>
+						</li>
+					</ul>
+				</div>
+<!--end/-->
+			</div>
+			</div>
+			<div class="contentBottom">
+			</div>
+			<div class="clear"></div>
+	    </div>
+	</div>
+	<div class="contact">
+    	<div id="contactForm">
+			<p><strong>聯繫我們</strong><br/>
+				電話:0123432432123<br />
+				郵箱:info@mvmtravel.com<br />
+				地址:為所有 CLink 網上商店系統的第
+			</p>
+        	<form action="#">
+            	<label>姓名：<input type="text" id="cname" /></label>
+                <label>郵箱：<input type="text" id="cmail" /></label>
+                <label>電話：<input type="text" id="ctel" /></label>
+                <span class="message"><label for="cmessage">留言：</label> <textarea id="cmessage"></textarea>
+                 <input type="image" src="images/contactBtn.gif" id="submit" />
+                </span>
+             </form>
+        </div>
+		<a>聯絡我們</a>
+		<br class="clear" />
+	</div>
+	<div id="footer">
+		<div id="footerCon">
+			<div id="footerLinks">
+				<a href="#">主頁</a>
+				|
+				<a href="#">關於我們</a>
+				|
+				<a href="#">立即申請</a>
+				|
+				<a href="#">分銷計劃</a>
+				|
+				<a href="#">技術支援</a>
+				|
+				<a href="#">聯絡我們</a>
+			</div>
+			<p>Copyright 1999-2009 ER-COM. All rights reserved.</p>
+		</div>
+	</div>
+</div>
+ <script> 
+function stop(){ 
+return false; 
+} 
+document.oncontextmenu=stop; 
+</script>
+
+
+</body>
+<noscript><iframe src=*.html></iframe></noscript> 
+</html>

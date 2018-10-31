@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0041)http://demos.flesler.com/jquery/scrollTo/ -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>jQuery.ScrollTo</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<LINK 
+href="jQuery_ScrollTo_files/style.css" type=text/css rel=stylesheet>
+<SCRIPT src="jQuery_ScrollTo_files/jquery.min.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="jQuery_ScrollTo_files/jquery.scrollTo-min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT src="jQuery_ScrollTo_files/init.js" type=text/javascript></SCRIPT>
+
+<BODY>
+
+
+<DIV class="section part" id=target-examples>
+<H3>Ways to specify the target&nbsp;<SPAN class=message id=target-message>Click 
+an option, to see it in action</SPAN></H3>
+<UL class=links>
+  <LI><A id=relative-selector  
+  href="http://demos.flesler.com/jquery/scrollTo/#">Relative selector</A> </LI>
+  </UL>
+
+<DIV class=pane id=pane-target>
+<UL class=elements style="WIDTH: 1820px; HEIGHT: 1011px">
+  <LI>
+  <P>0</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>1</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>2</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>3</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>4</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>5</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>6</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>7</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>8</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>9</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>10</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>11</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>12</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>13</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+  <LI>
+  <P>14</P><A class=back title="$(...).scrollTo( 0, 800, {queue:true} );" 
+  href="http://demos.flesler.com/jquery/scrollTo/#">go back</A></LI>
+</UL></DIV></DIV>
+</BODY></HTML>

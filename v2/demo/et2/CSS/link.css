@@ -1,0 +1,45 @@
+@charset "utf-8";
+a {
+     color:#000000;
+	 }
+a:visited {
+
+}
+a:hover {
+	color: #333333;
+	text-decoration:underline;
+}
+a:active {
+	color: #333333;
+
+}
+
+#left a{
+    color:#464444;
+	}
+#left a:hover{
+    color:#1864bf;
+	}	
+#center a{
+     color: #323232;
+	 }
+#center a:hover {
+      color:#1864bf;
+	  } 
+	  
+#news .hotnews a:hover{
+      color:#a2060b;
+	  text-decoration:none;
+	  }	  
+
+	  
+#subnews a{
+       color:#6b6b6b;
+	   }
+
+#right #announcement li a{
+       color:#1864bf;
+	   }	   
+#right #job li a{
+       color:#8e8d8d;
+	   }   

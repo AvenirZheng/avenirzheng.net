@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+AvenirZheng Verison 2010 Print Style Sheet
+Verison: 1.0
+Date:7/6/2010 
+Autor:AvenirZheng
+Email:div.AvenirZheng@gmail.com
+Website:http://avenirzheng.net
+--------------------------------------------------------------------*/
+.gb_nav,.tweet, .hide, .avatar_content {display:none;}
+body{font-family:微软雅黑;padding:15px;color:#262626;}
+h1{font-size:18px;font-family:Georgia;}
+a{color:#000;text-decoration:none;}
+a[href]:after { content:"("attr(href)")"; text-decoration:underline;}
+.gb_header h1{font-size:68px;font-variant:small-caps;font-style:italic;padding:0;margin:0;line-height:1;}
+.gb_header h1 a:after{font-size:12px;}
+.gb_header h2{font-size:14px;margin:0;padding:0;font-weight:normal;text-indent:10px;text-transform:uppercase;}
+.gb_header p{font-size:12px;background-color:#fff;padding:2px;position:absolute;top:25px;left:350px;text-transform:uppercase;}
+
+.my_network a{margin-left:10px;}
+.my_network a[href]:before{content:"http://";}
+.my_network a[href]:after {display:none;}
+
+.gb_content .level_1{font-size:24px;}
+.gb_content h1 a[href]:after {content:"";}

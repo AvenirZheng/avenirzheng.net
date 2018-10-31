@@ -1,0 +1,190 @@
+@charset "utf-8";
+/*!
+ *
+ * Copyright 2013
+ * Licensed under the Apache License v2.0
+ * http://resume.avenirzheng.net/
+ *
+ * 郑焕义的简历
+ */
+@import url("reset.css");/* =Eric Meyer样式初始化*/
+
+/*---------------------------------
+	OVERRIDES
+-----------------------------------*/
+body{
+	background-color:#FFF;
+	font:14px/24px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	color: #333;
+  	padding: 0 ;
+	margin: 0;
+	-webkit-font-smoothing: antialiased
+}
+a{
+	color: #08C;
+  	font-style: normal;
+	text-decoration:none;  
+}
+a:hover{
+	text-decoration:underline;
+}
+a[rel="external"]{
+	padding-right:15px;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAV5JREFUeNpi/P//PwMlgImBQkCxASzIHOfUkwysrKwMvLx8IOzAzMy8H1ke6N2Dc6pEHHAaAAOfP39i+Pv3zwMpUc6HU8rl5a/e/cagrczFEF55156BQQS3F/79+xf8+/fve0D8n4v15/0PHz7Ix1ReBGu+cOMjw5s3bzBtA8UCDBsEbb135Nyr/0CD/l+48fa/X/aB/yDglbEPTAPl/yOrB2EUF3z58k3RXFeQ4d6j9wwL199iWD/JlsElcQfDt28/GBzjtj8EyuOPhf//WRg+f/nO8PTFZ4bKZBWGrPrDDLnhEgz//zEzPH7x3eHfPwZHvLHAzs4PVPyXQU6cheHUxfcMsT4yDOLCrAyvP7xnYGPje/Dz54cHeA3g5ha5f/LSX0V9dQEGPQ0BBlYWRoaz176BxUHyPDzi+NMBJ6dgaeein90MDD8VkYTvg8T///+HNSExDv28QLEBAAEGAAtCqaTnCdj1AAAAAElFTkSuQmCC);
+	background-repeat:no-repeat;
+	background-position:right center;
+}
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/ 
+.main{
+	width:980px;
+	margin:0 auto;
+	padding:0;
+	position: relative;
+	overflow: hidden;
+}
+#g_header{
+	padding:100px 0 40px 0;
+}
+#g_content{
+	padding:0px 0 20px 0;
+}
+
+/*---------------------------------
+	g_header
+-----------------------------------*/
+#g_header hgroup {
+	float:left;
+	width: 168px;
+}
+#g_header  .contact{
+	overflow:hidden;
+}
+#g_header h1.name{	font-size: 56px;
+	padding: 0px 0px 5px 0px;
+	font-family:"黑体",hei;
+	line-height: 100%;
+}
+#g_header h2.taget_position{
+	font-size: 16px;
+	text-align:justify;
+    text-justify:distribute-all-lines;/*ie6-8*/
+    text-align-last:justify;/* ie9*/
+    -webkit-text-align-last:justify;/*chrome 20+*/
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){/* chrome*/
+      #g_header h2.taget_position:after{
+          content:".";
+          display: inline-block;
+          width:100%;
+          overflow:hidden;
+          height:0;
+      }
+  }
+#g_header  .contact h3{
+	display: none;
+}
+#g_header  .contact ul{
+	float: right;
+}
+#g_header  .contact li{
+	line-height: 28px;
+	padding-left: 25px;
+	background-image: url(../images/icon_20x20.png);
+	background-repeat: no-repeat;
+}
+#g_header  .contact li.qr{
+	position: absolute;
+	left: 210px;
+	top: 2px;
+	padding-left: 0px;
+	background: none;
+	display: none;
+}
+#g_header  .contact li.url{
+	background-position: 0px 3px;
+}
+#g_header  .contact li.mail{
+	background-position: 0px -27px;
+}
+#g_header  .contact li.mobile{
+	background-position: 0px -57px;
+}
+
+.resume_nav{
+	display: none;
+}
+/*---------------------------------
+	g_content
+-----------------------------------*/
+.mod_content {
+	padding-bottom: 20px;
+}
+.mod_content h2{
+	font-size: 30px;
+	line-height: 30px;
+	color: #08C;
+	padding-left: 40px;
+	background-image: url(../images/icon_32x32.png);
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+.content_education h2{
+	background-position: 0 -34px;
+}
+.content_self_appraisal h2{
+	background-position: 0 -76px;
+}
+.mod_content li,
+.mod_content div.detail{
+	padding-bottom: 10px;
+	display: block;
+	position: relative;
+	padding-left: 210px;
+}
+.mod_content .misc{
+	position: absolute;
+	left: 40px;
+	top: 0px;
+	width: 160px;
+}
+.mod_content .misc .position{
+	display: block;
+	font-weight: bold;
+}
+.mod_content .misc .during_time,
+.mod_content .desc{
+	color: #6E6E6E;
+}
+.mod_content h3{
+	font-size: 18px;
+	font-weight: bold;
+}
+.mod_content .desc{
+	margin-bottom: 10px;
+}
+.mod_content strong{
+	font-weight: bold;
+}
+/*---------------------------------
+	g_footer
+-----------------------------------*/
+.backtop{
+	padding-left: 22px;
+	background-image: url(../images/icon_20x20.png);
+	background-repeat: no-repeat;
+	background-position: 0 -85px;
+	line-height: 30px;	
+	display: block;
+	color: #333;
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+}
+.update{
+	text-align: right;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}

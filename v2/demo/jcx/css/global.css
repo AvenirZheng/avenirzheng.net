@@ -1,0 +1,259 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+Kcx General Style Sheet
+
+Verison: 1.0
+autor:Adrian Cheng
+Email:me@adriancheng.name
+Website:http://avenirzheng.net
+date:2009/05/09
+--------------------------------------------------------------------*/
+@import url("reset.css");/*样式初始化*/
+
+/* ---- Common -----*/
+html{background:#c6c6c6 url(../images/bg.gif) repeat-x left top;}
+body{
+     text-align:center;/*hack: ie5水平居中*/
+     font-family:Tohamo,Arial,helvetica, sans-serif;
+     font-size:12px;
+	 color:#202f3e;
+	 background:url(../images/bg.png) 50% 100% repeat-y;
+	}
+.clearfix:after{/* =clearfloat*/
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}* html .clearfix{height:1%;}
+/*link*/
+a:link, a:visited{
+	color:#16242f;
+	text-decoration:none
+	}	  
+a:hover{
+	text-decoration:underline;
+	}  
+
+/*页面容器*/	   
+#warpper{
+	 text-align:left;/*hack: ie6水平居中*/
+     width:960px;
+     margin:0 auto;
+	 background:#fff;
+	 overflow:hidden;
+	}   
+a.ppic img{border:1px solid #c5c2c2;}
+p.ptitle{ 
+	font-size:12px;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+	margin:0 15px;
+	padding-right:10px;
+	background:url(../images/product_tittle.png) -422px -33px no-repeat;
+	overflow:hidden;
+	}
+		p.ptitle a{
+			height:35px;
+			padding:0 0 0 5px;
+			display:block;
+			background:url(../images/product_tittle.png) 0px 2px no-repeat;
+			}
+.current{cursor:default;}
+/*------------------------头部----------------------*/	
+#header{
+	   width:100%;
+	   background:url(../images/bg_header.jpg) no-repeat;
+	   position:relative;
+		}
+	h1.logo{
+		width:420px;
+		height:125px;
+		}
+		h1.logo a{
+			font-size:24px;
+			font-weight:bold;
+			font-family:"Microsoft YaHei", "微软雅黑","yahei", "黑体";
+			text-align:center;
+			text-indent:-9999px;
+			line-height:125px;
+			display:block;
+			}
+	address.tel{
+		color:#fff;
+		text-align:right;
+		position:absolute;
+		top:44px;
+		right:225px;
+		}
+		address.tel em{
+			font-size:24px;
+			font-family:"Microsoft Sans Serif", Tahoma, Arial, Helvetica, sans-serif;
+			font-weight:bold;
+			}
+/*------------------------导航----------------------*/	
+ul.nav{
+	width:955px;
+	height:64px;
+	padding:0 0 0 5px;
+	background:url(../images/bg.jpg) left top repeat-x;
+	}
+	ul.nav li{
+		height:29px;
+		background:url(../images/bg.jpg) 0 -65px no-repeat;
+		display:block;
+		float:left;
+		position:relative;
+		}
+	ul.nav li.home{background:none;}
+		ul.nav li a:link, ul.nav li a:visited{
+			font-size:14px;
+			font-weight:bold;
+			color:#d4d6d7;
+			text-decoration:none;
+			text-align:center;	
+			line-height:27px;
+			padding:0 30px 0 31px;
+			margin-top:2px;
+			height:30px;
+			display:block;
+			float:left;
+			}
+			ul.nav li a:hover, ul.nav li.current a:link, ul.nav li.current a:visited{ 
+				color:#182632;
+				background:url(../images/bg_no_repeat.gif) 10px 0 no-repeat;
+				}
+				ul.nav li a:hover span, ul.nav li.current a span{
+					background:url(../images/bg_no_repeat.gif) -279px 0 no-repeat;
+					display:block;
+					width:23px;
+					height:30px;
+					margin-top:2px;
+					position:absolute;
+					top:0;
+					right:-1px;
+						}
+/*------------------------子导航----------------------*/	
+ul.subnav{
+	width:600px;
+	height:30px;
+	padding:0 30px;
+	display:none;
+	position:absolute;
+	top:30px;
+	}
+	li.about ul.subnav{margin-left:-90px;}
+	li.product ul.subnav{margin-left:-205px;}
+	li.news ul.subnav{margin-left:-30px;}
+	ul.nav li:hover ul.subnav, ul.nav li.hover ul.subnav{
+		display:block;
+		}
+		ul.subnav li{
+			height:auto;
+			background:none;
+			float:left;
+			position:static;
+			}
+			.nav ul.subnav li a:link, .nav ul.subnav li a:visited{
+				font-size:12px;
+				font-weight:normal;
+				color:#1d2c39;
+				line-height:1em;
+				padding:0;
+				margin:10px 8px 0;
+				height:auto;
+				background:none;
+				}
+			.nav ul.subnav li a:hover{
+				color:#000;
+				text-decoration:underline;
+				}
+/*------------------------搜索----------------------*/	
+form.search{
+	width:157px;
+	height:24px;
+	background:url(../images/bg_no_repeat.gif) 0 -43px no-repeat;
+	position:absolute;
+	top:128px;
+	right:26px;	
+	}
+	.search legend, .search label{display:none;}
+	.search input{
+		font-size:12px;
+		color:#bbbbbc;
+		width:98px;
+		height:18px;
+		padding:5px 8px 0;
+		border:none;
+		background:none;
+		float:left;
+		}
+	.search input.submit{
+		width:22px;
+		height:23px;
+		cursor:pointer;
+		outline:none;
+		}
+/*------------------------banner----------------------*/	
+#banner{
+	width:960px;
+	height:224px;
+	position:relative;
+}
+/* Style for picSwitch */
+ #pic-images-box, #pic-bar-box{
+	position: absolute;
+	left:0;
+}
+#pic-switch-box{position:relative;}
+#pic-switch-box{overflow: hidden;}
+	#pic-images-box a, #pic-bar-box a{display: block;}
+		#pic-images-box a img{
+			margin: 0;padding: 0;border: 0;}
+#pic-bar-box{
+	width: 220px;
+	height:20px;
+	text-align: center;
+	bottom:10px;
+	left:850px;
+}
+	#pic-bar-box a{
+		font-family:"Microsoft Sans Serif", Tahoma, Arial;
+		font-weight:bold;
+		font-size:11px;
+		line-height:16px;
+		color:#072460;
+		width:16px;
+		height:16px;
+		margin:0 3px;
+		opacity: 0.8;
+		filter: alpha(Opacity=80);
+		background:#e4e5e5;
+		float:left;
+		}
+	#pic-bar-box a.link-current-class{
+		color: #fff;
+		background-color: #3a88d8;
+		cursor:default;
+		}
+	/* <switch button> */
+	a#pic-go_stop, #pic-bar-box #pic-move{display:none;}
+
+/*------------------------底部----------------------*/	
+#footer{
+	text-align:center;
+	line-height:1.5em;
+	color:#919192;
+	height:62px;
+	padding:13px 0 0;
+	border:1px solid #a9acac;
+	border-width:1px 0 0;
+	background:#ecebeb;
+	clear:both;
+	}
+
+
+
+
+	  

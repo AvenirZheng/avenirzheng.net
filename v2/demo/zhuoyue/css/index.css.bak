@@ -1,0 +1,11 @@
+#mainContent{
+	background:url(../images/bg-main.jpg) center center no-repeat;
+} 
+.navMark{
+	width:103px;
+	height:592px;
+	background:#dcdcdc;
+	position:absolute;
+	top:-100px;
+	opacity:0.3;
+}
