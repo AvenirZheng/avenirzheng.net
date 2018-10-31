@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="一、概况 Adobe采用了每刷新一次页面，调用一款产品的方式，给访问者展示不同的内容。 首页分成了4个区块： A.顶部导航区、B.产品展示区、C.产品列表及相关信息块、D.底部版权区 解析如下： HTML片段： 二、顶部导航区 导航区域，Adobe用”dt”和”dd”分出了4个小块： 解析如下： 不">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!-- Title -->
+    
+    <title>{ Adobe } Adobe前端开发——结构层概况 [摘] | Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+<!-- Back Home -->
+<a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{ Adobe } Adobe前端开发——结构层概况 [摘]</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p><strong>一、概况</strong> Adobe采用了每刷新一次页面，调用一款产品的方式，给访问者展示不同的内容。 <img src="http://www.blueidea.com/articleimg/2008/03/5502/01.jpg" alt=""><br>首页分成了4个区块： A.顶部导航区、B.产品展示区、C.产品列表及相关信息块、D.底部版权区 解析如下： <img src="http://www.blueidea.com/articleimg/2008/03/5502/02.jpg" alt=""><br>HTML片段： <img src="http://www.blueidea.com/articleimg/2008/03/5502/3.gif" alt=""><br><strong>二、顶部导航区</strong> 导航区域，Adobe用”dt”和”dd”分出了4个小块： <img src="http://www.blueidea.com/articleimg/2008/03/5502/4.gif" alt=""><br>解析如下： <img src="http://www.blueidea.com/articleimg/2008/03/5502/5.gif" alt=""><br>不太符合国内开发习惯的是，他们采用了从右向左的写法，先给出了最右侧LOGO区域的<dt id="adobe-logo">标签，然后是<dd id="site-search">搜索区域，最后才是上下并列的两个左侧导航区域。值得借鉴的是，Adobe在导航区的下拉菜单运用了”dl”内嵌套”ul”的方法来实现效果，在国内的网站中这种写法目前尚不多见。 HTML片段： <img src="http://www.blueidea.com/articleimg/2008/03/5502/6.gif" alt=""><br><strong>三、产品展示区</strong> 这个区块主要是通过FLASH来作为主要的表现形式 <img src="http://www.blueidea.com/articleimg/2008/03/5502/7.jpg" alt=""><br>通过JS中FMARotator参数对背景层及对应产品FLASH路径的指定，来实现每刷新一次页面，更换一下产品展示区域的内容。 HTML片段： <img src="http://www.blueidea.com/articleimg/2008/03/5502/8.gif" alt=""><br><strong>四、产品列表及相关信息块</strong> 从直观上看，这是一个三列的布局： <img src="http://www.blueidea.com/articleimg/2008/03/5502/9.jpg" alt=""><br>但实际上Adobe只把这部分内容分成了两个大的块，<div id="contentBody">和<div id="contentPocket"> 解析如下： <img src="http://www.blueidea.com/articleimg/2008/03/5502/10.gif" alt=""><br>然后再用”columns-2-AB-A”和”columns-2-AB-B”这样的共用样式，分别切分出左右布局的结构，最后使用<br class="clear-both"> 清除浮动，代码非常简洁。 HTML片段： <img src="http://www.blueidea.com/articleimg/2008/03/5502/11.gif" alt=""><br><strong>五、底部版权区</strong> 相比较上边的内容，这里的结构比较简单 <img src="http://www.blueidea.com/articleimg/2008/03/5502/12.gif" alt=""><br>整体分成了上下两个块，上部的是站内的链接区域，下部的就是版权信息了 <img src="http://www.blueidea.com/articleimg/2008/03/5502/13.gif" alt=""><br>内部代码仍然采用了从右向左的写法。 HTML片段： <img src="http://www.blueidea.com/articleimg/2008/03/5502/14.gif" alt=""></div></div></dd></dt></p>
+
+ 
+                <!-- Meta -->
+                <div class="post-meta">
+                    <hr>
+                    <br>
+                    <div class="post-tags">
+                        
+                    </div>
+                    <div class="post-date">
+                        2008 年 03 月 18 日
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- Disqus Comments -->
+
+
+            </div>
+        </div>
+    </div>
+</article>
+</section>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	console.log('Hexo-theme-hollow designed by zchen9 🙋 © 2015-' + (new Date()).getFullYear());
+</script>
+
+    <!-- Google Analytics -->
+    
+
+</body>
+
+</html>

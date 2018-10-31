@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="基本的观点都挺认同的，特别是说到“瀑布模型”和重复劳动这两个点上。
+在中小型的网站项目上，也许强调分工真得没有必要，看现在的网络科技公司，不都只配置美工和程序员。不过在大型项目上，真得不需要明确分工么？
+
+期待着[Felix](http://heartstringz.net/about)的下一篇作品">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!-- Title -->
+    
+    <title>{ Division of labor } 为什么网页设计不应强调分工[摘] | Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+<!-- Back Home -->
+<a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{ Division of labor } 为什么网页设计不应强调分工[摘]</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p><img src="http://cai13.info/blog_pic/2008/12/divisionoflabor.jpg" alt="Division of labor" title="Division of labor">       基本的观点都挺认同的，特别是说到“瀑布模型”和重复劳动这两个点上。</p>
+<pre><code>在中小型的网站项目上，也许强调分工真得没有必要，看现在的网络科技公司，不都只配置美工和程序员。不过在大型项目上，真得不需要明确分工么？
+
+期待着[Felix](http://heartstringz.net/about)的下一篇作品，学习学习。
+
+JunChen在最近的一篇[《为何XHTML原型会失败》](http://www.junchenwu.com/2008/12/why_xhtml_fails.html)中说出了一个实质问题，即在快速变化的互联网公司中，非XHTML原型只是“看上去很美”而已。
+
+究其原因。除了JunChen提到的“难以维护”以外，对设计和开发人员精力的消耗也是一个重要方面。
+
+让我们来看一个典型的流程：
+</code></pre><ol>
+<li>用户研究员进行用户研究，根据结果编写了研究报告（比如角色模型和使用场景）；</li>
+<li>交互设计师按照用户研究报告，设计了线框图；</li>
+<li>视觉设计师拿到线框图，和交互设计师讨论并沟通后，进行视觉设计并输出高保真视觉原型；</li>
+<li>前端开发工程师拿到视觉原型，在和交互设计师及视觉设计师沟通后，进行编码工作，输出HTML文件；</li>
+<li>用户研究员开始可用性测试，并将问题反馈给交互设计师；</li>
+<li><p>回到第一步，直至用户研究员（或其他的什么人）认为质量合格。</p>
+<p>  这一看似合理的流水线作业存在什么问题呢？让我们来仔细分析一下：</p>
+</li>
+</ol>
+<h5 id="1-困惑的交互设计师"><a href="#1-困惑的交互设计师" class="headerlink" title="1. 困惑的交互设计师"></a>1. 困惑的交互设计师</h5><pre><code>用户研究是一个渐进式接近真相的过程，其结果不可能一步到位。尤其在研究初期，哪些因素会对产品设计有较大影响，哪些因素实际无足轻重，这是没有办法事先准确预估的。这就造成当交互设计师在依照研究结果设计时，发现研究结果不能给自己的设计以有力的支撑。
+
+比如，当两种交互方式都可以达到同样目的、而从已有的数据中又无法判断用户会喜欢哪种时，交互设计师就会犹豫不决。从资源的角度来考虑，请研究员再一次制订计划、招募用户并实施研究，是不太可能的；更不用说设计两种原型并分别测试了。因此此时交互设计师只能依据自己的经验，或者进行押宝。
+
+此外，交互设计师还面临一个颇为尴尬的问题：由于处于流程中的中间环节，缺少坚实的硬性产出，他很难、甚至没办法证明自己的工作价值。一方面，交互设计是一种偏“软”的技能，它目前没有、将来也很难产生一个标准化的量尺来考量其自身的质量。可用性测试可以做到部分量化，比如完成时间、出错次数等，但十几个人（一般甚至更少）的数据在统计学上是没有任何意义的。而且，有多少用户能理解那种低保真的原型呢？另一方面，就算用Axure等软件制作可操作的原型然后拿去做测试，各个业务部门会相信测试结果么？没错，你可以强硬一些，比如采取“如果业务部门不参与观察测试，就算自动放弃决策时的发言权”这样的办法，可这只能说你有工作方法，这实在无益于专业技能的提升。而且有多少设计师可以强势到让所有的业务部门闭嘴的？
+
+实施社会分工的目的之一，就是实施标准化的作业。而当流水线中某一环节的产出物质量，是随着其作者的经验而变化时，也就是说质量并不能定量控制时，分工的意义就不复存在，这一生产方式也就不可能按简单复制的方式扩张规模。
+</code></pre><h5 id="2-交互、视觉和前端间的沟通成本，和可能的不愉快"><a href="#2-交互、视觉和前端间的沟通成本，和可能的不愉快" class="headerlink" title="2. 交互、视觉和前端间的沟通成本，和可能的不愉快"></a>2. 交互、视觉和前端间的沟通成本，和可能的不愉快</h5><pre><code>在交互设计师和视觉设计师交接工作时，沟通不可避免。视觉设计师要充分领会交互设计师的意图，这需要沟通；反过来视觉设计师给交互设计师的线框图提意见，这也需要沟通。尤其在整个部门缺乏UI规范时，沟通成本可能会高得吓人。比如交互设计师认为某处需要用3级标题（比如h3），到了视觉这里直接用了一行红字。所以常常觉得“有那时间费力沟通，还不如直接改了算了”。结果改完了交互设计师心里会想“你怎么也不和我打声招呼就改了”，不愉快就这么来了。
+
+到了前端开发那里，问题就更复杂了。首先，前端开发需要实现所有细节，而出于资源上的考虑，这些细节未必都会由交互和视觉设计师的产出物覆盖到（比如同一页面上仅有一处文字有微小变化，那么线框图和视觉稿要分别做两份吗？），那么前端开发就需要经常和前面两者沟通；其次，如果前端开发发觉设计稿的实现难度或成本太高，那么情况就更为棘手，最麻烦的莫过于要重新设计交互原型。
+
+当然，上述问题基本都能靠沟通解决，问题是，你愿意花多少时间去沟通呢？从这个角度来说，敏捷开发的沟通成本是最低的，因为沟通就是产出。而反过来上述流程的沟通成本很高，因为沟通是用来解释产出的，是产出成本之外的“额外成本”。
+</code></pre><h5 id="3-瀑布模型与生俱来的缺陷"><a href="#3-瀑布模型与生俱来的缺陷" class="headerlink" title="3. 瀑布模型与生俱来的缺陷"></a>3. 瀑布模型与生俱来的缺陷</h5><pre><code>上述流程是一个典型的[瀑布模型](http://zh.wikipedia.org/wiki/%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B)，一旦在可用性测试阶段发现问题，就需要重新再走整个流程，其效率之低可想而知。此外，由于涉及到的环节和人员不少，流程走得次数越多，出问题的机会也越多。最常见的是各个环节的产出物版本控制困难，甚至根本没有版本控制，结果往往造成项目组中每个人拿到的产出物（如Demo）都不一样，这是一个非常可怕的风险，会给项目过程和质量带来非常严重的影响。
+
+我对这个问题采取过“文档管理＋版本控制＋减少分工”的方法，效果很好。这个后文会阐述，这里先不展开。
+</code></pre><h5 id="4-无技术含量可言的重复劳动"><a href="#4-无技术含量可言的重复劳动" class="headerlink" title="4. 无技术含量可言的重复劳动"></a>4. 无技术含量可言的重复劳动</h5><pre><code>在一些页面调整不大的日常项目中，交互设计师用2小时做的原型，到了前端那里可能半个小时就把HTML搞定了，如果用[CSSEdit](http://heartstringz.net/blog/posts/view/web-design-tools)那样的工具，实现过程甚至更快、更惬意。那么，为什么要把原本一件很小的工作硬生生地拆成两部分来做呢？
+
+举一个非常常见的例子：业务部门提需求说要改某某宣传文案，如果按照上述流程，交互先做线框，给到视觉确认，然后到前端修改，往最快了说也得半小时吧。而若交互设计师直接改HTML，十分钟搞定。
+
+有人说找到相应的模板还要时间呢，这好办，做个可搜索的模板库就好了。我们曾参考[DocBlock规范](http://phpdoc.org/)做过VelocityDoc，效果很好。
+</code></pre><h5 id="5-破坏了网页设计工作本身的美感"><a href="#5-破坏了网页设计工作本身的美感" class="headerlink" title="5. 破坏了网页设计工作本身的美感"></a>5. 破坏了网页设计工作本身的美感</h5><pre><code>网页设计是技术和艺术的结合，一个优秀的设计师不仅大量吸收传统的设计知识（如平面设计），更懂得如何利用合适的技术去带来艺术上的创新。这个过程是相辅相成的，硬性拆开只会限制设计师的创造力。
+
+这就好像搞油画的必须要掌握不同染料和画布的性质，搞雕塑的既要有创意又有能动手（你能想象出一个雕塑家只管创意而从不亲自去实现吗）一样，使用技术来展现艺术，借助艺术去探究可能的技术。
+
+据说Apple的工业设计师都要清楚地理解各种材料的特点的，如果只让他们画图，Unibody这样的杰作又如何诞生？
+
+说了半天问题，下篇中我们来看怎么解决。
+</code></pre><p>原文：<a href="http://heartstringz.net/blog/posts/view/why-no-division-in-web-design-1" title="http://heartstringz.net/blog/posts/view/why-no-division-in-web-design-1" target="_blank" rel="noopener">http://heartstringz.net/blog/posts/view/why-no-division-in-web-design-1</a></p>
+<p>转至：<a href="http://heartstringz.net/blog/" target="_blank" rel="noopener">心弦</a></p>
+
+ 
+                <!-- Meta -->
+                <div class="post-meta">
+                    <hr>
+                    <br>
+                    <div class="post-tags">
+                        
+                    </div>
+                    <div class="post-date">
+                        2008 年 12 月 16 日
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- Disqus Comments -->
+
+
+            </div>
+        </div>
+    </div>
+</article>
+</section>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	console.log('Hexo-theme-hollow designed by zchen9 🙋 © 2015-' + (new Date()).getFullYear());
+</script>
+
+    <!-- Google Analytics -->
+    
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="首先来简要介绍一下钢笔工具和路径的概念 　　1、钢笔工具属于矢量绘图工具，其优点是可以勾画平滑的曲线，在缩放或者变形之后仍能保持平滑效果。 　　2、钢笔工具画出来的矢量图形称为路径，路径是矢量的路径允许是不封闭的开放状，如果把起点与终点重合绘制就可以得到封闭的路径。 　　现在我们来绘制一个简单的路径">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!-- Title -->
+    
+    <title>Photoshop钢笔的使用方法和技巧 | Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+<!-- Back Home -->
+<a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Photoshop钢笔的使用方法和技巧</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>首先来简要介绍一下钢笔工具和路径的概念 　　1、钢笔工具属于矢量绘图工具，其优点是可以勾画平滑的曲线，在缩放或者变形之后仍能保持平滑效果。 　　2、钢笔工具画出来的矢量图形称为路径，路径是矢量的路径允许是不封闭的开放状，如果把起点与终点重合绘制就可以得到封闭的路径。 　　现在我们来绘制一个简单的路径 　　如下图在工具栏选择钢笔工具（快捷键P） 　　<img src="http://www.coolface.net/attachments/month_0604/f200648153910.gif" alt="">　　<img src="http://www.coolface.net/attachments/month_0604/n200648153957.gif" alt="">  　　然后用钢笔在画面中单击，会看到在击打的点之间有线段相连 　　保持按住Shift键可以让所绘制的点与上一个点保持45度整数倍夹角（比如零度、90度） 　　这样可以绘制水平或者是垂直的线段（图中从第5个点开始按下了Shift键） 　　 　　<img src="http://www.coolface.net/attachments/month_0604/t200648155434.gif" alt=""> 　　从上面的简单练习中我们得出两个规律： 　　　　1、我们并没有直接绘制线段，而是定义了各个点的位置，软件则在点间连线成型 　　　　2、控制线段形态（方向、距离）的，并不是线段本身，而是线段中的各个点的位置 　　记住两个术语： 　　　　1、那些点称为“锚点”(anchor) 　　　　2、锚点间的线段称为“片断”(segment) 　　刚才我们绘制的那些锚点，由于它们之间的线段都是直线，所以又称为直线型锚点。 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>__</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> 　　现在我们来绘制曲线形锚点 　　如下图所示般，在起点按下鼠标之后不要松手，向上拖动出一条方向线后放手 　　然后在第二个锚点拖动出一条向下的方向线，以此类推，画出类似图示的路径 　　<img src="http://www.coolface.net/attachments/month_0604/02006481661.gif" alt=""> 　　我们看到，在绘制出第二个及之后的锚点并拖动方向线时，曲线的形态也随之改变 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>____</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> 　　究竟曲线是怎样生成的，我们又该如何来控制曲线的形态呢？ 　　除了具有直线的方向和距离外，曲线多了一个弯曲度的形态， 　　方向和距离只要改变锚点位置就可以做到，但是弯曲度该如何控制？ 　　如图在工具栏选择“直接选择工具”，注意是下方那个空心的箭头 　　<img src="http://www.coolface.net/attachments/month_0604/1200648161026.gif" alt=""> 　　假设我们刚才绘制的4个锚点分别是ABCD 　　用“直接选择工具”去点取位于AB之间的片断 　　会看到刚才我们绘制AB锚点时候定义的方向线 　　<img src="http://www.coolface.net/attachments/month_0604/120064816117.gif" alt=""> 　　仔细看一下这两个方向线 　　再这样想象： 　　一个人要从A点到B点，在A点出发的时候，位于A点的其他人看到他是朝着上偏右的方向走的 　　而位于B点的人，看到他是朝着下偏右的方向来的 　　那么综合两地的观测结果。就可以得出这个人行走的路线：必定是一个类似锅盖的上弧形 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>___</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> 　　现在我们选择如图的“转换点工具”，该工具用来修改方向线 　　<img src="http://www.coolface.net/attachments/month_0604/o200648183418.gif" alt=""> 　　然后如下图所示般改变AB锚点上的方向线，将会看到曲线弯曲度的改变 　　注意方向线末端有一个小圆点，这个圆点称为“手柄”，要点击手柄位置才可以改变方向线 　　<img src="http://www.coolface.net/attachments/month_0604/h200648183452.gif" alt=""> 　　结合刚才所作的比喻，就不难理解了： 　　　　1、修改B锚点方向线为下，相当于指定那个人从A点上方出发后，从B点下方进入，那么所走的路程就是一个S形 　　　　2、再修改A锚点方向线为下，相当于从A点下方出发，再从B点下方进入，所走的就是一个下弧形的路程 　　修改后的方向线如下图 　　<img src="http://www.coolface.net/attachments/month_0604/s20064818374.gif" alt=""> <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>__</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> 　　明白了方向线的方向对曲线形态的影响后，我们来看一下方向线长短造成的影响 　　如下图般，在同一方向上拖拉方向线：（可使用“直接选择工具”） 　　<img src="http://www.coolface.net/attachments/month_0604/v200648184448.gif" alt=""> 　　<strong>对于一个锚点而言，如果方向线越长，那么曲线在这个方向上走的路程就越长，反之就越短</strong> 　　可以这样设想，曲线是一个橡皮筋，在头尾两端有两个力在各自的方向上拉 　　哪个方向上力气大，则橡皮筋就朝向这个方向多靠拢一些。反而反之 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>__</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> 　　除了修改锚点之外，也可以利用“直接选择工具”，在片断上修改曲线的形态 　　如下图： 　　<img src="http://www.coolface.net/attachments/month_0604/520064818506.gif" alt=""> 　　注意：这并不能说是“修改了片断”，而应该说是“同时修改了两个锚点” 　　牢记原则：片断是由锚点组成的，只有修改锚点才能改变片断形态，这是不可逆的因果关系 　　做一下小结： 　　对于这条曲线上的除了起点和终点的BC两个锚点而言，都存在两条方向线： 　　一条是从上一个锚点“来向”的方向线；另一条是通往下一个锚点的“去向”的方向线 　　对于起点，只存在“去向”的方向线；对于终点，只存在“来向”的方向线 <a href="http://www.coolface.net/article.asp?id=6" target="_blank" rel="noopener">Photoshop钢笔的使用方法和技巧（二）</a> <a href="http://www.coolface.net/article.asp?id=7" target="_blank" rel="noopener">Photoshop钢笔的使用方法和技巧（三）</a> <a href="http://www.coolface.net/article.asp?id=8" target="_blank" rel="noopener">Photoshop钢笔的使用方法和技巧（四）</a> <a href="http://www.coolface.net/article.asp?id=67" target="_blank" rel="noopener"></a> 转载至:<a href="http://www.coolface.net/" title="coolface&#39;s 设计空间" target="_blank" rel="noopener"><img src="http://www.coolface.net/logo.png" alt=""></a></p>
+
+ 
+                <!-- Meta -->
+                <div class="post-meta">
+                    <hr>
+                    <br>
+                    <div class="post-tags">
+                        
+                    </div>
+                    <div class="post-date">
+                        2007 年 07 月 11 日
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- Disqus Comments -->
+
+
+            </div>
+        </div>
+    </div>
+</article>
+</section>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	console.log('Hexo-theme-hollow designed by zchen9 🙋 © 2015-' + (new Date()).getFullYear());
+</script>
+
+    <!-- Google Analytics -->
+    
+
+</body>
+
+</html>

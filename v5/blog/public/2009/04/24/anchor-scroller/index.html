@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="实现的基本原理是利用Jquery的scrollTo插件，本人初学jq，只能抛砖引玉，做个简单的示例，希望大家能支持。
+使用很简单，下载导jquery库文件和scrollTo插件，编写合理的markup，使用或任意ID作为锚点，编写3行js代码就可以实现效果！
+具体效果
+1.在html中导入jquer">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!-- Title -->
+    
+    <title>{ Jquery实战 } 带动画效果的锚点跳转 | Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+<!-- Back Home -->
+<a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{ Jquery实战 } 带动画效果的锚点跳转</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p><a href="http://cai13.info/blog_pic/2009/04/jquery.jpg" target="_blank" rel="noopener"><img src="http://cai13.info/blog_pic/2009/04/jquery-thumb.jpg" alt="jquery" title="jquery"></a></p>
+<p>实现的基本原理是利用Jquery的<a href="http://flesler.blogspot.com/2007/10/jquerylocalscroll-10.html" target="_blank" rel="noopener">scrollTo插件</a>，本人初学jq，只能抛砖引玉，做个简单的示例，希望大家能支持。</p>
+<p>使用很简单，下载导<a href="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js" target="_blank" rel="noopener">jquery库</a>文件和<a href="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.1-min.js" target="_blank" rel="noopener">scrollTo插件</a>，编写合理的markup，使用<a id="”#"></a>或任意ID作为锚点，编写3行js代码就可以实现效果！</p>
+<p><a href="http://www.adriancheng.name/" target="_blank" rel="noopener">具体效果</a></p>
+<p>1.在html中导入<a href="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js" target="_blank" rel="noopener">jquery库</a>和<a href="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.1-min.js" target="_blank" rel="noopener">scrollTo插件</a></p>
+<blockquote>
+<head><meta name="generator" content="Hexo 3.8.0"><br><title>锚点跳转</title><br><br>&lt;script src=”<a href="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js&quot;" target="_blank" rel="noopener">http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js”</a> type=”text/javascript”&gt;<br><br>&lt;script src=”<a href="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.1-min.js" title="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.1-min.js" target="_blank" rel="noopener">http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.1-min.js</a>“ type=”text/javascript” &gt;<br><br></head>
+</blockquote>
+<p>2.编写markup，简单做个示例</p>
+<blockquote>
+<body><br><a href="#example"></a><br><div style="height:2000px"></div><br><br><div id="expamle"></div><br>我在这<br><br></body>
+</blockquote>
+<p>3编写js代码。</p>
+<blockquote>
+<p>jQuery(function( $ ){<br>        $.easing.elasout = function(x, t, b, c, d) {<br>            var s=1.70158;var p=0;var a=c;<br>            if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d<em>.3;<br>            if (a &lt; Math.abs(c)) { a=c; var s=p/4; }<br>            else var s = p/(2\</em>Math.PI) * Math.asin (c/a);<br>            return a*Math.pow(2,-10*t) <em> Math.sin( (t\</em>d-s)*(2*Math.PI)/p ) + c + b;<br>        };<br>    $.scrollTo.defaults.axis = ‘xy’;<br>    $.scrollTo( 0 );<br>    $(‘a’).click(function(){<br>        $.scrollTo( this.hash, { duration: 1000 } );<br>        return false;<br>    });<br>});</p>
+</blockquote>
+<p>$(‘a’) 是选择符</p>
+<p>$.scrollTo( 位置, 速度,{ 滑动方式 } );</p>
+<p>效果很简单，也很实用，在FAQ页面或者应用到TOP按钮，能达到不错的效果。</p>
+<p>注：代码中的删除线表示没必要删除或改动的代码部分。</p>
+<p>如果觉得有点大才小用，请点击：<a href="http://demos.flesler.com/jquery/scrollTo/" target="_blank" rel="noopener">http://demos.flesler.com/jquery/scrollTo/</a> 查看全部效果。</p>
+<p>不仅可以实现窗口范围内的滑动，还可以在html各个容器，各个位置中滑动。</p>
+<p>效果也不仅仅只有平滑，还有加速，水平垂直移动，摇摆等等效果。</p>
+<p>这样就可以应用到各种tab效果上，大家尽情发挥创意啦。</p>
+
+ 
+                <!-- Meta -->
+                <div class="post-meta">
+                    <hr>
+                    <br>
+                    <div class="post-tags">
+                        
+                    </div>
+                    <div class="post-date">
+                        2009 年 04 月 24 日
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- Disqus Comments -->
+
+
+            </div>
+        </div>
+    </div>
+</article>
+</section>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	console.log('Hexo-theme-hollow designed by zchen9 🙋 © 2015-' + (new Date()).getFullYear());
+</script>
+
+    <!-- Google Analytics -->
+    
+
+</body>
+
+</html>

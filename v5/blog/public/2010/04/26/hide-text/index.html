@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="最近整理的一份CSS文字隐藏的demo，总结了几种方法，希望得出一种最完美的方案放进自己的代码片段，可是，到最后却陷入一种重复不断地推翻结论的境地。因为需要考虑的应用场景和元素实在太多，放下浏览器不谈，不同的应用终端，不同的标签结构会有不一样的最优方案，因此，与其希望在工作上多“偷一些懒”，不如平常">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!-- Title -->
+    
+    <title>{ hide_text } CSS文字隐藏总结报告 | Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+<!-- Back Home -->
+<a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{ hide_text } CSS文字隐藏总结报告</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p><a href="http://caib.me/wp-content/uploads/2010/04/hide_text.jpg" target="_blank" rel="noopener"><img src="http://caib.me/wp-content/uploads/2010/04/hide_text_thumb.jpg" alt="hide_text" title="hide_text"></a> 最近整理的一份CSS文字隐藏的demo，总结了几种方法，希望得出一种最完美的方案放进自己的代码片段，可是，到最后却陷入一种重复不断地推翻结论的境地。因为需要考虑的应用场景和元素实在太多，放下浏览器不谈，不同的应用终端，不同的标签结构会有不一样的最优方案，因此，与其希望在工作上多“偷一些懒”，不如平常多巩固积累基础的知识，在需要权衡的时候，便能更加得心应手。  因为自己经验尚浅，demo部分难免会有错漏情况，如发现问题，望大家能指出。 <a href="http://demo.adriancheng.name/css_demo/hide/" target="_blank" rel="noopener">方法列表</a> <a href="http://demo.adriancheng.name/css_demo/hide/demo.html" target="_blank" rel="noopener">demo</a></p>
+<ol>
+<li><h2 id="毫无保留：display-none"><a href="#毫无保留：display-none" class="headerlink" title="毫无保留：display:none"></a>毫无保留：<strong>display:none</strong></h2><ul>
+<li><h3 id="代码片段："><a href="#代码片段：" class="headerlink" title="代码片段："></a>代码片段：</h3><h4 id="x-HTML"><a href="#x-HTML" class="headerlink" title="(x)HTML"></a>(x)HTML</h4><p>[xml] </p><p class="hide_display">我是打酱油的文本</p> [/xml]<p></p>
+<h4 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h4><p>[css] /<em> 暴力隐藏 </em>/ .hide_display{display:none;} [/css]</p>
+</li>
+<li><h3 id="兼容性："><a href="#兼容性：" class="headerlink" title="兼容性："></a>兼容性：</h3><p>浏览器兼容性</p>
+<p>CHROME</p>
+<p>FIREFOX</p>
+<p>OPERA</p>
+<p>SAFARI</p>
+<p>IE</p>
+<p>版本</p>
+<p>5</p>
+<p>3.6</p>
+<p>10.10</p>
+<p>4</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>支持情况</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+</li>
+<li><h3 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h3><ol>
+<li>方便、快捷</li>
+<li>兼容性好</li>
+</ol>
+</li>
+<li><h3 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h3><ol>
+<li>屏幕阅读器无法阅读</li>
+<li>超链接不适用</li>
+<li>图片替代文本需要其他标签的背景</li>
+<li>影响搜索排名</li>
+<li>大量使用容易被认为是SEO作弊</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h2 id="折中选择：overflow-hidden-position-absolute-visibility-hidden"><a href="#折中选择：overflow-hidden-position-absolute-visibility-hidden" class="headerlink" title="折中选择：overflow:hidden/position:absolute/visibility:hidden"></a>折中选择：<strong>overflow:hidden/position:absolute/visibility:hidden</strong></h2><ul>
+<li><h3 id="代码片段：-1"><a href="#代码片段：-1" class="headerlink" title="代码片段："></a>代码片段：</h3><h4 id="x-HTML-1"><a href="#x-HTML-1" class="headerlink" title="(x)HTML"></a>(x)HTML</h4><p>[xml] <span class="hide\_overflow">我是一号打酱油的文本</span> </p><p class="hide\_position">我是二号打酱油的文本</p> <p class="hide_visibility">我是三号打酱油的文本</p> [/xml]<p></p>
+<h4 id="CSS-1"><a href="#CSS-1" class="headerlink" title="CSS"></a>CSS</h4><p>[css] /<em> 隐藏元素，脱离文本流，使元素不影响其他元素 </em>/ .hide_overflow{ height:0px; overflow:hidden; display:block;/<em> 行内元素需要 </em>/ float:left; /<em> 脱离文档流 或者position:absolute;</em>/ } /<em> 定位在可视范围外，脱离文本流，使元素不影响其他元素 </em>/ .hide_position{ position:absolute; left:-32767px; } /<em> 原理与.hide_position一样</em>/ .hide_visibility{ visibility:hidden; position:absolute; /<em> 脱离文档流 </em>/ margin-left:-32767px; } [/css]</p>
+</li>
+<li><h3 id="兼容性：-1"><a href="#兼容性：-1" class="headerlink" title="兼容性："></a>兼容性：</h3><p>浏览器兼容性</p>
+<p>CHROME</p>
+<p>FIREFOX</p>
+<p>OPERA</p>
+<p>SAFARI</p>
+<p>IE</p>
+<p>版本</p>
+<p>5</p>
+<p>3.6</p>
+<p>10.10</p>
+<p>4</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>支持情况</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+</li>
+<li><h3 id="优点：-1"><a href="#优点：-1" class="headerlink" title="优点："></a>优点：</h3><ol>
+<li>方便、快捷</li>
+<li>不希望屏幕阅读器读取的内容可以使用visibility</li>
+</ol>
+</li>
+<li><h3 id="缺点：-1"><a href="#缺点：-1" class="headerlink" title="缺点："></a>缺点：</h3><ol>
+<li>超链接不适用</li>
+<li>图片替代文本需要其他标签的背景</li>
+<li>overflow:hidden;被认为有害体验</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h2 id="体验损失：text-indent负值"><a href="#体验损失：text-indent负值" class="headerlink" title="体验损失：text-indent负值"></a>体验损失：<strong>text-indent负值</strong></h2><ul>
+<li><h3 id="代码片段：-2"><a href="#代码片段：-2" class="headerlink" title="代码片段："></a>代码片段：</h3><h4 id="x-HTML-2"><a href="#x-HTML-2" class="headerlink" title="(x)HTML"></a>(x)HTML</h4><p>[xml] </p><p class="hide\_tex"><a href="#">我是打酱油的超链接一号</a></p> <a class="hide\_tex\_span" href="#"><span>我是打酱油的超链接二号</span></a> <!--全英文字符在IE下不能被隐藏 --> <input class="hide\_tex\_input" type="submit"> <input class="hide\_tex\_input" type="submit"> <button class="hide\_tex_input">我是打酱油的文本btn</button> [/xml]<p></p>
+<h4 id="CSS-2"><a href="#CSS-2" class="headerlink" title="CSS"></a>CSS</h4><p>[css] .hide_tex a, .hide_tex_span{ text-indent:-32767px; display:block; /<em> text-indent适用块状元素中行内元素和文本节点 </em>/ /<em> 演示需要 </em>/ width:200px; height:20px; margin-left:300px; background-color:#ccc; /<em> outline:none; 不建议隐藏outline，键盘流选手无法操作 </em>/ } .hide_tex_input{ text-indent:-32767px; width:200px; height:50px; display:block; } [/css]</p>
+</li>
+<li><h3 id="兼容性：-2"><a href="#兼容性：-2" class="headerlink" title="兼容性："></a>兼容性：</h3><p>浏览器兼容性</p>
+<p>CHROME</p>
+<p>FIREFOX</p>
+<p>OPERA</p>
+<p>SAFARI</p>
+<p>IE</p>
+<p>版本</p>
+<p>5</p>
+<p>3.6</p>
+<p>10.10</p>
+<p>4</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>支持情况</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+</li>
+<li><h3 id="优点：-2"><a href="#优点：-2" class="headerlink" title="优点："></a>优点：</h3><ol>
+<li>适用超链接的图片替代</li>
+</ol>
+</li>
+<li><h3 id="缺点：-2"><a href="#缺点：-2" class="headerlink" title="缺点："></a>缺点：</h3><ol>
+<li>FF的虚边问题</li>
+<li>text-indent容易产生bug</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h2 id="牛皮癣：font-size设零"><a href="#牛皮癣：font-size设零" class="headerlink" title="牛皮癣：font-size设零"></a>牛皮癣：<strong>font-size设零</strong></h2><ul>
+<li><h3 id="代码片段：-3"><a href="#代码片段：-3" class="headerlink" title="代码片段："></a>代码片段：</h3><h4 id="x-HTML-3"><a href="#x-HTML-3" class="headerlink" title="(x)HTML"></a>(x)HTML</h4><p>[xml] </p><p class="hide\_fs">我是擦不掉牛皮癣</p> <button class="hide\_fs">我是打酱油的文本btn</button> <input class="hide_fs" type="submit"> [/xml]<p></p>
+<h4 id="CSS-3"><a href="#CSS-3" class="headerlink" title="CSS"></a>CSS</h4><p>[css] .hide_fs{ font-size:0; } [/css]</p>
+</li>
+<li><h3 id="兼容性：-3"><a href="#兼容性：-3" class="headerlink" title="兼容性："></a>兼容性：</h3><p>浏览器兼容性</p>
+<p>CHROME</p>
+<p>FIREFOX</p>
+<p>OPERA</p>
+<p>SAFARI</p>
+<p>IE</p>
+<p>版本</p>
+<p>5</p>
+<p>3.6</p>
+<p>10.10</p>
+<p>4</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>支持情况</p>
+<p>N</p>
+<p>Y</p>
+<p>Y</p>
+<p>N</p>
+<p>N</p>
+<p>N</p>
+<p>N</p>
+</li>
+<li><h3 id="优点：-3"><a href="#优点：-3" class="headerlink" title="优点："></a>优点：</h3><ol>
+<li>方便、快捷</li>
+</ol>
+</li>
+<li><h3 id="缺点：-3"><a href="#缺点：-3" class="headerlink" title="缺点："></a>缺点：</h3><ol>
+<li>浏览器表现不一致，ie,safari有最小字号，chrome最小12px，ff不显示文本</li>
+<li>适用环境少</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h2 id="强强联合：line-height三倍"><a href="#强强联合：line-height三倍" class="headerlink" title="强强联合：line-height三倍"></a>强强联合：<strong>line-height三倍</strong></h2><ul>
+<li><h3 id="代码片段：-4"><a href="#代码片段：-4" class="headerlink" title="代码片段："></a>代码片段：</h3><h4 id="x-HTML-4"><a href="#x-HTML-4" class="headerlink" title="(x)HTML"></a>(x)HTML</h4><p>[xml] </p><p class="hide\_lh"><a href="#">目前为止被正常人类普遍接受的疑似最完美隐藏文字方案，传说是tommy发明的</a></p> <!-- line-height在ff3.6的button无法隐藏文本，需要配合其他方式 --> <button class="hide\_lh\_btn">我是打酱油的文本btn</button> <!-- line-height在ff3.6、opera的input无法隐藏文本，需要配合其他方式 --> <input class="hide\_lh\_btn" type="submit"> <!-- 目前比较完善的方案 --> <input class="hide\_lh\_btn\_final" type="submit"> [/xml]<p></p>
+<h4 id="CSS-4"><a href="#CSS-4" class="headerlink" title="CSS"></a>CSS</h4><p>[css] /<em> 设定高度，利用行高将文本撑到容器可视范围外 </em>/ .hide_lh a, .hide_lh_btn{ width:200px; height:20px; overflow:hidden; line-height: 60px;/<em> 行高最好设3倍或以上，chrome容易后漏 </em>/ display:block;/<em> 行内元素需要 </em>/ /<em> 演示需要 </em>/ background-color:#ccc; margin-left:300px; } .hide_lh_btn_final{ width:200px; height:20px; overflow:hidden; line-height:60px; display:block; font-size:0px; /<em> opera和ff支持 </em>/ } [/css]</p>
+</li>
+<li><h3 id="兼容性：-4"><a href="#兼容性：-4" class="headerlink" title="兼容性："></a>兼容性：</h3><p>浏览器兼容性</p>
+<p>CHROME</p>
+<p>FIREFOX</p>
+<p>OPERA</p>
+<p>SAFARI</p>
+<p>IE</p>
+<p>版本</p>
+<p>5</p>
+<p>3.6</p>
+<p>10.10</p>
+<p>4</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>支持情况</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+</li>
+<li><h3 id="优点：-4"><a href="#优点：-4" class="headerlink" title="优点："></a>优点：</h3><ol>
+<li>兼容性好</li>
+<li>超链接和图片替代文本可用</li>
+</ol>
+</li>
+<li><h3 id="缺点：-4"><a href="#缺点：-4" class="headerlink" title="缺点："></a>缺点：</h3><ol>
+<li>使用限制较大，需要定宽高</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h2 id="多一丁点：前置背景遮挡"><a href="#多一丁点：前置背景遮挡" class="headerlink" title="多一丁点：前置背景遮挡"></a>多一丁点：<strong>前置背景遮挡</strong></h2><ul>
+<li><h3 id="代码片段：-5"><a href="#代码片段：-5" class="headerlink" title="代码片段："></a>代码片段：</h3><h4 id="x-HTML-5"><a href="#x-HTML-5" class="headerlink" title="(x)HTML"></a>(x)HTML</h4><p>[xml] <!-- 在css无效和css有效图片无效都适用 --> <a class="hide\_bg" href="#"><span class="front\_bg"></span>我是可访问性的化身</a> [/xml]</p>
+<h4 id="CSS-5"><a href="#CSS-5" class="headerlink" title="CSS"></a>CSS</h4><p>[css] .hide_bg{ width:200px; height:20px; position:relative; display:block;/<em> 行内元素需要 </em>/ } .hide_bg .front_bg{ background:url(‘bg_text.png’) no-repeat; /<em> 背景内容等于或大于容器大小 </em>/ position:absolute; /<em> 绝对定位，不影响文本 </em>/ left:0px; top:0px; width:200px;/<em> 与父元素等宽高 </em>/ height:20px; display:block; /<em> cursor:pointer; ie6和链接需要用 </em>/ } [/css]</p>
+</li>
+<li><h3 id="兼容性：-5"><a href="#兼容性：-5" class="headerlink" title="兼容性："></a>兼容性：</h3><p>浏览器兼容性</p>
+<p>CHROME</p>
+<p>FIREFOX</p>
+<p>OPERA</p>
+<p>SAFARI</p>
+<p>IE</p>
+<p>版本</p>
+<p>5</p>
+<p>3.6</p>
+<p>10.10</p>
+<p>4</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>支持情况</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+<p>Y</p>
+</li>
+<li><h3 id="优点：-5"><a href="#优点：-5" class="headerlink" title="优点："></a>优点：</h3><ol>
+<li>兼容性好</li>
+<li>超链接和图片替代文本可用</li>
+<li>可访问性强</li>
+</ol>
+</li>
+<li><h3 id="缺点：-5"><a href="#缺点：-5" class="headerlink" title="缺点："></a>缺点：</h3><ol>
+<li>使用限制较大，需要定宽高</li>
+<li>代码冗余，需要空标签</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h2 id="另辟蹊径：content-””"><a href="#另辟蹊径：content-””" class="headerlink" title="另辟蹊径：content:””"></a>另辟蹊径：<strong>content:””</strong></h2><ul>
+<li><h3 id="代码片段：-6"><a href="#代码片段：-6" class="headerlink" title="代码片段："></a>代码片段：</h3><h4 id="x-HTML-6"><a href="#x-HTML-6" class="headerlink" title="(x)HTML"></a>(x)HTML</h4><p>[xml] <!--只有opera支持，按定义只能用在:before 和:after--> <a class="hide_ct" href="#">也许我才是最合适的，谁知道呢，内容表现分离。只有opera支持</a> [/xml]</p>
+<h4 id="CSS-6"><a href="#CSS-6" class="headerlink" title="CSS"></a>CSS</h4><p>[css] .hide_ct{ content:&quot;&quot;; } [/css]</p>
+</li>
+<li><h3 id="兼容性：-6"><a href="#兼容性：-6" class="headerlink" title="兼容性："></a>兼容性：</h3><p>浏览器兼容性</p>
+<p>CHROME</p>
+<p>FIREFOX</p>
+<p>OPERA</p>
+<p>SAFARI</p>
+<p>IE</p>
+<p>版本</p>
+<p>5</p>
+<p>3.6</p>
+<p>10.10</p>
+<p>4</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>支持情况</p>
+<p>N</p>
+<p>N</p>
+<p>Y</p>
+<p>N</p>
+<p>N</p>
+<p>N</p>
+<p>N</p>
+</li>
+<li><h3 id="优点：-6"><a href="#优点：-6" class="headerlink" title="优点："></a>优点：</h3><ol>
+<li>简单</li>
+</ol>
+</li>
+<li><h3 id="缺点：-6"><a href="#缺点：-6" class="headerlink" title="缺点："></a>缺点：</h3><ol>
+<li>内容样式分离</li>
+<li>不实用</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+
+ 
+                <!-- Meta -->
+                <div class="post-meta">
+                    <hr>
+                    <br>
+                    <div class="post-tags">
+                        
+                    </div>
+                    <div class="post-date">
+                        2010 年 04 月 26 日
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- Disqus Comments -->
+
+
+            </div>
+        </div>
+    </div>
+</article>
+</section>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	console.log('Hexo-theme-hollow designed by zchen9 🙋 © 2015-' + (new Date()).getFullYear());
+</script>
+
+    <!-- Google Analytics -->
+    
+
+</body>
+
+</html>
